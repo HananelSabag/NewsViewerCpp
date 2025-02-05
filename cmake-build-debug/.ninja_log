@@ -1,0 +1,4 @@
+# ninja log v5
+12	7668	7604561573714334	CMakeFiles/NewsViewer.dir/main.cpp.obj	5e094d792a4293bc
+7	10298	7604561599886837	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	76cef4dbd3ad5655
+10299	29299	7604561790034409	NewsViewer.exe	2f65bc69622ace1c
