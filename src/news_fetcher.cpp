@@ -17,7 +17,7 @@ NewsFetcher::NewsFetcher(const std::string& apiKey) : apiKey(apiKey) {
 // Fetches top headlines and caches them
 std::vector<std::string> NewsFetcher::fetchHeadlines() {
     std::lock_guard<std::mutex> lock(fetchMutex);
-    std::string query = baseUrl + "?country=us&apiKey=" + apiKey;
+    std::string query = "/v2/top-headlines?country=us&apiKey=" + apiKey;
 
     // Check if cached and not expired
     if (searchCache.count("top_headlines") && !isCacheExpired("top_headlines")) {
@@ -32,7 +32,7 @@ std::vector<std::string> NewsFetcher::fetchHeadlines() {
         if (jsonData.contains("articles")) {
             for (const auto& article : jsonData["articles"]) {
                 if (article.contains("title")) {
-                    headlines.push_back(formatNewsArticle(article["title"]));
+                    headlines.push_back(article["title"]);
                 }
             }
         }
@@ -65,7 +65,7 @@ std::vector<std::string> NewsFetcher::searchNews(const std::string& keyword) {
         return searchCache[lowerKeyword];
     }
 
-    std::string query = baseUrl + "?q=" + urlEncode(keyword) + "&apiKey=" + apiKey;
+    std::string query = "/v2/everything?q=" + urlEncode(keyword) + "&apiKey=" + apiKey;
     std::string response = makeRequest(query);
 
     std::vector<std::string> searchResults;
@@ -75,24 +75,12 @@ std::vector<std::string> NewsFetcher::searchNews(const std::string& keyword) {
             for (const auto& article : jsonData["articles"]) {
                 if (article.contains("title")) {
                     std::string title = article["title"];
-
-                    // Convert title to lowercase for matching
-                    std::string lowerTitle = title;
-                    std::transform(lowerTitle.begin(), lowerTitle.end(), lowerTitle.begin(), ::tolower);
-
-                    // Check if keyword appears in the title
-                    if (lowerTitle.find(lowerKeyword) != std::string::npos) {
-                        searchResults.push_back(formatNewsArticle(title, keyword));
-                    }
+                    searchResults.push_back(title);
                 }
             }
         }
     } catch (const std::exception& e) {
         std::cerr << "[ERROR] JSON Parsing failed: " << e.what() << std::endl;
-    }
-
-    if (searchResults.empty()) {
-        std::cout << "[INFO] No relevant news articles found for '" << keyword << "'.\n";
     }
 
     // Cache and save results
@@ -149,7 +137,8 @@ bool NewsFetcher::isCacheExpired(const std::string& keyword) {
 
 // Makes an HTTP request to fetch news
 std::string NewsFetcher::makeRequest(const std::string& query) {
-    httplib::Client client("https://newsapi.org");
+    httplib::SSLClient client("newsapi.org");  // **Changed to SSLClient**
+
     auto res = client.Get(query.c_str());
 
     if (res && res->status == 200) {
@@ -175,26 +164,4 @@ std::string NewsFetcher::urlEncode(const std::string& value) {
         }
     }
     return escaped.str();
-}
-
-// Formats output for better readability
-std::string NewsFetcher::formatNewsArticle(const std::string& title, const std::string& keyword) {
-    std::ostringstream formattedOutput;
-    formattedOutput << "\n----------------------------------------\n";
-
-    if (!keyword.empty()) {
-        // Highlight keyword in the article
-        std::string highlightedTitle = title;
-        size_t pos = highlightedTitle.find(keyword);
-        if (pos != std::string::npos) {
-            highlightedTitle.insert(pos, "[");
-            highlightedTitle.insert(pos + keyword.length() + 1, "]");
-        }
-        formattedOutput << "📰 " << highlightedTitle << "\n";
-    } else {
-        formattedOutput << "📰 " << title << "\n";
-    }
-
-    formattedOutput << "----------------------------------------\n";
-    return formattedOutput.str();
 }

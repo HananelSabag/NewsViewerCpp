@@ -3,17 +3,36 @@ project(NewsViewer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Ensure OpenSSL is found
+# מציאת OpenGL
+find_package(OpenGL REQUIRED)
+
+# מציאת OpenSSL
 find_package(OpenSSL REQUIRED)
 
-# Define OpenSSL support for httplib
+# הגדרת תיקיות include
+include_directories(${CMAKE_SOURCE_DIR}/include)
+link_directories(${CMAKE_SOURCE_DIR}/lib)
+
+# קבצי מקור (ודא שכולם מופיעים כאן)
+add_executable(NewsViewer
+        main.cpp
+        src/news_fetcher.cpp
+        src/ui.cpp
+        src/imgui.cpp
+        src/imgui_draw.cpp
+        src/imgui_tables.cpp
+        src/imgui_widgets.cpp
+        src/imgui_impl_glfw.cpp
+        src/imgui_impl_opengl3.cpp
+
+        )
 add_definitions(-DCPPHTTPLIB_OPENSSL_SUPPORT)
 
-# Include directories
-include_directories(${CMAKE_SOURCE_DIR}/include ${OPENSSL_INCLUDE_DIR})
-
-# Add source files
-add_executable(NewsViewer main.cpp src/news_fetcher.cpp)
-
-# Link OpenSSL and Windows Sockets
-target_link_libraries(NewsViewer OpenSSL::SSL OpenSSL::Crypto ws2_32 crypt32)
+# חיבור לספריות
+target_link_libraries(NewsViewer
+        OpenGL::GL  # OpenGL
+        glfw3       # GLFW
+        OpenSSL::SSL OpenSSL::Crypto # OpenSSL
+        ws2_32      # Windows Sockets (נדרש עבור HTTP)
+        crypt32
+        )
