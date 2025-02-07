@@ -25,8 +25,10 @@ add_executable(NewsViewer
         src/imgui_impl_glfw.cpp
         src/imgui_impl_opengl3.cpp
 
-        )
+        include/news_storage.h src/news_storage.cpp)
 add_definitions(-DCPPHTTPLIB_OPENSSL_SUPPORT)
+file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
+
 
 # חיבור לספריות
 target_link_libraries(NewsViewer

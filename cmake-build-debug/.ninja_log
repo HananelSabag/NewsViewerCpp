@@ -1,12 +1,17 @@
 # ninja log v5
-4	6943	7606343976913205	CMakeFiles/NewsViewer.dir/main.cpp.obj	5e094d792a4293bc
-8	6999	7606343977479890	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	6f2d05d1c81a7840
-9	11373	7606341260590169	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	76cef4dbd3ad5655
-9658	32536	7606335661807094	NewsViewer.exe	dfc195938a48e717
+6	7740	7606385084042774	CMakeFiles/NewsViewer.dir/main.cpp.obj	5e094d792a4293bc
+4	6698	7606394813094895	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	6f2d05d1c81a7840
+9	10183	7606371106186431	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	76cef4dbd3ad5655
+6699	30759	7606395053696934	NewsViewer.exe	18080dcadc94309a
 12	2079	7606341167904755	CMakeFiles/NewsViewer.dir/src/imgui_draw.cpp.obj	7410ba80fa105792
 19	3125	7606341178349930	CMakeFiles/NewsViewer.dir/src/imgui.cpp.obj	b327c98a5ea04114
-26	1512	7606341162112881	CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj	75bb1ba6ef093a67
+11	440	7606363688546220	CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj	c3a66160bccfabc1
 23	2456	7606341171665798	CMakeFiles/NewsViewer.dir/src/imgui_widgets.cpp.obj	19ac5910017d381a
+26	1512	7606341162112881	CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj	75bb1ba6ef093a67
 34	948	7606341156611172	CMakeFiles/NewsViewer.dir/src/imgui_impl_opengl3.cpp.obj	32f4959d15fa5f81
 30	1663	7606341163763248	CMakeFiles/NewsViewer.dir/src/imgui_impl_glfw.cpp.obj	2009d0e2ab601117
-4	23923	7606345016144705	NewsViewer.exe	cbcc1f591b53d959
+5	7120	7606399012894184	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	6f2d05d1c81a7840
+7120	31585	7606399257540976	NewsViewer.exe	18080dcadc94309a
+4	7400	7606403524446347	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	6f2d05d1c81a7840
+5	7088	7606406783633984	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	6f2d05d1c81a7840
+7088	31507	7606407027813683	NewsViewer.exe	18080dcadc94309a
