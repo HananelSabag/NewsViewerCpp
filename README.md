@@ -118,7 +118,7 @@ Persistent Storage
 📌 Authors
 
 Developed by Hananel Sabag & Amit Cohen
-📧 Contact: hanane12345@gmail.com | amit.cohen@example.com
+📧 Contact: hananel12345@gmail.com | cohen.amit24@gmail.com
 
 License
 
