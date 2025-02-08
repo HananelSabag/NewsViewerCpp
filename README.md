@@ -1,32 +1,36 @@
-📰 NewsViewerCpp - GUI Version ✅
+# 📰 NewsViewerCpp - GUI Version ✅
 
-📌 Project Overview
+## 📌 Project Overview
 
-NewsViewerCpp is a C++ application that fetches and displays news articles from NewsAPI.org.
-This project was designed to be efficient, concurrent, and user-friendly, supporting:
-	•	Multithreading,
-	•	Search functionality,
-	•	Favorites management ⭐,
-	•	Caching & File Persistence,
-	•	Graphical User Interface (GUI) with ImGui 🎨
+**NewsViewerCpp** is a **C++** application that fetches and displays news articles from **NewsAPI.org**.  
+This project was designed to be **efficient, concurrent, and user-friendly**, supporting:
+- **Multithreading**
+- **Search functionality**
+- **Favorites management** ⭐
+- **Caching & File Persistence**
+- **Graphical User Interface (GUI) with ImGui** 🎨
 
-This version fully transitions from CLI to GUI while maintaining the project’s robustness! 🚀
+This version **fully transitions from CLI to GUI** while maintaining the project's robustness! 🚀
 
-🚀 Features & Implementations
+---
 
-✅ Fetch latest news dynamically from NewsAPI
-✅ Search for news using keywords
-✅ Graphical User Interface (GUI) powered by ImGui
-✅ Thread-safe news fetching with std::mutex
-✅ Efficient caching to store previous search results (std::unordered_map)
-✅ Favorites System – Save, view, and remove favorite articles ⭐
-✅ File persistence for favorites & cache with fstream and filesystem
-✅ Cache expiration mechanism to keep results fresh
-✅ Error handling & input validation
-✅ Formatted search results with highlighted keywords
-✅ Unicode & Emoji Support 🎉
+## 🚀 Features & Implementations
 
-🏠 Project Structure
+✅ **Fetch latest news** dynamically from NewsAPI  
+✅ **Search for news** using keywords  
+✅ **Graphical User Interface (GUI)** powered by **ImGui**  
+✅ **Thread-safe news fetching** with `std::mutex`  
+✅ **Efficient caching** to store previous search results (`std::unordered_map`)  
+✅ **Favorites System** – Save, view, and remove favorite articles ⭐  
+✅ **File persistence** for favorites & cache with `fstream` and `filesystem`  
+✅ **Cache expiration mechanism** to keep results fresh  
+✅ **Error handling & input validation**  
+✅ **Formatted search results** with **highlighted keywords**  
+✅ **Unicode & Emoji Support** 🎉  
+
+---
+
+## 🏠 Project Structure
 
 NewsViewerCpp/
 │── assets/
@@ -46,32 +50,38 @@ NewsViewerCpp/
 │── README.md                  # This file
 │── lib/                       # Precompiled external libraries
 
-🛠️ Dependencies
+---
 
-This project utilizes third-party libraries for networking, JSON parsing, and GUI rendering:
+## 🛠️ Dependencies
 
-Library	Purpose	Installation
-cpp-httplib	HTTP Client	Included in source
-nlohmann/json	JSON Parsing	Included in source
-ImGui	GUI Framework	Included in source
-GLFW	Window Handling	Installed via CMake
-OpenSSL	Secure HTTP Requests	Installed via CMake
+This project utilizes **third-party libraries** for networking, JSON parsing, and GUI rendering:
 
-🔧 How to Build & Run
+| Library                                               | Purpose               | Installation        |
+| ----------------------------------------------------- | --------------------- | ------------------ |
+| [cpp-httplib](https://github.com/yhirose/cpp-httplib) | HTTP Client          | Included in source |
+| [nlohmann/json](https://github.com/nlohmann/json)     | JSON Parsing         | Included in source |
+| [ImGui](https://github.com/ocornut/imgui)            | GUI Framework        | Included in source |
+| [GLFW](https://www.glfw.org/)                        | Window Handling      | Installed via CMake |
+| [OpenSSL](https://www.openssl.org/)                  | Secure HTTP Requests | Installed via CMake |
 
-🔹 Prerequisites:
-	•	C++17 or later
-	•	CMake (for project compilation)
-	•	g++ / clang++ / MSVC (C++ compiler)
-	•	GLFW & OpenGL installed
-	•	Noto Emoji Font (Included in assets/)
+---
 
-🔹 Steps:
-	1.	Clone the repository:
+## 🔧 How to Build & Run
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/NewsViewerCpp.git
-cd NewsViewerCpp
+### 🔹 Prerequisites:
 
+- **C++17 or later**
+- **CMake** (for project compilation)
+- **g++ / clang++ / MSVC** (C++ compiler)
+- **GLFW & OpenGL** installed
+- **Noto Emoji Font** (Included in `assets/`)
+
+### 🔹 Steps:
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/YOUR_GITHUB_USERNAME/NewsViewerCpp.git
+   cd NewsViewerCpp
 
 	2.	Configure & Compile using CMake:
 
@@ -128,3 +138,4 @@ This project is open-source under the MIT License.
 
 🚀 The GUI version is fully functional! 🎉
 If you encounter any issues, please ensure you have all dependencies installed correctly!
+
