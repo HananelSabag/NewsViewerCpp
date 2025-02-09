@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <optional>
 #include "news_fetcher.h"
 #include "news_storage.h"
 #include "imgui.h"
@@ -35,17 +36,21 @@ public:
     void run();
 
 private:
-    NewsFetcher& fetcher;              // Reference to NewsFetcher for fetching news
-    std::vector<std::string> headlines; // Stores fetched headlines
-    std::vector<std::string> searchResults; // Stores search results
-    std::vector<std::string> favorites; // Stores favorite headlines
-    std::string searchQuery;           // Stores the current user search input
+    NewsFetcher& fetcher;                                  // Reference to NewsFetcher for fetching news
+    std::vector<NewsFetcher::NewsArticle> headlines;       // Stores fetched headlines
+    std::vector<NewsFetcher::NewsArticle> searchResults;   // Stores search results
+    std::vector<std::string> favorites;                    // Stores favorite headlines (just titles)
+    std::string searchQuery;                               // Stores the current user search input
+
+    // Current selected article for popup
+    std::optional<NewsFetcher::NewsArticle> selectedArticle;
+    bool showArticlePopup = false;                         // Controls visibility of the article details popup
 
     // UI State variables
     bool showFavoritesPopup = false;   // Controls visibility of the favorites popup
     bool showHome = true;              // Controls whether to show "Top Headlines" or search results
-    bool isDarkMode = true;           // Controls dark/light mode
-    float fontSize = 16.0f;          // Controls font size
+    bool isDarkMode = true;            // Controls dark/light mode
+    float fontSize = 16.0f;            // Controls font size
     float pendingFontSize = 14.0f;     // For handling font size changes
     bool fontSizeChanged = false;      // Flag for font changes
     bool showSettings = false;         // Controls settings popup visibility
@@ -73,6 +78,11 @@ private:
      * Displays the settings popup.
      */
     void renderSettingsPopup();
+
+    /**
+     * Displays the article details popup.
+     */
+    void renderArticlePopup();
 
     /**
      * Renders the main toolbar (search, favorites, settings buttons).

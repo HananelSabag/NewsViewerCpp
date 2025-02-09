@@ -7,6 +7,8 @@
 #include <iostream>
 #include <cstring>
 #include <filesystem>
+#include <algorithm>
+#include <string>
 
 namespace fs = std::filesystem;
 
@@ -277,52 +279,69 @@ void NewsUI::renderToolbar() {
 }
 
 void NewsUI::renderNewsContent() {
-    // Calculate available space and add padding
     ImVec2 contentSize = ImGui::GetContentRegionAvail();
-    ImGui::BeginChild("NewsContent", ImVec2(0, -ImGui::GetFrameHeightWithSpacing()), true);
+    ImGui::BeginChild("NewsContent", ImVec2(0, -ImGui::GetFrameHeightWithSpacing()), true, ImGuiWindowFlags_AlwaysVerticalScrollbar);
+
     const auto& displayList = showHome ? headlines : searchResults;
 
     if (displayList.empty()) {
         ImGui::TextColored(textColor, "No articles to display.");
     } else {
         for (const auto& article : displayList) {
-            // Add spacing between articles
             if (&article != &displayList.front()) {
-                ImGui::Dummy(ImVec2(0.0f, 8.0f));
+                ImGui::Dummy(ImVec2(0.0f, 10.0f));  // הוספת מרווח בין הכותרות
             }
 
             ImGui::PushStyleColor(ImGuiCol_Text, textColor);
-
-            // Article container with rounded corners
             ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 8.0f);
-            ImGui::BeginChild(("Article" + article).c_str(), ImVec2(contentSize.x, 80), true);
 
-            // Article text
-            ImGui::TextWrapped("%s", article.c_str());
+            std::string articleId = "Article" + std::to_string(reinterpret_cast<size_t>(&article));
+            ImGui::BeginChild(articleId.c_str(), ImVec2(contentSize.x, 120), true, ImGuiWindowFlags_AlwaysUseWindowPadding);
 
-            // Favorite button
+            bool clickedOnFavorite = false;  // משתנה שנשתמש בו לבדוק אם לחצו על הכפתור של המועדפים
+
+            // ✅ הצגת הכותרת בצורה ברורה יותר
+            ImGui::TextWrapped("%s", article.title.c_str());
+
+            // ✅ הצגת תקציר עם תוספת מקום
+            if (!article.description.empty()) {
+                ImGui::TextColored(ImVec4(0.7f, 0.7f, 0.7f, 1.0f), "%s",
+                                   article.description.substr(0, 150).c_str());
+            }
+
+            // ✅ שיפור עיצוב הכפתור של המועדפים
             ImGui::SetCursorPosY(ImGui::GetCursorPosY() + 5);
-            bool isFavorite = std::find(favorites.begin(), favorites.end(), article) != favorites.end();
+            bool isFavorite = std::find(favorites.begin(), favorites.end(), article.title) != favorites.end();
 
             pushIcon();
             if (isFavorite) {
                 ImGui::PushStyleColor(ImGuiCol_Button, buttonColor);
-                if (ImGui::Button((FA_ICON_STAR "##" + article).c_str())) {
-                    removeFavorite(article);
+                std::string btnId = FA_ICON_STAR "##" + article.title;
+                if (ImGui::Button(btnId.c_str())) {
+                    removeFavorite(article.title);
+                    clickedOnFavorite = true;  // ✅ סימון שלחצו על הכפתור
                 }
                 ImGui::PopStyleColor();
                 if (ImGui::IsItemHovered()) {
                     ImGui::SetTooltip("Remove from favorites");
                 }
             } else {
-                if (ImGui::Button((FA_ICON_STAR_O "##" + article).c_str())) {
-                    addToFavorites(article);
+                std::string btnId = FA_ICON_STAR_O "##" + article.title;
+                if (ImGui::Button(btnId.c_str())) {
+                    addToFavorites(article.title);
+                    clickedOnFavorite = true;  // ✅ סימון שלחצו על הכפתור
                 }
                 if (ImGui::IsItemHovered()) {
                     ImGui::SetTooltip("Add to favorites");
                 }
             }
             popIcon();
+
+            // ✅ תיקון הבעיה: פתיחת הפופאפ רק אם לא לחצו על כפתור המועדפים!
+            if (ImGui::IsWindowHovered() && ImGui::IsMouseClicked(0) && !clickedOnFavorite) {
+                selectedArticle = article;
+                showArticlePopup = true;
+            }
 
             ImGui::EndChild();
             ImGui::PopStyleVar();
@@ -331,7 +350,15 @@ void NewsUI::renderNewsContent() {
     }
 
     ImGui::EndChild();
+
+    if (showArticlePopup) {
+        renderArticlePopup();
+    }
 }
+
+
+
+
 void NewsUI::renderSettingsPopup() {
     if (showSettings) {
         ImGui::OpenPopup("Settings");
@@ -361,9 +388,13 @@ void NewsUI::renderSettingsPopup() {
 }
 void NewsUI::renderFavoritesPopup() {
     ImGui::OpenPopup("Favorites");
-    if (ImGui::BeginPopupModal("Favorites", &showFavoritesPopup,
-                               ImGuiWindowFlags_AlwaysAutoResize)) {
 
+
+    ImVec2 center = ImGui::GetMainViewport()->GetCenter();
+    ImGui::SetNextWindowPos(center, ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
+    ImGui::SetNextWindowSize(ImVec2(900, 600), ImGuiCond_Appearing);
+
+    if (ImGui::BeginPopupModal("Favorites", &showFavoritesPopup, ImGuiWindowFlags_AlwaysAutoResize)) {
         pushIcon();
         ImGui::Text(FA_ICON_STAR);
         popIcon();
@@ -371,19 +402,26 @@ void NewsUI::renderFavoritesPopup() {
         ImGui::Text(" Saved Articles");
         ImGui::Separator();
 
+
+        ImGui::BeginChild("FavoritesList", ImVec2(850, 450), true, ImGuiWindowFlags_AlwaysVerticalScrollbar);
+
         if (favorites.empty()) {
             ImGui::TextColored(textColor, "No favorites added yet.");
         } else {
-            ImGui::BeginChild("FavoritesList", ImVec2(600, 400), true);
             for (const auto& favorite : favorites) {
                 ImGui::PushStyleColor(ImGuiCol_Text, textColor);
+
+
                 ImGui::TextWrapped("%s", favorite.c_str());
 
                 ImGui::SameLine();
                 pushIcon();
+
+
                 if (ImGui::Button((FA_ICON_TIMES "##" + favorite).c_str())) {
                     removeFavorite(favorite);
                 }
+
                 popIcon();
                 if (ImGui::IsItemHovered()) {
                     ImGui::SetTooltip("Remove from favorites");
@@ -392,10 +430,13 @@ void NewsUI::renderFavoritesPopup() {
                 ImGui::PopStyleColor();
                 ImGui::Separator();
             }
-            ImGui::EndChild();
         }
 
-        if (ImGui::Button("Close")) {
+        ImGui::EndChild();
+
+
+        ImGui::Spacing();
+        if (ImGui::Button("Close", ImVec2(120, 40))) {
             showFavoritesPopup = false;
             ImGui::CloseCurrentPopup();
         }
@@ -451,6 +492,7 @@ void NewsUI::handleSearch() {
     }
 }
 
+// Helper functions remain unchanged since they work with strings
 void NewsUI::addToFavorites(const std::string& headline) {
     if (std::find(favorites.begin(), favorites.end(), headline) == favorites.end()) {
         favorites.push_back(headline);
@@ -459,6 +501,75 @@ void NewsUI::addToFavorites(const std::string& headline) {
 }
 
 void NewsUI::removeFavorite(const std::string& headline) {
-    favorites.erase(std::remove(favorites.begin(), favorites.end(), headline), favorites.end());
+    favorites.erase(
+            std::remove(favorites.begin(), favorites.end(), headline),
+            favorites.end()
+    );
     NewsStorage::saveFavoritesToFile(favorites);
+}
+void NewsUI::renderArticlePopup() {
+    ImGui::OpenPopup("Article Details");
+
+    ImVec2 center = ImGui::GetMainViewport()->GetCenter();
+    ImGui::SetNextWindowPos(center, ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
+    ImGui::SetNextWindowSize(ImVec2(600, 400), ImGuiCond_Appearing);
+
+    if (ImGui::BeginPopupModal("Article Details", &showArticlePopup,
+                               ImGuiWindowFlags_AlwaysAutoResize)) {
+
+        if (selectedArticle) {  // Check if we have a valid article
+            // Title with larger font
+            ImGui::PushFont(defaultFont);
+            ImGui::TextWrapped("%s", selectedArticle->title.c_str());
+            ImGui::PopFont();
+            ImGui::Separator();
+
+            // Source and date
+            if (!selectedArticle->source.empty()) {
+                ImGui::Text("Source: %s", selectedArticle->source.c_str());
+                ImGui::SameLine();
+            }
+            if (!selectedArticle->publishedAt.empty()) {
+                ImGui::Text("| Published: %s", selectedArticle->publishedAt.c_str());
+            }
+            ImGui::Separator();
+
+            // Description in a scrolling region
+            if (!selectedArticle->description.empty()) {
+                ImGui::TextWrapped("%s", selectedArticle->description.c_str());
+                ImGui::Spacing();
+            }
+
+            // Content in a scrolling region
+            if (!selectedArticle->content.empty()) {
+                ImGui::BeginChild("Content", ImVec2(0, 200), true);
+                ImGui::TextWrapped("%s", selectedArticle->content.c_str());
+                ImGui::EndChild();
+            }
+
+            ImGui::Separator();
+
+            // URL Button
+            if (!selectedArticle->url.empty()) {
+                if (ImGui::Button("Open in Browser")) {
+                    // Open URL in default browser - platform specific
+#ifdef _WIN32
+                    system(("start " + selectedArticle->url).c_str());
+#elif __APPLE__
+                    system(("open " + selectedArticle->url).c_str());
+                    #else
+                        system(("xdg-open " + selectedArticle->url).c_str());
+#endif
+                }
+                ImGui::SameLine();
+            }
+        }
+
+        if (ImGui::Button("Close")) {
+            showArticlePopup = false;
+            ImGui::CloseCurrentPopup();
+        }
+
+        ImGui::EndPopup();
+    }
 }

@@ -11,66 +11,64 @@
 #include <filesystem>
 #include "httplib.h"
 #include "json.hpp"
+#include <thread>
+#include <atomic>
 
 class NewsFetcher {
 public:
-    /**
-     * Constructor - Initializes the NewsFetcher with an API key.
-     * @param apiKey The API key for the NewsAPI service.
-     */
+    // Struct to hold complete article data
+    struct NewsArticle {
+        std::string title;
+        std::string description;
+        std::string content;
+        std::string url;
+        std::string source;
+        std::string publishedAt;
+        std::string urlToImage;
+
+        // Default constructor
+        NewsArticle(const std::string& _title = "",
+                    const std::string& _description = "",
+                    const std::string& _content = "",
+                    const std::string& _url = "",
+                    const std::string& _source = "",
+                    const std::string& _publishedAt = "",
+                    const std::string& _urlToImage = "")
+                : title(_title), description(_description), content(_content),
+                  url(_url), source(_source), publishedAt(_publishedAt),
+                  urlToImage(_urlToImage) {}
+    };
+    void startAutoUpdate(int intervalSeconds = 300);  // 5 minutes default
+    void stopAutoUpdate();
+
+    // Constructor takes API key
     explicit NewsFetcher(const std::string& apiKey);
 
-    /**
-     * Fetches the latest top headlines and caches them.
-     * @return A vector of news headlines.
-     */
-    std::vector<std::string> fetchHeadlines();
-
-    /**
-     * Searches for news articles based on a given keyword.
-     * @param keyword The search term.
-     * @return A vector of relevant news headlines.
-     */
-    std::vector<std::string> searchNews(const std::string& keyword);
+    // Main public interface
+    std::vector<NewsArticle> fetchHeadlines();
+    std::vector<NewsArticle> searchNews(const std::string& keyword);
+    NewsArticle getArticleByTitle(const std::string& title) const;
 
 private:
-    std::string apiKey;  // API key for authentication
-    std::string baseUrl = "https://newsapi.org/v2/top-headlines";  // Base API endpoint
+    std::string apiKey;
+    std::string baseUrl = "https://newsapi.org/v2/top-headlines";
+    bool isAutoUpdateRunning = false;
+    std::thread updateThread;
 
-    std::unordered_map<std::string, std::vector<std::string>> searchCache; // Cached search results
-    std::unordered_map<std::string, time_t> cacheTimestamps;  // Cache timestamps
-    std::mutex fetchMutex;  // Mutex for thread safety
 
-    /**
-     * Saves the cached search results to a file.
-     */
+    // Cache storage
+    std::unordered_map<std::string, std::vector<NewsArticle>> searchCache;
+    std::unordered_map<std::string, time_t> cacheTimestamps;
+    std::mutex fetchMutex;
+
+    // Helper methods
     void saveCacheToFile();
-
-    /**
-     * Loads cached search results from a file.
-     */
     void loadCacheFromFile();
-
-    /**
-     * Checks if a cached result is expired.
-     * @param keyword The keyword or category to check.
-     * @return True if expired, otherwise false.
-     */
     bool isCacheExpired(const std::string& keyword);
-
-    /**
-     * Performs an HTTP request to fetch news data.
-     * @param query The API query string.
-     * @return The API response in JSON format.
-     */
     std::string makeRequest(const std::string& query);
-
-    /**
-     * Encodes special characters in a URL query.
-     * @param value The string to encode.
-     * @return The encoded URL string.
-     */
     std::string urlEncode(const std::string& value);
+    NewsArticle parseArticleJson(const nlohmann::json& articleJson);
+    void autoUpdateLoop(int intervalSeconds);
 };
 
 #endif // NEWS_FETCHER_H

@@ -3,52 +3,82 @@
 #include <sstream>
 #include <iomanip>
 #include <algorithm>
+#include <thread>
+#include <atomic>
 
 using json = nlohmann::json;
 namespace fs = std::filesystem;
 
+// Constants for caching configuration
 const std::string CACHE_FILE = "news_cache.txt";
-const time_t CACHE_EXPIRY = 60 * 60; // 1 Hour Expiry
+const time_t CACHE_EXPIRY = 60 * 60; // 1 Hour cache expiry
 
+// Parse JSON article data into NewsArticle struct
+NewsFetcher::NewsArticle NewsFetcher::parseArticleJson(const json& articleJson) {
+    // Helper function to safely get value from JSON
+    auto safeGet = [](const json& j, const char* key) -> std::string {
+        if (j.contains(key) && !j[key].is_null()) {
+            return j[key].get<std::string>();
+        }
+        return "";
+    };
+
+    // Get source name safely
+    std::string sourceName;
+    if (articleJson.contains("source") && !articleJson["source"].is_null()) {
+        sourceName = safeGet(articleJson["source"], "name");
+    }
+
+    return NewsArticle(
+            safeGet(articleJson, "title"),
+            safeGet(articleJson, "description"),
+            safeGet(articleJson, "content"),
+            safeGet(articleJson, "url"),
+            sourceName,
+            safeGet(articleJson, "publishedAt"),
+            safeGet(articleJson, "urlToImage")
+    );
+}
+
+// Constructor initializes fetcher and loads cache
 NewsFetcher::NewsFetcher(const std::string& apiKey) : apiKey(apiKey) {
     loadCacheFromFile();
 }
 
-// Fetches top headlines and caches them
-std::vector<std::string> NewsFetcher::fetchHeadlines() {
+// Fetch top headlines with full article details
+std::vector<NewsFetcher::NewsArticle> NewsFetcher::fetchHeadlines() {
     std::lock_guard<std::mutex> lock(fetchMutex);
     std::string query = "/v2/top-headlines?country=us&apiKey=" + apiKey;
 
-    // Check if cached and not expired
+    // Return cached results if valid
     if (searchCache.count("top_headlines") && !isCacheExpired("top_headlines")) {
         return searchCache["top_headlines"];
     }
 
     std::string response = makeRequest(query);
-    std::vector<std::string> headlines;
+    std::vector<NewsArticle> articles;
 
     try {
         auto jsonData = json::parse(response);
         if (jsonData.contains("articles")) {
             for (const auto& article : jsonData["articles"]) {
-                if (article.contains("title")) {
-                    headlines.push_back(article["title"]);
-                }
+                articles.push_back(parseArticleJson(article));
             }
         }
     } catch (const std::exception& e) {
         std::cerr << "[ERROR] JSON Parsing failed: " << e.what() << std::endl;
     }
 
-    searchCache["top_headlines"] = headlines;
+    // Cache results and save
+    searchCache["top_headlines"] = articles;
     cacheTimestamps["top_headlines"] = std::time(nullptr);
     saveCacheToFile();
 
-    return headlines;
+    return articles;
 }
 
-// Searches news by keyword, caching results
-std::vector<std::string> NewsFetcher::searchNews(const std::string& keyword) {
+// Search news by keyword and return full article details
+std::vector<NewsFetcher::NewsArticle> NewsFetcher::searchNews(const std::string& keyword) {
     if (keyword.length() < 2) {
         std::cerr << "[INFO] Please enter at least 2 characters for search.\n";
         return {};
@@ -56,101 +86,129 @@ std::vector<std::string> NewsFetcher::searchNews(const std::string& keyword) {
 
     std::lock_guard<std::mutex> lock(fetchMutex);
 
-    // Convert keyword to lowercase for case-insensitive search
+    // Convert to lowercase for case-insensitive search
     std::string lowerKeyword = keyword;
     std::transform(lowerKeyword.begin(), lowerKeyword.end(), lowerKeyword.begin(), ::tolower);
 
-    // Check cache first
+    // Return cached results if valid
     if (searchCache.count(lowerKeyword) && !isCacheExpired(lowerKeyword)) {
         return searchCache[lowerKeyword];
     }
 
     std::string query = "/v2/everything?q=" + urlEncode(keyword) + "&apiKey=" + apiKey;
     std::string response = makeRequest(query);
+    std::vector<NewsArticle> articles;
 
-    std::vector<std::string> searchResults;
     try {
         auto jsonData = json::parse(response);
         if (jsonData.contains("articles")) {
             for (const auto& article : jsonData["articles"]) {
-                if (article.contains("title")) {
-                    std::string title = article["title"];
-                    searchResults.push_back(title);
-                }
+                articles.push_back(parseArticleJson(article));
             }
         }
     } catch (const std::exception& e) {
         std::cerr << "[ERROR] JSON Parsing failed: " << e.what() << std::endl;
     }
 
-    // Cache and save results
-    searchCache[lowerKeyword] = searchResults;
+    // Cache results and save
+    searchCache[lowerKeyword] = articles;
     cacheTimestamps[lowerKeyword] = std::time(nullptr);
     saveCacheToFile();
 
-    return searchResults;
+    return articles;
 }
 
-// Saves search cache to a file
+// Get full article details by title
+NewsFetcher::NewsArticle NewsFetcher::getArticleByTitle(const std::string& title) const {
+    // Search through all cached articles
+    for (const auto& [key, articles] : searchCache) {
+        for (const auto& article : articles) {
+            if (article.title == title) {
+                return article;
+            }
+        }
+    }
+    return NewsArticle(); // Return empty article if not found
+}
+
+// Save current cache state to file
 void NewsFetcher::saveCacheToFile() {
     std::ofstream outFile(CACHE_FILE);
     if (outFile.is_open()) {
-        for (const auto& entry : searchCache) {
-            outFile << entry.first << "\n" << cacheTimestamps[entry.first] << "\n";
-            for (const auto& news : entry.second) {
-                outFile << news << "\n";
+        json cacheJson;
+
+        // Convert cache to JSON format
+        for (const auto& [key, articles] : searchCache) {
+            json articlesArray = json::array();
+            for (const auto& article : articles) {
+                json articleJson = {
+                        {"title", article.title},
+                        {"description", article.description},
+                        {"content", article.content},
+                        {"url", article.url},
+                        {"source", article.source},
+                        {"publishedAt", article.publishedAt},
+                        {"urlToImage", article.urlToImage}
+                };
+                articlesArray.push_back(articleJson);
             }
-            outFile << "###END###\n";
+            cacheJson[key] = {
+                    {"timestamp", cacheTimestamps[key]},
+                    {"articles", articlesArray}
+            };
         }
+
+        outFile << cacheJson.dump(4);
         outFile.close();
     }
 }
 
-// Loads search cache from a file
+// Load cached data from file
 void NewsFetcher::loadCacheFromFile() {
     if (!fs::exists(CACHE_FILE)) return;
 
     std::ifstream inFile(CACHE_FILE);
-    std::string line, keyword;
-    time_t timestamp;
-    std::vector<std::string> results;
+    if (!inFile.is_open()) return;
 
-    while (std::getline(inFile, line)) {
-        if (line == "###END###") {
-            searchCache[keyword] = results;
-            cacheTimestamps[keyword] = timestamp;
-            results.clear();
-        } else if (searchCache.count(line) == 0) {
-            keyword = line;
-            inFile >> timestamp;
-            inFile.ignore();
-        } else {
-            results.push_back(line);
+    try {
+        json cacheJson = json::parse(inFile);
+
+        // Parse JSON cache data
+        for (auto& [key, value] : cacheJson.items()) {
+            cacheTimestamps[key] = value["timestamp"];
+            std::vector<NewsArticle> articles;
+
+            for (const auto& articleJson : value["articles"]) {
+                articles.push_back(parseArticleJson(articleJson));
+            }
+
+            searchCache[key] = articles;
         }
+    } catch (const std::exception& e) {
+        std::cerr << "[ERROR] Failed to load cache: " << e.what() << std::endl;
     }
 }
 
-// Checks if cached data is expired
+// Check if cached data has expired
 bool NewsFetcher::isCacheExpired(const std::string& keyword) {
     return std::difftime(std::time(nullptr), cacheTimestamps[keyword]) > CACHE_EXPIRY;
 }
 
-// Makes an HTTP request to fetch news
+// Make HTTP request to fetch news data
 std::string NewsFetcher::makeRequest(const std::string& query) {
-    httplib::SSLClient client("newsapi.org");  // **Changed to SSLClient**
-
+    httplib::SSLClient client("newsapi.org");
     auto res = client.Get(query.c_str());
 
     if (res && res->status == 200) {
         return res->body;
     } else {
-        std::cerr << "[ERROR] Failed to fetch data. HTTP Status Code: "
+        std::cerr << "[ERROR] Failed to fetch data. Status Code: "
                   << (res ? std::to_string(res->status) : "No Response") << std::endl;
         return "{}";
     }
 }
 
-// Encodes special characters for URL queries
+// URL encode string for query parameters
 std::string NewsFetcher::urlEncode(const std::string& value) {
     std::ostringstream escaped;
     escaped.fill('0');
@@ -164,4 +222,47 @@ std::string NewsFetcher::urlEncode(const std::string& value) {
         }
     }
     return escaped.str();
+}
+void NewsFetcher::startAutoUpdate(int intervalSeconds) {
+    if (isAutoUpdateRunning) return;
+
+    isAutoUpdateRunning = true;
+    updateThread = std::thread(&NewsFetcher::autoUpdateLoop, this, intervalSeconds);
+    updateThread.detach();  // Run independently
+}
+
+void NewsFetcher::stopAutoUpdate() {
+    isAutoUpdateRunning = false;
+}
+
+void NewsFetcher::autoUpdateLoop(int intervalSeconds) {
+    while (isAutoUpdateRunning) {
+        auto startTime = std::chrono::steady_clock::now();  // ⏳ תיעוד זמן ההתחלה
+
+        try {
+            std::cout << "[INFO] Starting auto-update..." << std::endl;
+
+            // ✅ עדכון הכותרות
+            auto newHeadlines = fetchHeadlines();
+
+            // ✅ עדכון חיפושים קיימים
+            for (const auto& [keyword, _] : searchCache) {
+                if (keyword != "top_headlines") {  // דילוג על כותרות ראשיות שכבר עודכנו
+                    searchNews(keyword);
+                }
+            }
+
+            std::cout << "[INFO] Auto-update completed successfully" << std::endl;
+        } catch (const std::exception& e) {
+            std::cerr << "[ERROR] Auto-update failed: " << e.what() << std::endl;
+        }
+
+        // ✅ טיימר לקראת העדכון הבא
+        for (int i = intervalSeconds; i > 0; --i) {
+            std::cout << "\r[INFO] Next update in: " << i << " seconds   " << std::flush;
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
+
+        std::cout << "\r[INFO] Updating now...                              " << std::endl;
+    }
 }
