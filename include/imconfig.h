@@ -13,6 +13,8 @@
 //-----------------------------------------------------------------------------
 
 #pragma once
+#define ICON_MIN_FA 0xf000
+#define ICON_MAX_FA 0xf897
 
 //---- Define assertion handler. Defaults to calling assert().
 // If your macro uses multiple statements, make sure is enclosed in a 'do { .. } while (0)' block so it can be used as a single statement.

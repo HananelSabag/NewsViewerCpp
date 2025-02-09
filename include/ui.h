@@ -7,6 +7,16 @@
 #include "news_storage.h"
 #include "imgui.h"
 
+// Font Awesome icon definitions
+#define FA_ICON_SEARCH     "\uf002"
+#define FA_ICON_HOME       "\uf015"
+#define FA_ICON_STAR       "\uf005"
+#define FA_ICON_STAR_O     "\uf006"
+#define FA_ICON_COG        "\uf013"
+#define FA_ICON_SUN        "\uf185"
+#define FA_ICON_MOON       "\uf186"
+#define FA_ICON_TIMES      "\uf00d"
+
 /**
  * @class NewsUI
  * @brief Handles the graphical user interface for the news viewer application.
@@ -25,14 +35,29 @@ public:
     void run();
 
 private:
-    NewsFetcher& fetcher;  // Reference to NewsFetcher for fetching news
-    std::vector<std::string> headlines;  // Stores fetched headlines
-    std::vector<std::string> searchResults;  // Stores search results
-    std::vector<std::string> favorites;  // Stores favorite headlines
-    std::string searchQuery;  // Stores the current user search input
+    NewsFetcher& fetcher;              // Reference to NewsFetcher for fetching news
+    std::vector<std::string> headlines; // Stores fetched headlines
+    std::vector<std::string> searchResults; // Stores search results
+    std::vector<std::string> favorites; // Stores favorite headlines
+    std::string searchQuery;           // Stores the current user search input
 
-    bool showFavoritesPopup = false;  // Controls visibility of the favorites popup
-    bool showHome = true;  // ✅ Controls whether to show "Top Headlines" or search results
+    // UI State variables
+    bool showFavoritesPopup = false;   // Controls visibility of the favorites popup
+    bool showHome = true;              // Controls whether to show "Top Headlines" or search results
+    bool isDarkMode = true;           // Controls dark/light mode
+    float fontSize = 16.0f;          // Controls font size
+    float pendingFontSize = 14.0f;     // For handling font size changes
+    bool fontSizeChanged = false;      // Flag for font changes
+    bool showSettings = false;         // Controls settings popup visibility
+    ImFont* defaultFont = nullptr;     // Default font
+    ImFont* iconFont = nullptr;        // Font Awesome icons font
+
+    // UI Colors
+    ImVec4 backgroundColor = ImVec4(0.9f, 0.9f, 0.9f, 1.0f);
+    ImVec4 textColor = ImVec4(0.0f, 0.0f, 0.0f, 1.0f);
+    ImVec4 accentColor = ImVec4(0.2f, 0.6f, 1.0f, 1.0f);
+    ImVec4 buttonColor = ImVec4(0.2f, 0.6f, 1.0f, 0.6f);
+    ImVec4 buttonHoverColor = ImVec4(0.2f, 0.6f, 1.0f, 0.8f);
 
     /**
      * Renders the main ImGui interface.
@@ -45,9 +70,34 @@ private:
     void renderFavoritesPopup();
 
     /**
-     * Cleans up ImGui resources before exiting.
+     * Displays the settings popup.
      */
-    void cleanup();
+    void renderSettingsPopup();
+
+    /**
+     * Renders the main toolbar (search, favorites, settings buttons).
+     */
+    void renderToolbar();
+
+    /**
+     * Renders the news content area.
+     */
+    void renderNewsContent();
+
+    /**
+     * Applies the current theme (dark/light mode).
+     */
+    void applyTheme();
+
+    /**
+     * Loads and initializes fonts.
+     */
+    bool initializeFonts();
+
+    /**
+     * Checks and handles font size changes safely between frames.
+     */
+    void checkFontSizeChange();
 
     /**
      * Handles user input and searches for news.
@@ -65,6 +115,23 @@ private:
      * @param headline The news headline to remove.
      */
     void removeFavorite(const std::string& headline);
+
+    /**
+     * Helper function to push icon font for rendering Font Awesome icons.
+     */
+    void pushIcon() { ImGui::PushFont(iconFont); }
+
+    /**
+     * Helper function to pop icon font after rendering Font Awesome icons.
+     */
+    void popIcon() { ImGui::PopFont(); }
+
+    /**
+     * Renders a button with a Font Awesome icon.
+     * @param icon The Font Awesome icon code.
+     * @param tooltip Optional tooltip text to show on hover.
+     */
+    void renderIconButton(const char* icon, const char* tooltip = nullptr);
 };
 
 #endif // NEWS_UI_H

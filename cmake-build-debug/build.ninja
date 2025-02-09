@@ -50,7 +50,7 @@ cmake_ninja_workdir = C$:/Projects-C++/NewsViewerCpp/cmake-build-debug/
 build cmake_object_order_depends_target_NewsViewer: phony || CMakeFiles/NewsViewer.dir
 
 build CMakeFiles/NewsViewer.dir/main.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/main.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -58,15 +58,23 @@ build CMakeFiles/NewsViewer.dir/main.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir
 
 build CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/news_fetcher.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\news_fetcher.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
   OBJECT_DIR = CMakeFiles\NewsViewer.dir
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
+build CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/news_storage.cpp || cmake_object_order_depends_target_NewsViewer
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
+  DEP_FILE = CMakeFiles\NewsViewer.dir\src\news_storage.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
+  OBJECT_DIR = CMakeFiles\NewsViewer.dir
+  OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
+
 build CMakeFiles/NewsViewer.dir/src/ui.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/ui.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\ui.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -74,7 +82,7 @@ build CMakeFiles/NewsViewer.dir/src/ui.cpp.obj: CXX_COMPILER__NewsViewer_Debug C
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -82,7 +90,7 @@ build CMakeFiles/NewsViewer.dir/src/imgui.cpp.obj: CXX_COMPILER__NewsViewer_Debu
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui_draw.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui_draw.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui_draw.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -90,7 +98,7 @@ build CMakeFiles/NewsViewer.dir/src/imgui_draw.cpp.obj: CXX_COMPILER__NewsViewer
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui_tables.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui_tables.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -98,7 +106,7 @@ build CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj: CXX_COMPILER__NewsView
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui_widgets.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui_widgets.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui_widgets.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -106,7 +114,7 @@ build CMakeFiles/NewsViewer.dir/src/imgui_widgets.cpp.obj: CXX_COMPILER__NewsVie
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui_impl_glfw.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui_impl_glfw.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui_impl_glfw.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
@@ -114,16 +122,8 @@ build CMakeFiles/NewsViewer.dir/src/imgui_impl_glfw.cpp.obj: CXX_COMPILER__NewsV
   OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
 
 build CMakeFiles/NewsViewer.dir/src/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DUNICODE -D_UNICODE
   DEP_FILE = CMakeFiles\NewsViewer.dir\src\imgui_impl_opengl3.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
-  INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
-  OBJECT_DIR = CMakeFiles\NewsViewer.dir
-  OBJECT_FILE_DIR = CMakeFiles\NewsViewer.dir\src
-
-build CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj: CXX_COMPILER__NewsViewer_Debug C$:/Projects-C++/NewsViewerCpp/src/news_storage.cpp || cmake_object_order_depends_target_NewsViewer
-  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
-  DEP_FILE = CMakeFiles\NewsViewer.dir\src\news_storage.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++17
   INCLUDES = -IC:/Projects-C++/NewsViewerCpp/include -isystem "C:/Program Files/OpenSSL-Win64/include"
   OBJECT_DIR = CMakeFiles\NewsViewer.dir
@@ -137,7 +137,7 @@ build CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj: CXX_COMPILER__NewsView
 #############################################
 # Link the executable NewsViewer.exe
 
-build NewsViewer.exe: CXX_EXECUTABLE_LINKER__NewsViewer_Debug CMakeFiles/NewsViewer.dir/main.cpp.obj CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj CMakeFiles/NewsViewer.dir/src/ui.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_draw.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_widgets.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_impl_glfw.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_impl_opengl3.cpp.obj CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj | C$:/msys64/mingw64/lib/libssl.dll.a C$:/msys64/mingw64/lib/libcrypto.dll.a
+build NewsViewer.exe: CXX_EXECUTABLE_LINKER__NewsViewer_Debug CMakeFiles/NewsViewer.dir/main.cpp.obj CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj CMakeFiles/NewsViewer.dir/src/ui.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_draw.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_tables.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_widgets.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_impl_glfw.cpp.obj CMakeFiles/NewsViewer.dir/src/imgui_impl_opengl3.cpp.obj | C$:/msys64/mingw64/lib/libssl.dll.a C$:/msys64/mingw64/lib/libcrypto.dll.a
   FLAGS = -g
   LINK_LIBRARIES = -lopengl32  -lglfw3  C:/msys64/mingw64/lib/libssl.dll.a  C:/msys64/mingw64/lib/libcrypto.dll.a  -lws2_32  -lcrypt32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Projects-C++/NewsViewerCpp/lib
