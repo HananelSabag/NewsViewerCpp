@@ -65,3 +65,6 @@
 7926	48031	7608795328744289	NewsViewer.exe	e55c8fed6321a2c5
 4	8038	7608798206209856	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	1206156b0074ecf0
 8039	48869	7608798614543036	NewsViewer.exe	e55c8fed6321a2c5
+9	10266	7608815399919743	CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj	26bd237e80a40a15
+5	12633	7608815423569015	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	7b15e3bc8a482bbd
+12633	53019	7608815827555768	NewsViewer.exe	e55c8fed6321a2c5

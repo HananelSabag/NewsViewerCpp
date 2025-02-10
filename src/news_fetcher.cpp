@@ -208,46 +208,68 @@ std::string NewsFetcher::makeRequest(const std::string& query) {
     }
 }
 
-// URL encode string for query parameters
+/**
+* Encodes a string for use in a URL query parameter
+* Converts special characters to percent-encoded format
+* @param value The string to encode
+* @return The URL-encoded string
+*/
 std::string NewsFetcher::urlEncode(const std::string& value) {
     std::ostringstream escaped;
     escaped.fill('0');
     escaped << std::hex;
 
     for (const char c : value) {
+        // Keep alphanumeric and certain special chars as-is
         if (isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~') {
             escaped << c;
         } else {
+            // Convert other chars to percent-encoded hex
             escaped << '%' << std::setw(2) << std::uppercase << int((unsigned char)c);
         }
     }
     return escaped.str();
 }
+
+/**
+* Starts the background auto-update thread
+* @param intervalSeconds Time between updates in seconds (default 300)
+*/
 void NewsFetcher::startAutoUpdate(int intervalSeconds) {
+    // Prevent multiple update threads
     if (isAutoUpdateRunning) return;
 
     isAutoUpdateRunning = true;
     updateThread = std::thread(&NewsFetcher::autoUpdateLoop, this, intervalSeconds);
-    updateThread.detach();  // Run independently
+    updateThread.detach();  // Thread runs independently from main thread
 }
 
+/**
+* Stops the auto-update thread gracefully
+*/
 void NewsFetcher::stopAutoUpdate() {
     isAutoUpdateRunning = false;
 }
 
+/**
+* Background auto-update loop that periodically refreshes news content
+* @param intervalSeconds The time interval between updates in seconds
+*/
 void NewsFetcher::autoUpdateLoop(int intervalSeconds) {
     while (isAutoUpdateRunning) {
-        auto startTime = std::chrono::steady_clock::now();  // ⏳ תיעוד זמן ההתחלה
+        // Record start time for timing purposes
+        auto startTime = std::chrono::steady_clock::now();
 
         try {
             std::cout << "[INFO] Starting auto-update..." << std::endl;
 
-            // ✅ עדכון הכותרות
+            // First update the main headlines
             auto newHeadlines = fetchHeadlines();
 
-            // ✅ עדכון חיפושים קיימים
+            // Then update any cached search results
             for (const auto& [keyword, _] : searchCache) {
-                if (keyword != "top_headlines") {  // דילוג על כותרות ראשיות שכבר עודכנו
+                // Skip updating headlines since we just did that
+                if (keyword != "top_headlines") {
                     searchNews(keyword);
                 }
             }
@@ -257,7 +279,7 @@ void NewsFetcher::autoUpdateLoop(int intervalSeconds) {
             std::cerr << "[ERROR] Auto-update failed: " << e.what() << std::endl;
         }
 
-        // ✅ טיימר לקראת העדכון הבא
+        // Wait for next update with countdown display
         for (int i = intervalSeconds; i > 0; --i) {
             std::cout << "\r[INFO] Next update in: " << i << " seconds   " << std::flush;
             std::this_thread::sleep_for(std::chrono::seconds(1));
