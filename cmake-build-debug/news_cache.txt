@@ -1,201 +1,1398 @@
 {
+    ",l,l": {
+        "articles": [
+            {
+                "content": "@pepijndevos Thanks for letting me know. After setting GGML_VK_FORCE_MAX_ALLOCATION_SIZE, I verified that llama3.1 8B works fine. However, I noticed a strange issue where models around 1213 GiB in si… [+1947 chars]",
+                "description": "Edit: (2025/01/19)\nIt&#39;s been around 7 months and ollama devs don&#39;t seem to be interested in merging this PR. I&#39;ll maintain this fork as a separate project from now on. If you have any i...",
+                "publishedAt": "2025-01-31T11:30:48Z",
+                "source": "Github.com",
+                "title": "Llama.cpp supports Vulkan. why doesn't Ollama?",
+                "url": "https://github.com/ollama/ollama/pull/5059",
+                "urlToImage": "https://opengraph.githubassets.com/e86c502339d1036d0383dff2f779d7646178b6f2b75b9968c0d3982aa48a97ac/ollama/ollama/pull/5059"
+            },
+            {
+                "content": "From the post $$x + 1 \\ \\text{is a list}$$ I bring to you the binary tree. If details are needed please refer to this. I had to modify slightly the function to take care of vector outputs.\r\nfrom numb… [+789 chars]",
+                "description": "Comments",
+                "publishedAt": "2025-01-29T05:05:43Z",
+                "source": "Ivanbelenky.com",
+                "title": "[x",
+                "url": "https://ivanbelenky.com/articles/x%3C%3C1%20+%202,%20x%3C%3C2%20+%203",
+                "urlToImage": ""
+            },
+            {
+                "content": "Problem Statement\r\nWe'll analyze the charge present in a capacitor under the influence of a square wave with symmetric semi-period and positive average value. The step function takes the values:\r\n<ul… [+1609 chars]",
+                "description": "Comments",
+                "publishedAt": "2025-01-22T05:34:15Z",
+                "source": "Ivanbelenky.com",
+                "title": "Capacitors Meet Geometric Series",
+                "url": "https://ivanbelenky.com/articles/capacitors",
+                "urlToImage": ""
+            },
+            {
+                "content": ", , PPU, .\r\n, . , .\r\n uint8_t ctrl[0x100];\r\n uint8_t stack[0x300];\r\n uint8_t ram[RAM_MAX];\r\n uint8_t oam[0x800];\r\n uint8_t ppu[0x10000];\r\n uint8_t mem[0x8000];\r\n uint8_t chr[0x2000];\r\n , ppu. , 0x200… [+875 chars]",
+                "description": "Итак, мне удалось дойти до этого момента, и эмулятор начинает писать в неправильную область PPU, что конечно же портит всё выполнение.Дошел до этого местаС цвета...",
+                "publishedAt": "2025-01-28T14:06:21Z",
+                "source": "Habr.com",
+                "title": "Эмулятор NES в каждый проект! [0x01]",
+                "url": "https://habr.com/ru/articles/877372/#post-content-body",
+                "urlToImage": "https://habrastorage.org/getpro/habr/upload_files/652/c70/d71/652c70d7125ab7da1699c65b77c33c04.png"
+            },
+            {
+                "content": "- , : « », « »« ». , ? , ?\r\n , «Python-»\r\n . , «», «» « », . , . , , .\r\n . , , , . , . , . .\r\n , . \r\n, , . . , .\r\n , , . , , . , . : .\r\n « » « », , , .\r\n - , .\r\n , :\r\n<ul><li> Windows Windows Termina… [+3569 chars]",
+                "description": "Если вы когда-либо читали инструкции от разработчиков, то наверняка видели фразы вроде: «Откройте консоль», «Выполните эту команду в терминале» или «Для этого потребуется командная строка». Эти инструменты часто называют невероятно мощными и полезными, но что…",
+                "publishedAt": "2025-01-29T07:10:00Z",
+                "source": "Habr.com",
+                "title": "Интерфейс командной строки для начинающих разработчиков",
+                "url": "https://habr.com/ru/companies/yandex_praktikum/articles/875058/#post-content-body",
+                "urlToImage": "https://habrastorage.org/getpro/habr/upload_files/42b/9e8/214/42b9e82144cb5620f2be86e11212763f.png"
+            },
+            {
+                "content": "Another secret feature has been spotted in one of the latest Windows 11 Insider preview builds. Discovered by X user phantomofearth and reported by Tom’s Hardware, it appears that Microsoft is trying… [+2409 chars]",
+                "description": "A secret feature has been spotted in a Windows 11 Insiders build and it lets you share files by dragging and dropping them into a tray at the top of the screen.",
+                "publishedAt": "2025-01-27T15:29:04Z",
+                "source": "Digital Trends",
+                "title": "Microsoft just added a secret file sharing feature to Windows 11",
+                "url": "https://www.digitaltrends.com/computing/microsoft-testing-new-file-sharing-menu/",
+                "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2025/01/Screenshot-2025-01-27-at-16.19.57.jpg?resize=1200%2C630&p=1"
+            },
+            {
+                "content": "La nuova generazione di Audi A6 (endotermica)? Si chiamerà A7, anzi no, ancora A6. Ma come, la casa dei quattro anelli non aveva scelto di assegnare alle elettriche i numeri pari e alle endotermiche … [+1605 chars]",
+                "description": "Ll formato alfanumerico fornirà unidentificazione immediata delle dimensioni e del posizionamento di ciascun modello",
+                "publishedAt": "2025-02-04T07:00:00Z",
+                "source": "Hdmotori.it",
+                "title": "Nuova Audi A6 si chiamerà... ancora Audi A6. Si cambia nuovamente",
+                "url": "https://www.hdmotori.it/audi/articoli/n607639/audi-a6-nuova-scelta-nomi-endotermiche-elettriche/",
+                "urlToImage": "https://hd2.tudocdn.net/1229599?w=1920"
+            },
+            {
+                "content": "Mere hours after the OpenAI announced the ambitious Stargate Project, which would see up to $500 billion in private AI infrastructure construction over the next four years, Tesla CEO and newly-minted… [+3518 chars]",
+                "description": "Shortly after OpenAI announced a $500 billion AI infrastructure project, Elon Musk took to X to claim the whole thing a sham.",
+                "publishedAt": "2025-01-22T18:51:59Z",
+                "source": "Digital Trends",
+                "title": "Elon Musk claims Trump’s Stargate backers ‘don’t actually have the money’",
+                "url": "https://www.digitaltrends.com/computing/elon-musk-stargate-project-backers-dont-have-the-money/",
+                "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2023/11/Elon-Musk-in-Saturday-Night-Live.jpg?resize=1200%2C630&p=1"
+            },
+            {
+                "content": "Inhaltsverzeichnis\r\nWer eine neue Festplatte bestellt, erwartet auch, genau das zu bekommen: eine neue Festplatte. Mindestens 50 unserer Leser haben aber beim Kauf einer Seagate-Festplatte in den let… [+3598 chars]",
+                "description": "Einem unserer Leser fiel eine Ungereimtheit bei neuen Festplatten auf – dies deutete auf einen Betrug hin. Fast 50 weitere Leser haben das gleiche Problem.",
+                "publishedAt": "2025-01-28T12:58:00Z",
+                "source": "heise online",
+                "title": "Betrug mit Seagate-Festplatten: Dutzende Leser melden Verdachtsfälle",
+                "url": "https://www.heise.de/news/Betrug-mit-Seagate-Festplatten-Dutzende-Leser-melden-Verdachtsfaelle-10258657.html",
+                "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/7/8/8/6/2/1/Seagate_Exos_X_16_TB_neu-d656a9a676885767.jpg"
+            },
+            {
+                "content": "Viele Menschen dürften in den vergangenen Tagen erstmals mit dem Festplattentool smartmontools in Berührung gekommen sein. Es dient etwa zur Ermittlung, ob eine neu gekaufte Seagate-Festplatte vielle… [+3132 chars]",
+                "description": "Mittlerweile haben uns mehr als 100 Leser von Seagate-Festplatten mit hohen Laufzeiten berichtet, die als neu verkauft wurden. Immer mehr Händler kommen hinzu.",
+                "publishedAt": "2025-01-30T15:58:00Z",
+                "source": "heise online",
+                "title": "Festplatten-Betrug: Weitere Händler betroffen, erste Rücknahmen",
+                "url": "https://www.heise.de/news/Festplatten-Betrug-Weitere-Haendler-betroffen-erste-Ruecknahmen-10264019.html",
+                "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/7/9/1/5/9/9/Seagate_Exos_X_16_TB2-16265d700295ebc2.jpg"
+            },
+            {
+                "content": "L L\r\n L 5050mm 1960mm 2970mm532C \r\nL 5040mm 1996mm 2990mm 532 SUV\r\nL L 500kW670 810kW1086 580kW777 \r\n··Frank Stephenson\r\n F3 Dragon Face \r\n·Wolfgang Egger\r\n2016 R8 A7 Sportback Dragon Face Max\r\nDrago… [+403 chars]",
+                "description": "比亚迪再次冲高。#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。\n爱范儿 |\n原文链接 ·\n查看评论 ·\n新浪微博",
+                "publishedAt": "2025-01-17T13:02:14Z",
+                "source": "Ifanr.com",
+                "title": "内外大改！比亚迪汉 L、唐 L 双车亮相，最大马力上千匹，零百 2.7 秒！",
+                "url": "https://www.ifanr.com/1612500",
+                "urlToImage": "https://s3.ifanr.com/wp-content/uploads/2025/01/bydhtltm.jpg"
+            },
+            {
+                "content": "Shoes in Closet( ) 2448\r\nShoes in Closet\r\nXS(22.5)6L(26.0)\r\n 2448\r\n3\r\n2448\r\n4,480()(3)4.5XS(22.0-22.5)S(22.5-23.0)M(23.0-23.5)L(23.5-24.0)LL(24.0-24.5)LL(24.0-24.5)3L(24.5-25.0)4L(25.0-25.5)5L(25.5-2… [+233 chars]",
+                "description": "Shoes in Closetから履き回ししやすい「軽量厚底 ベーシック ダブルライン スニーカー 2448」登場",
+                "publishedAt": "2025-01-12T02:00:00Z",
+                "source": "Getnews.jp",
+                "title": "Shoes in Closetから履き回ししやすい「軽量厚底 ベーシック ダブルライン スニーカー 2448」登場",
+                "url": "https://getnews.jp/archives/3590188",
+                "urlToImage": "https://torso-jack.com/wp-content/uploads/2025/01/sub1-3.jpg"
+            },
+            {
+                "content": "Cosa spinge il sopravvissuto alla Shoah Sami Modiano, dopo decenni di viaggi della Memoria e di incontri nelle scuole, ad affidare la sua storia a un ologramma? Cosa porta una testimone quasi centena… [+1991 chars]",
+                "description": "I depositari delle testimonianze del buio della storia sono ora i nipoti (ANSA)",
+                "publishedAt": "2025-01-23T15:58:36Z",
+                "source": "ANSA.it",
+                "title": "ll futuro e la memoria. Shoah e Generazione Z",
+                "url": "https://www.ansa.it/canale_lifestyle/notizie/teen/2025/01/22/ll-futuro-e-la-memoria.-shoah-e-generazione-z_6ea5267c-58ff-4810-92b8-f6111d153802.html",
+                "urlToImage": "https://www.ansa.it/webimages/img_700/2024/9/30/809e4168596f6d201e2e022d943954fa.jpg"
+            },
+            {
+                "content": "Pop icon Lisa Lisa is opening up about her secret cancer battle in her early career -- revealing she kept it under wraps for years out of fear it would cost her everything.\r\nThe legend dropped by \"TM… [+871 chars]",
+                "description": "Pop icon Lisa Lisa is opening up about her secret cancer battle in her early career -- revealing she kept it under wraps for years out of fear it would cost her everything. The legend dropped by \"TMZ Live\" Monday to chat about her new Lifetime…",
+                "publishedAt": "2025-02-03T22:02:07Z",
+                "source": "TMZ",
+                "title": "Lisa Lisa Hid Cancer Battle From Family for Years Over Career Concerns",
+                "url": "https://www.tmz.com/2025/02/03/lisa-lisa-breast-cancer-lifetime-biopic/",
+                "urlToImage": "https://imagez.tmz.com/image/b6/16by9/2025/02/03/b6ab1dd2c05f4ee59ee9c64f0c1ec606_xl.jpg"
+            },
+            {
+                "content": "The UK's Competition and Markets Authority has announced an investigation into Google's search and ad businesses. It wants to find out if the search giant has a 'strategic market status' and whether … [+1850 chars]",
+                "description": "The UK&#039;s competition watchdog, the CMA, has launched another investigation into Google&#039;s search and ad businesses. It&#039;ll conclude by October.",
+                "publishedAt": "2025-01-14T10:56:01Z",
+                "source": "Neowin",
+                "title": "The UK competition watchdog has just launched another investigation into Google",
+                "url": "https://www.neowin.net/news/the-uk-competition-watchdog-has-just-launched-another-investigation-into-google/",
+                "urlToImage": "https://cdn.neowin.com/news/images/uploaded/2022/07/1658336048_google_story.jpg"
+            },
+            {
+                "content": "Amazon\r\n61%26075079\r\n38\r\n2025116\r\n38\r\n61 M\r\n79 XS\r\n65 S\r\n62 M \r\n69 XS\r\n70 XS\r\n53 M\r\n50 S\r\n56 M\r\n65 140\r\n71 L\r\n65 L\r\n71 S\r\n23 THE NORTH FACE M\r\n38 THE NORTH FACE M\r\n34 THE NORTH FACE L\r\n34 THE NORTH F… [+245 chars]",
+                "description": "毎日お得なタイムセールを開催しているAmazon。家電・食品・ファッションなど、さまざまなカテゴリーのアイテムを特別価格でゲットできるチャンス。 本日は、アディダスのジャージトップが61%オフの2607円だったり、『アシ […]",
+                "publishedAt": "2025-01-16T06:38:43Z",
+                "source": "Rocketnews24.com",
+                "title": "Amazonで『アディダス』のジャージトップが2607円！ 人気スポーツ・アウトドアウェアなど、激安目玉商品38選",
+                "url": "https://rocketnews24.com/2025/01/16/2404374/",
+                "urlToImage": "https://rocketnews24.com/wp-content/uploads/sites/2/2025/01/IMG_6440.jpg?crop=0px%2C157px%2C1629px%2C856px&resize=1200%2C630"
+            },
+            {
+                "content": "Unindo boxe e esperança, a Pfizer apresenta seu segundo comercial consecutivo no Super Bowl. O filme de 60 segundos acompanha um jovem paciente que, inspirado pelo famoso “Let’s get ready to rumble!”… [+1361 chars]",
+                "description": "Unindo boxe e esperança, a Pfizer apresenta seu segundo comercial consecutivo no Super Bowl. O filme de 60 segundos acompanha um jovem paciente que, inspirado pelo famoso “Let’s get ready to rumble!” de Michael Buffer, inicia sua própria luta contra o câncer.…",
+                "publishedAt": "2025-02-07T18:49:41Z",
+                "source": "B9.com.br",
+                "title": "Em luta (literal) contra o câncer, Pfizer traz LL Cool J para comercial do Super Bowl 2025",
+                "url": "https://www.b9.com.br/171012/pfizer-cancer-ll-cool-j-super-bowl-2025/",
+                "urlToImage": "https://assets.b9.com.br/wp-content/uploads/2025/02/pfizer-cancer-superbowl.jpg"
+            },
+            {
+                "content": "« previous post | \r\n[This is a guest post by Don Keyser]\r\nA true tale from nearly a half century ago … prompted by reading the mox nix posting to LL. \r\nMy first of three Beijing postings was 1976-78 … [+2815 chars]",
+                "description": "[This is a guest post by Don Keyser] A true tale from nearly a half century ago … prompted by reading the mox nix posting to LL.  —–   My first of three Beijing postings was 1976-78 to the U.S. Liaison Office.  USLO was tiny — 25 total personnel (9 \"substanti…",
+                "publishedAt": "2025-01-26T23:06:29Z",
+                "source": "Upenn.edu",
+                "title": "Sino-American diplomatic slang in the mid-70s",
+                "url": "https://languagelog.ldc.upenn.edu/nll/?p=68146",
+                "urlToImage": ""
+            },
+            {
+                "content": "Table of Contents\r\nTable of Contents\r\nWhat is the Stargate Project?\r\nWho is involved in the Stargate Project?\r\nControversies surrounding the Stargate Project\r\nShortly after taking office, Donald Trum… [+6158 chars]",
+                "description": "OpenAI's Stargate Project promises to build AI data centers and clean energy facilities across the U.S., creating 100,000 jobs. But will those promises be kept?",
+                "publishedAt": "2025-01-29T23:00:02Z",
+                "source": "Digital Trends",
+                "title": "Stargate Project: everything you need to know about OpenAI’s $500 billion gamble",
+                "url": "https://www.digitaltrends.com/computing/what-is-stargate-project/",
+                "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2023/11/Sam_Altman_keynote_OpenAI_DevDay.webp?resize=1200%2C630&p=1"
+            },
+            {
+                "content": "ll bilancio dei danni poteva essere gravissimo viste le alterate condizioni psicofisiche del conducente dell'automobile che lo hanno portato a guidare contromano per oltre 20 chilometri nella tratta … [+1151 chars]",
+                "description": "ll bilancio dei danni poteva essere gravissimo viste le alterate condizioni psicofisiche del conducente dell'automobile che lo hanno portato a guidare contromano per oltre 20 chilometri nella tratta autostradale Messina -Catania. (ANSA)",
+                "publishedAt": "2025-01-19T06:16:12Z",
+                "source": "ANSA.it",
+                "title": "Guida contromano in A/18 per oltre 20 km, multato nel messinese",
+                "url": "https://www.ansa.it/canale_motori/notizie/mondo_motori/2025/01/18/guida-contromano-in-a18-per-oltre-20-km-multato-nel-messinese_000584c5-aebc-4a27-9f69-9d495e62be88.html",
+                "urlToImage": "https://www.ansa.it/webimages/img_700/2025/1/18/e98228c214f4817c4c1b5d87c2df85bf.jpg"
+            },
+            {
+                "content": "DeepL, azienda specializzata in soluzioni di traduzione basate su IA che sviluppa l'omonimo servizio, ha aggiornato la sua API, potenziandola ed estendendo le funzionalità dell'applicazione. Due le n… [+3383 chars]",
+                "description": "ll modello di nuova generazione fornisce traduzioni più precise, mentre lintroduzione di DeepL Write sullAPI agevola laccesso allo strumento di scrittura assistita, con suggerimenti grammaticali e correzioni ortografiche",
+                "publishedAt": "2025-01-30T12:13:30Z",
+                "source": "Hwupgrade.it",
+                "title": "DeepL si aggiorna: integrato un nuovo motore di traduzione e API potenziate",
+                "url": "https://edge9.hwupgrade.it/news/data/deepl-si-aggiorna-integrato-un-nuovo-motore-di-traduzione-e-api-potenziate_135121.html",
+                "urlToImage": "https://www.hwupgrade.it/i/n/deepl_api_720.jpg"
+            },
+            {
+                "content": "President Donald Trump is MAGA-fying the Kennedy Center, saying on his Truth Social that he intends to immediately fire the board of directors for the Kennedy Center and put someone friendly to the p… [+1991 chars]",
+                "description": "The president took issue with \"drag shows specifically targeting our youth\" after the venue hosted several drag brunches and events in 2024.",
+                "publishedAt": "2025-02-08T01:09:55Z",
+                "source": "IndieWire",
+                "title": "Trump Says He’s Firing the Kennedy Center Board and Naming Himself Chairman",
+                "url": "https://www.indiewire.com/news/general-news/trump-firing-kennedy-center-board-naming-himself-chairman-1235093056/",
+                "urlToImage": "https://www.indiewire.com/wp-content/uploads/2025/01/GettyImages-2194990747.jpg?w=650"
+            },
+            {
+                "content": "“Questa capacità di Giorgia Meloni di essere concava e convessa a seconda della convenienza viene da Berlusconi“. Così il giornalista Giovanni Floris, ospite assieme all’ex ministra Rosy Bindi della … [+2198 chars]",
+                "description": "Rosy Bindi e Giovanni Floris commentano un filmato del 3 dicembre 2020, nel quale Giorgia Meloni contestò l'allora premier Giuseppe Conte per la vicenda della scorta per cui fu denunciato per peculato da Fdi. Il procedimento fu archiviato dal Tribunale dei mi…",
+                "publishedAt": "2025-02-02T15:34:57Z",
+                "source": "Ilfattoquotidiano.it",
+                "title": "Quando Meloni nel 2020 inveiva contro Conte sulla scorta. Floris: “Si fa concava e convessa come Berlusconi”. Bindi: “È anche peggio”",
+                "url": "https://www.ilfattoquotidiano.it/2025/02/02/almasri-meloni-contro-conte-2020-floris-berlusconi-bindi/7861646/",
+                "urlToImage": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/02/02/bindi_meloni_floris_1200.jpg"
+            },
+            {
+                "content": "Preorder Support Independent Type II and Get a Free Font Family Worth 239.!\r\nCelebrate the vibrant world of independent type design with Support Independent Type II, the highly anticipated continuati… [+1871 chars]",
+                "description": "Preorder Support Independent Type II and Get a Free Font Family Worth €239.–! Celebrate the...\nDer Beitrag Preorder Support Independent Type ll + Tor Grotesk Mix for Free erschien zuerst auf slanted.",
+                "publishedAt": "2025-01-10T09:00:43Z",
+                "source": "Slanted.de",
+                "title": "Preorder Support Independent Type ll + Tor Grotesk Mix for Free",
+                "url": "https://www.slanted.de/preorder-support-independent-type-ll-tor-grotesk-mix-for-free/",
+                "urlToImage": "https://www.slanted.de/wp-content/uploads/2025/01/Support-Independent-Type-ll_03.jpg"
+            },
+            {
+                "content": "Mit hohem Tempo setzt die Trump-Regierung ihr Versprechen um, gegen illegale Migranten vorzugehen. 530 Personen seien bereits festgenommen und hunderte abgeschoben worden, heißt es. Die größte Massen… [+1538 chars]",
+                "description": "Mit hohem Tempo setzt die Trump-Regierung ihr Versprechen um, gegen illegale Migranten vorzugehen. 530 Personen seien bereits festgenommen und hunderte abgeschoben worden, heißt es. „Die größte Massenabschiebung der Geschichte ist im Gange“, sagt Trumps Sprec…",
+                "publishedAt": "2025-01-24T07:16:27Z",
+                "source": "DIE WELT",
+                "title": "Trump-Regierung schiebt hunderte „kriminelle illegale Einwanderer“ ab",
+                "url": "https://www.welt.de/politik/ausland/article255228372/USA-Trump-Regierung-schiebt-hunderte-kriminelle-illegale-Einwanderer-ab.html",
+                "urlToImage": "https://img.welt.de/img/politik/ausland/mobile255228368/4587931467-ci16x9-w1200/Asylum-seekers-wait-to-be-processed.jpg"
+            },
+            {
+                "content": "Ce dimanche soir sur France 2, les adorateurs de récits d’espionnage ont rendez-vous avec les adieux déchirants à Daniel Craig. Bientôt quatre ans après sa sortie en salles, Mourir peut attendre s’of… [+5289 chars]",
+                "description": "Ce dimanche 2 de février, France 2 diffuse l'ultime volet des aventures du James Bond de Daniel Craig. Quel avenir pour le personnage ?",
+                "publishedAt": "2025-02-02T09:09:09Z",
+                "source": "Journal du geek",
+                "title": "James Bond ce soir à la TV : qui pour remplacer Daniel Craig ?",
+                "url": "https://www.journaldugeek.com/2025/02/02/james-bond-ce-soir-a-la-tv-qui-pour-remplacer-daniel-craig/",
+                "urlToImage": "https://www.journaldugeek.com/app/uploads/2025/01/james-bond-remplacant-2.jpg"
+            },
+            {
+                "content": "Picking up from where last years Big Game ad debut left off, Pfizer wants to bring a note of resilience and motivation to those fighting cancer in its Super Bowl 59 spot.\r\nIn the ad, a young boy gets… [+2234 chars]",
+                "description": "Picking up from where last year's Big Game ad debut left off, Pfizer wants to bring a note of resilience and motivation to those fighting cancer in its Super Bowl 59 spot. In the ad, a young boy gets out of his hospital bed, spurred by the sounds coming from …",
+                "publishedAt": "2025-02-07T14:00:00Z",
+                "source": "Adweek",
+                "title": "Pfizer Teams Up With LL Cool J In Super Bowl Ad, Literally Fighting Cancer",
+                "url": "https://www.adweek.com/creativity/pfizer-teams-up-with-ll-cool-j-in-super-bowl-ad-literally-fighting-cancer/",
+                "urlToImage": "https://www.adweek.com/wp-content/uploads/2025/02/Hero-3-1.jpg?w=600&h=315&crop=1"
+            },
+            {
+                "content": ", 10.45 PERL- PCRE2, C BSD. , , , .\r\n 10.45 – , , , PCRE PCRE2.\r\n :\r\n<ul><li>sljit .</li><li> 16.</li><li> Unicode Ll, LtLu Perl. /\\p{Ll}/i ( ). POSIX, , , [:lower:].</li><li>scan_substring. , . , \\b… [+357 chars]",
+                "description": "После более полугода разработки, состоялся выпуск 10.45 библиотеки PERL-совместимых регулярных выражений PCRE2, написанной на языке C и распространяемой по лицензии BSD. Это сравнительно большой выпуск, включающий в себя новые функции, некоторые исправления о…",
+                "publishedAt": "2025-02-06T09:47:30Z",
+                "source": "Linux.org.ru",
+                "title": "PCRE2 10.45",
+                "url": "https://www.linux.org.ru/news/opensource/17874547",
+                "urlToImage": "https://www.linux.org.ru/img/good-penguin.png"
+            },
+            {
+                "content": "2025117 LL2025LLLLLOONG FACE  \r\n202442722\r\n23B+C\r\nSUV20SUV700\r\nLOONG FACE\r\nLLLL\r\nLLLOONG FACE\r\nLL\r\nLL\r\nLLL5050*1960*1505mm2970mm532L5040*1996*1760mm2950mm\r\nLL3D+\r\nLLLL",
+                "description": "2025年1月17日，比亚迪盛大举行“何以中国 盛世王朝，汉L唐L设计发布会暨2025首届王朝盛典”，王朝网旗舰汉L唐L迎来全球首秀。在新能源步入崭新发展阶段的时代背景下，为响应主流市场用户的体验进阶需求，汉L唐L携全面进化的LOONG FACE 龙颜美学，和比亚迪王朝全新设计理念而来，打造属于中国汽车自己的模样！ 在中国的土地上扎根，在世界掀起浪潮刚刚过去的2024年，比亚迪以超427万辆的销售成绩，蝉联中国汽车市场车企、中国汽车市场品牌、全球新能源车市场三大销冠，成绩斐然。从微末走向潮头，比亚迪造车22年，反…",
+                "publishedAt": "2025-01-17T15:06:05Z",
+                "source": "Dgtle.com",
+                "title": "何以中国 盛世汉唐，比亚迪盛世旗舰汉L唐L全新设计正式揭幕",
+                "url": "https://www.dgtle.com/news-1553609-14.html",
+                "urlToImage": ""
+            },
+            {
+                "content": "Apple starebbe lavorando a un nuovo servizio di coaching personalizzato basato sull’intelligenza artificiale. Secondo quanto riportato dal giornalista Mark Gurman, si tratterebbe di un’applicazione a… [+2117 chars]",
+                "description": "Utilizzerà l'AI per offrire raccomandazioni mirate agli utenti su esercizio fisico, alimentazione e sonno",
+                "publishedAt": "2025-01-17T10:40:00Z",
+                "source": "Hdblog.it",
+                "title": "Apple, in sviluppo un servizio di coaching e wellness basato su intelligenza artificiale",
+                "url": "https://www.hdblog.it/indossabili/articoli/n605727/apple-sviluppo-nuovo-servizio-coaching-ai/",
+                "urlToImage": "https://hd2.tudocdn.net/1225278?w=1920"
+            },
+            {
+                "content": "The Chivette Challenge is still coming in a bit!\r\nFor now, lets chat.\r\nFor years, this community has been one of the brightest corners of the internet. Its always been a happy, positive space, and we… [+997 chars]",
+                "description": "See the full gallery on thechive.com",
+                "publishedAt": "2025-01-10T20:20:00Z",
+                "source": "Thechive.com",
+                "title": "Toxic negativity ain’t welcome in this neighborhood…",
+                "url": "https://thechive.com/lifestyle/toxic-negativity-aint-welcome-in-this-neighborhood/?utm_postid=4881448&utm_editor=4881448_ben",
+                "urlToImage": "https://thechive.com/wp-content/uploads/2025/01/lead232.jpg?attachment_cache_bust=4881561&quality=85&strip=info"
+            },
+            {
+                "content": "Es war eine der ersten Entscheidungen des neuen US-Präsidenten: Der Golf von Mexiko soll einen neuen Namen erhalten, Google reagiert nun. Währenddessen schickt Kolumbien ein Militärflugzeug, um eigen… [+2926 chars]",
+                "description": "Der Streit um Abschiebeflüge ist beigelegt – Kolumbien knickt ein und schickt nun Flugzeuge, um die eigenen Staatsangehörigen aus den USA zu holen. Dazu gibt es erste Reaktionen auf den Wunsch von US-Präsident Trump, den „Golf von Mexiko“ umzubenennen. Alle N…",
+                "publishedAt": "2025-01-28T09:00:00Z",
+                "source": "DIE WELT",
+                "title": "„Golf von Amerika“ – Google will Namen in Karten anpassen",
+                "url": "https://www.welt.de/politik/ausland/article255235410/USA-unter-Trump-Golf-von-Amerika-Google-will-Namen-in-Karten-anpassen-Liveticker.html",
+                "urlToImage": "https://img.welt.de/img/politik/ausland/mobile255264734/5297935957-ci16x9-w1200/Trump-auf-dem-inis-Weisse-Haus.jpg"
+            },
+            {
+                "content": "US-Regierungsschiffe sollen künftig nicht mehr für die Durchfahrt des Panamakanals bezahlen. Das kündigt das US-Außenministerium auf der Plattform X an. Doch dann meldet sich die zuständige Behörde i… [+2453 chars]",
+                "description": "US-Regierungsschiffe sollen künftig nicht mehr für die Durchfahrt des Panamakanals bezahlen. Das kündigt das US-Außenministerium auf der Plattform X an. Doch dann meldet sich die zuständige Behörde in Panama.",
+                "publishedAt": "2025-02-06T06:25:00Z",
+                "source": "DIE WELT",
+                "title": "Verwirrung um Kanalgebühren – Panama widerspricht US-Regierung",
+                "url": "https://www.welt.de/politik/ausland/article255353170/Donald-Trump-Verwirrung-um-Kanalgebuehren-Panama-widerspricht-US-Regierung.html",
+                "urlToImage": "https://img.welt.de/img/politik/ausland/mobile255353474/4907937077-ci16x9-w1200/Panamakanal.jpg"
+            },
+            {
+                "content": "Bei der ZDF-Sendung Schlagabtausch erhalten die Aussagen eines Grünen- und eines Linken-Politikers stets lauten Applaus. Ein ZDF-Journalist erklärt hinterher die Zusammensetzung des Publikums, der Se… [+2428 chars]",
+                "description": "Bei der ZDF-Sendung „Schlagabtausch“ erhalten die Aussagen eines Grünen- und eines Linken-Politikers stets lauten Applaus. Ein ZDF-Journalist erklärt hinterher die Zusammensetzung des Publikums, der Sender bedauert „zu einseitige Reaktionen“.",
+                "publishedAt": "2025-02-07T11:30:21Z",
+                "source": "DIE WELT",
+                "title": "Studenten aus „eher linken Unis“ im Publikum – CDU und FDP empören sich über ZDF",
+                "url": "https://www.welt.de/politik/deutschland/article255367216/ZDF-Schlagabtausch-Studenten-aus-eher-linken-Unis-im-Publikum-CDU-und-FDP-empoeren-sich.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255367212/7787939947-ci16x9-w1200/Wahlkampf-ZDF-Livesendung-Schlagabtausch.jpg"
+            },
+            {
+                "content": "Copyright © 2025 Balatarin, LLC",
+                "description": "دیپ سیک (DeepSeek) یک شرکت نوآور در حوزه‌ی فناوری‌های پیشرفته‌ی هوش مصنوعی (AI) و به‌ویژه در زمینه‌ی توسعه‌ی مدل‌های زبانی بزرگ (Large Language Models یا LL\nبا ۲۲ امتیاز و ۰ نظر فرستاده شده در بالاچه فناوری های نولینک مستقیم",
+                "publishedAt": "2025-01-29T15:17:42Z",
+                "source": "Balatarin.com",
+                "title": "دیپ سیک چیست؟",
+                "url": "https://www.balatarin.com:443/permlink/2025/1/28/6290893",
+                "urlToImage": ""
+            },
+            {
+                "content": "It's been over two years since beloved Migos member Takeoff was shot and killed outside a bowling alley in Houston on Nov. 1, 2020, and the trial for the man arrested for the crime continues to loom … [+1775 chars]",
+                "description": "LL Takeoff. Continue reading…",
+                "publishedAt": "2025-01-20T19:07:00Z",
+                "source": "XXLMAG.COM",
+                "title": "Takeoff Murder Trial Looms as Case Drags On",
+                "url": "https://www.xxlmag.com/takeoff-murder-trial-update/",
+                "urlToImage": "https://townsquare.media/site/812/files/2025/01/attachment-Takeoff.jpg?w=1200&q=75&format=natural"
+            },
+            {
+                "content": "Da Deportee di Woody Guthrie a Pronti a salpare. Lomaggio di Edoardo Bennato al dramma dei migranti è servito. Nella scaletta dei concerti del 78enne cantautore napoletano degli ultimi anni, proprio … [+1801 chars]",
+                "description": "Bennato racconta spesso che nei primi anni di carriera in scaletta non mancava mai l’antesignana di Pronti a salpare: quel Deportee scritto dal folk singer statunitense Woody Guthrie\nL'articolo Da Deportee di Woody Guthrie a Pronti a salpare. La canzone di Ed…",
+                "publishedAt": "2025-02-06T14:13:43Z",
+                "source": "Ilfattoquotidiano.it",
+                "title": "Da Deportee di Woody Guthrie a Pronti a salpare. La canzone di Edoardo Bennato sul dramma dei migranti",
+                "url": "https://www.ilfattoquotidiano.it/2025/02/06/da-deportee-di-woody-guthrie-a-pronti-a-salpare-la-canzone-di-edoardo-bennato-sul-dramma-dei-migranti/7867226/",
+                "urlToImage": "https://st.ilfattoquotidiano.it/wp-content/uploads/2025/02/06/Schermata-2025-02-06-alle-15.10.41-1200x630.png"
+            },
+            {
+                "content": "Avrete sicuramente già sentito parlare di Garmin Varia, il radar posteriore per biciclette un prodotto capace di avvertirci se alle nostre spalle sta arrivando un’autovettura. Oggi Garmin ha presenta… [+1338 chars]",
+                "description": "Garmin lancia il radar per angoli ciechi zumo R1. Monitoraggio sulle vetture che arrivano alle spalle, collegamento con casco, smartphone e navigatore oppure fuzionamento anche senza altri dispositivi. Ecco i dettagli\n- su macitynet.it In moto sicuri con il r…",
+                "publishedAt": "2025-01-10T17:29:39Z",
+                "source": "Macitynet.it",
+                "title": "In moto sicuri con il radar per angoli ciechi Garmin zūmo R1",
+                "url": "https://www.macitynet.it/garmin-zumo-r1-radar-prezzo-rilascio/",
+                "urlToImage": "https://www.macitynet.it/wp-content/uploads/2025/01/radar-per-angoli-ciechi-zumo-garmin.jpg"
+            },
+            {
+                "content": "Il 2024 è stato un anno di successi per Fiat, che ha rafforzato la sua posizione come marchio leader globale di Stellantis. Con oltre 1,2 milioni di veicoli venduti, Fiat ha dominato i suoi mercati p… [+2443 chars]",
+                "description": "Con oltre 1,2 milioni di veicoli venduti, Fiat ha consolidato la sua posizione di leader globale, eccellendo in Brasile, Italia, Turchia e Algeria.",
+                "publishedAt": "2025-01-22T12:00:00Z",
+                "source": "Hdmotori.it",
+                "title": "FIAT: consolidato il dominio globale nel 2024",
+                "url": "https://www.hdmotori.it/fiat/articoli/n606213/fiat-consolidato-dominio-globale-2024/",
+                "urlToImage": "https://hd2.tudocdn.net/1226683?w=1920"
+            },
+            {
+                "content": "In un’intervista rilasciata al podcast Kiwi Talkz, l'ex-Rockstar Mike York ha manifestato perplessità circa le prestazioni di GTA 6 al lancio non solo su PlayStation 5 (e conseguentemente su Xbox Ser… [+2549 chars]",
+                "description": "Rockstar potrebbe puntare ai 30 fps stabili.",
+                "publishedAt": "2025-01-31T06:45:00Z",
+                "source": "Hdblog.it",
+                "title": "GTA 6 al lancio potrebbe non arrivare a 60 fps su PS5 Pro: parola di un ex-Rockstar",
+                "url": "https://www.hdblog.it/games/articoli/n607296/gta-6-vi-60-fps-ps5-pro-playstation-frame-rate/",
+                "urlToImage": "https://hd2.tudocdn.net/1180750?w=1920"
+            },
+            {
+                "content": "L'entrata in vigore di un accordo di cessate il fuoco tra Israele e Hamas, inizialmente prevista per oggi alle 8:30 ora locale (le 7:30 in Italia), è stata ritardata poiché Hamas non ha ancora presen… [+1531 chars]",
+                "description": "Il piano sarebbe dovuto entrare in vigore oggi alle 7.30, ma Hamas ha avvertito di ritardi 'per motivi tecnici' nella trasmissione dei nomi dei primi rapiti che dovrebbero essere rilasciati. Nuovi raid sulla Striscia, 8 morti e 25 feriti (ANSA)",
+                "publishedAt": "2025-01-19T08:26:24Z",
+                "source": "ANSA.it",
+                "title": "Slitta la tregua a Gaza, Hamas consegna la lista degli ostaggi da liberare. L'esercito: 'Proseguiamo gli attacchi'",
+                "url": "https://www.ansa.it/sito/notizie/mondo/2025/01/19/slitta-la-tregua-a-gaza-hamas-consegna-la-lista-degli-ostaggi-da-liberare.-lesercito_768b440d-f4df-4075-82a6-a7a800a832ab.html",
+                "urlToImage": "https://www.ansa.it/webimages/img_700/2025/1/19/289d33aa9dae33cd65b1e3b24fd0d2b5.jpg"
+            },
+            {
+                "content": "L'entrata in vigore di un accordo di cessate il fuoco tra Israele e Hamas, inizialmente prevista per oggi alle 8:30 ora locale (le 7:30 in Italia), è stata ritardata poiché Hamas non ha ancora presen… [+1531 chars]",
+                "description": "Il piano sarebbe dovuto entrare in vigore oggi alle 7.30, ma Hamas ha avvertito di ritardi 'per motivi tecnici' nella trasmissione dei nomi dei primi rapiti che dovrebbero essere rilasciati. Ira di Netanyahu: il piano si fermerà se Tel Aviv non riceverà l'ele…",
+                "publishedAt": "2025-01-19T06:59:20Z",
+                "source": "ANSA.it",
+                "title": "Slitta la tregua a Gaza. L'esercito: 'Proseguiamo gli attacchi'",
+                "url": "https://www.ansa.it/sito/notizie/mondo/2025/01/19/slitta-la-tregua-a-gaza.-lesercito-proseguiamo-gli-attacchi_768b440d-f4df-4075-82a6-a7a800a832ab.html",
+                "urlToImage": "https://www.ansa.it/webimages/img_700/2025/1/19/289d33aa9dae33cd65b1e3b24fd0d2b5.jpg"
+            },
+            {
+                "content": "Il premier svedese Ulf Kristersson ha detto che \"c'è il rischio di un legame con una potenza straniera\" dietro l'omicidio in Svezia dell'uomo che nel 2023 bruciò una copia del Corano.\r\n    Salwan Mom… [+1693 chars]",
+                "description": "L'ipotesi è stata fatta dal premier Kristersson dopo la morte di Salwan Momika, ucciso a colpi di arma da fuoco nel suo appartamento (ANSA)",
+                "publishedAt": "2025-01-30T12:02:16Z",
+                "source": "ANSA.it",
+                "title": "'Forse una potenza straniera' dietro l'uccisione dell'uomo che bruciò un Corano",
+                "url": "https://www.ansa.it/sito/notizie/mondo/2025/01/30/forse-una-potenza-straniera-dietro-luccisione-delluomo-che-brucio-un-corano_abac7c67-cb87-4ec2-aff7-a6a308caee31.html",
+                "urlToImage": "https://www.ansa.it/webimages/img_700/2023/7/20/518f5b0d5c596c22c2d461cdd2337103.jpg"
+            },
+            {
+                "content": "last september (as of jan ‘25), in a fit of pique, i sliced my modmic off\r\nits cable, then designed and built a ribbon microphone as a replacement.\r\nthe view of the microphone i usually have, ribbon … [+13732 chars]",
+                "description": "Comments",
+                "publishedAt": "2025-01-19T23:39:20Z",
+                "source": "Khz.ac",
+                "title": "The Ribbon Microphone",
+                "url": "https://khz.ac/sound/ribbon-mic/",
+                "urlToImage": ""
+            },
+            {
+                "content": "only 1.28 BTC for $100k cash?\r\n.\r\nTo borrow $100,000 in USD Coin (USDC) from Coinbase using Bitcoin (BTC) as collateral, youâ™ll need to maintain a loan-to-value (LTV) ratio of at least 133%. This me… [+601 chars]",
+                "description": "only 1.28 BTC for $100k cash? . To borrow $100,000 in USD Coin (USDC) from Coinbase using Bitcoin (BTC) as collateral, youâ€™ll need to maintain a loan-to-value (LTV) ratio of at least 133%. This means you must pledge Bitcoin worth approximately 133% of the l…",
+                "publishedAt": "2025-01-29T20:48:58Z",
+                "source": "Erickimphotography.com",
+                "title": "How much bitcoin to pledge as collateral on Coinbase for $100k",
+                "url": "https://erickimphotography.com/blog/2025/01/29/how-much-bitcoin-to-pledge-as-collateral-on-coinbase-for-100k/",
+                "urlToImage": ""
+            },
+            {
+                "content": ", ?\r\n24,454 , , .\r\n! , 90-.\r\n- , , , , 1995-96 , -1997. , , .\r\n, 1989-. \r\n, , , 28 37 .\r\n\" , , , \", Der Spiegel.\r\n, 1997- , :\r\n\" , , \".\r\n\" \", 2009-.\r\n. , 10,000 \"\", : \"! , \".\r\n, 21 .\r\nUnity Desperado… [+802 chars]",
+                "description": "А ви знали, що дортмундська Жовта стіна – найбільша трибуна Європи? Вона вміщує 24,454 уболівальники, причому суцільною масою, без розбивки на сектори. Це легенда – авжеж! Але дуже нова, родом із 90-х.",
+                "publishedAt": "2025-01-29T08:38:46Z",
+                "source": "Champion.com.ua",
+                "title": "Таємниці Жовтої стіни, або Як найбільшою зіркою Боруссії стала трибуна",
+                "url": "https://champion.com.ua/ukr/football/usi-tayemnici-naybilshoji-futbolnoji-tribuni-yevropi-z-yakoyu-zitknetsya-shahtar-1024775/",
+                "urlToImage": "https://static.champion.com.ua/champion/images/doc/2/e/191669/2eb00b21e07429cc4eed75e6a6658a57.jpeg?q=90&w=1920"
+            },
+            {
+                "content": "()202527Lian Li IndustrialL-ShapeATX 3.1EDGE GOLD214()\r\n202516USBL1,000W850W750W3750W\r\nO11PCUSBUSB 2.0x4PWMx6\r\n12V-2×6120mm86mm182mm150mm\r\nEDGE GOLD 750 BK(LL-EDGE GOLD 750W BK)17,980(2025214)EDGE GO… [+569 chars]",
+                "description": "株式会社ディラック(本社：東京都千代田区)は2025年2月7日、Lian Li Industrial（本社：台湾）のL-Shapeデザイン採用のATX 3.1規格準フルモジュラー型電源ユニット「EDGE GOLD」シリーズについて、国内市場での新規取り扱い開始を発表した。発売日は2月14日(金)の予定。",
+                "publishedAt": "2025-02-07T07:40:46Z",
+                "source": "Gdm.or.jp",
+                "title": "デュアルチャンバーPCケース専用に設計されたATX 3.1規格電源、Lian Li「EDGE GOLD」シリーズ",
+                "url": "https://www.gdm.or.jp/pressrelease/2025/0207/574461",
+                "urlToImage": "https://www.gdm.or.jp/wp-content/uploads/2025/02/07/edge_gold_1000_02.jpg"
+            },
+            {
+                "content": "B\r\n\\(N\\)\\(M\\)\r\n\\(x\\)\r\n\\(x\\)\\(x\\)\\(x\\)vector\r\n\\(O(nm)\\)\r\n#include&lt;bits/stdc++.h&gt;\r\n#define endl \"\\n\"\r\nusing namespace std;\r\nconst int N = 310;\r\nint n, m, ans;\r\nint a[N][N], b[N][N], sz[N];\r\nvecto… [+3583 chars]",
+                "description": "AGC018 B 题目大意 举办一场运动会，有 \\(N\\) 人，\\(M\\) 个项目，每个人所有项目都有一个排名，会选择参加排名最高且开设的项目，现在要开设若干项目使得人数最多的项目人数尽可能小，求这个最小值。 解题思路 考虑贪心。 一开始，我们不妨开设所有项目，设人数最多的项目为 \\(x\\)。 如果",
+                "publishedAt": "2025-01-19T08:07:00Z",
+                "source": "Cnblogs.com",
+                "title": "AGC018 - I_LOVE_MATH",
+                "url": "https://www.cnblogs.com/lintianchen/p/18679648",
+                "urlToImage": ""
+            },
+            {
+                "content": "Tal y como os hemos informado recientemente, Sony tenía algunos juegos como servicio en desarrollo que han sido cancelados, entre los que se incluyen un título de Bend Studio, creadores de Days Gone,… [+1378 chars]",
+                "description": "<!--cache-->Kevin McAllister, el community manager de Bend Studio, ha agradecido a los fans sus muestras de apoyo tras comunicarse la cancelación de un juego como servicio en el que estaban trabajando.<!--aa--->Tal y como os hemos informado recientemente, Son…",
+                "publishedAt": "2025-01-20T17:22:00Z",
+                "source": "Elespanol.com",
+                "title": "Bend Studio no tira la toalla tras la cancelación de su juego como servicio y seguirá trabajando en nuevos proyectos",
+                "url": "https://vandal.elespanol.com/noticia/1350777355/bend-studio-no-tira-la-toalla-tras-la-cancelacion-de-su-juego-como-servicio-y-seguira-trabajando-en-nuevos-proyectos/",
+                "urlToImage": "https://media.vandal.net/ivandal/12/63/1200x630/38/38421/days-gone-2019291343776_1.jpg"
+            },
+            {
+                "content": "Der Bundestag debattiert nach dem tödlichen Messerangriff in Aschaffenburg über die Migrationspolitik. Bundeskanzler Scholz nennt die Vorschläge der Union verfassungswidrig und wirft CDU-Chef Merz ei… [+3282 chars]",
+                "description": "Der Bundestag debattiert nach dem tödlichen Messerangriff in Aschaffenburg über die Migrationspolitik. Bundeskanzler Scholz nennt die Vorschläge der Union verfassungswidrig – und wirft CDU-Chef Merz einen „unverzeihlichen Fehler“ vor, indem er eine Mehrheit m…",
+                "publishedAt": "2025-01-29T13:31:12Z",
+                "source": "DIE WELT",
+                "title": "„Sonst droht uns eine schwarz-blaue Regierung“ – Scholz macht Merz schwere Vorwürfe",
+                "url": "https://www.welt.de/politik/deutschland/article255278440/Regierungserklaerung-Sonst-droht-uns-eine-schwarz-blaue-Regierung-Scholz-macht-Merz-schwere-Vorwuerfe.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255278890/3667938457-ci16x9-w1200/Bundestag-Regierungserklaerung.jpg"
+            },
+            {
+                "content": "Dorothy has announced details of her new album, The Way, set for release on March 14th via Roc Nation. The singer has also shared the LP’s new single, the uptempo rocker “Tombstone Town” featuring le… [+1520 chars]",
+                "description": "The powerhouse vocalist's new LP will arrive on March 14th.\nDorothy Announces New Album The Way, Unveils “Tombstone Town” Featuring Slash: Stream\nSpencer Kaufman",
+                "publishedAt": "2025-01-24T14:45:32Z",
+                "source": "Consequence.net",
+                "title": "Dorothy Announces New Album The Way, Unveils “Tombstone Town” Featuring Slash: Stream",
+                "url": "https://consequence.net/2025/01/dorothy-new-album-the-way-single-tombstone-town-slash/",
+                "urlToImage": "https://consequence.net/wp-content/uploads/2025/01/Dorothy-and-Slash-featured.jpg"
+            },
+            {
+                "content": "Der Bundestag hat sich für mehr Zurückweisungen an den deutschen Grenzen ausgesprochen. Eine knappe Mehrheit stimmte für den Fünf-Punkte-Plan der Union. Ein zweiter Antrag hingegen fand keine Mehrhei… [+4012 chars]",
+                "description": "Der Bundestag hat sich für mehr Zurückweisungen an den deutschen Grenzen ausgesprochen. Eine knappe Mehrheit stimmte für den Fünf-Punkte-Plan der Union. Ein zweiter Antrag hingegen fand keine Mehrheit.",
+                "publishedAt": "2025-01-29T16:43:13Z",
+                "source": "DIE WELT",
+                "title": "Unionsantrag für Asylwende erhält Mehrheit im Bundestag – zweiter Antrag abgelehnt",
+                "url": "https://www.welt.de/politik/deutschland/article255281180/Unterstuetzung-von-AfD-und-FDP-Unionsantrag-fuer-Asylwende-erhaelt-Mehrheit-im-Bundestag-zweiter-Antrag-abgelehnt.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255282286/7257938827-ci16x9-w1200/Bundestag-Regierungserklaerung.jpg"
+            },
+            {
+                "content": "Die Altkanzlerin hat die gemeinsame Abstimmung von Union und AfD im Bundestag scharf kritisiert. In der Partei sorgt das für Unverständnis, selbst einstige Weggefährten kritisieren Merkel. Mehr im Li… [+3616 chars]",
+                "description": "Die Altkanzlerin hat die gemeinsame Abstimmung von Union und AfD im Bundestag scharf kritisiert. In der Partei sorgt das für Unverständnis, selbst einstige Weggefährten kritisieren Merkel. Mehr im Liveticker.",
+                "publishedAt": "2025-01-31T04:30:00Z",
+                "source": "DIE WELT",
+                "title": "„Merkel hätte einfach schweigen sollen“ – Ärger bei CDU-Politikern",
+                "url": "https://www.welt.de/politik/deutschland/article255295952/Bundestagswahl-Merkel-haette-einfach-schweigen-sollen-Aerger-bei-CDU-Politikern-Live-Ticker.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255295950/6317937717-ci16x9-w1200/FILES-German-former-Chancellor-An.jpg"
+            },
+            {
+                "content": "56cm!?\r\n202532Makuake198002015800\r\nLL (24.5cm)3L (25.5cm)4L (26.5cm)\r\nMakuake",
+                "description": "その日のコーデやなりたい印象によって、「できれば背を高く見せたくない」なんてときが皆さんにはないでしょうか？ そんなおしゃれにこだわりのある人におすすめしたいのが、身長が低く見える「トリックシューズ」！ 履くだけで5～6 […]",
+                "publishedAt": "2025-02-04T06:55:45Z",
+                "source": "Youpouch.com",
+                "title": "身長を低く見せたい人必見！視覚の錯覚を利用したトリックシューズの見た目がどうみても厚底なんですけど…!?",
+                "url": "https://youpouch.com/2025/02/04/1250073/",
+                "urlToImage": "https://youpouch.com/wp-content/uploads/sites/4/2025/01/img_423271_10.jpg?crop=0px%2C46px%2C1230px%2C646px&resize=1200%2C630"
+            },
+            {
+                "content": "DÉCÈS - Les incendies qui ravagent Los Angeles ont tué lacteur britannique Rory Callum Sykes. « Cest avec une grande tristesse que je dois vous annoncer la mort de mon magnifique fils », a déclaré su… [+3437 chars]",
+                "description": "L’acteur âgé de 32 ans se trouvait dans sa maison familiale à Malibu, à Los Angeles, qui a brûlé dans les incendies en cours depuis près d’une semaine.",
+                "publishedAt": "2025-01-12T17:25:52Z",
+                "source": "Le HuffPost",
+                "title": "Mort de l’acteur britannique Rory Callum Sykes à 32 ans dans les incendies de Los Angeles",
+                "url": "https://www.huffingtonpost.fr/culture/article/mort-de-l-acteur-britannique-rory-callum-sykes-a-32-ans-dans-les-incendies-de-los-angeles_244728.html",
+                "urlToImage": "https://focus.huffingtonpost.fr/2025/01/12/0/0/2656/1494/1820/1023/75/0/31464ff_sirius-fs-upload-1-gepk4wbvpiu5-1736700838820-gg3o4x8amae9ud-6783dcfe3ba3b437939944.jpg"
+            },
+            {
+                "content": "HANDBALL - Une ligne de plus à la légende de Karabatic. Six mois après le fiasco olympique, léquipe de France a passé lobstacle des quarts de finale du Mondial de handball, mardi 28 janvier contre lÉ… [+2489 chars]",
+                "description": "Le but a été validé après arbitrage vidéo et les Bleus ont exulté après ce scénario incroyable, semblable à celui vécu en demi-finale de l’Euro-2024.",
+                "publishedAt": "2025-01-29T05:10:11Z",
+                "source": "Le HuffPost",
+                "title": "France-Égypte : ce but de Luka Karabatic à la dernière seconde envoie les Bleus en demi-finale du Mondial de hand",
+                "url": "https://www.huffingtonpost.fr/sport/article/france-egypte-ce-but-de-luka-karabatic-a-la-derniere-seconde-envoie-les-bleus-en-demi-finale-du-mondial-de-hand_245473.html",
+                "urlToImage": "https://focus.huffingtonpost.fr/2025/01/28/125/0/4819/2710/1820/1023/75/0/f112e48_sirius-fs-upload-1-f1t7hgzpz6gr-1738105020301-000-36wh6hb.jpg"
+            },
+            {
+                "content": "pjh0625 \r\n1. \r\ns\r\n2. \r\n\\(O(n^2)\\)\\(n \\le 10^5\\)Binary Indexed Tree, BIT\r\n<ul><li></li><li><ul><li></li><li>c\\(2 \\times \\text{sum} - j + n\\)sumj</li></ul></li><li></li></ul>3. \r\n<ul><li></li><li>a z\r\n… [+1709 chars]",
+                "description": "P1787 [入门赛 #22]非众数 Hard Version 题解 原题传送门 这里对 pjh0625 的题解进行了详细解释 1. 读题 题目要求计算给定字符串中非众数子串的数量。 非众数子串 的定义是：子串中出现次数最多的字符的频率不超过子串长度的一半。 非众数串 的定义是：一个字符串 s 中，",
+                "publishedAt": "2025-02-05T06:34:00Z",
+                "source": "Cnblogs.com",
+                "title": "P1787 [入门赛 #22]非众数 Hard Version 题解 - sunhy2012",
+                "url": "https://www.cnblogs.com/sunhy2012/p/18699391",
+                "urlToImage": ""
+            },
+            {
+                "content": "The tiny FiiO Snowsky Retro Nano looks like a mini cassette player and can be used wirelessly or via ... [+] a USB connection.\r\nFiiO\r\nWho can resist a gadget, especially one that takes us back to the… [+2938 chars]",
+                "description": "This new and portable music player from FiiO is a miniature hi-fi upgrade for laptops and smartphones, all packaged in a nostalgic and pint-sized 1990s design.",
+                "publishedAt": "2025-01-22T15:15:30Z",
+                "source": "Forbes",
+                "title": "FiiO’s New Snowsky Retro Nano Music Player Has A 1990s Vibe",
+                "url": "https://www.forbes.com/sites/marksparrow/2025/01/22/fiio-launches-snowsky-retro-nano-music-player-with-1990s-vibe/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/679106259b18abe0b161685b/0x0.jpg?format=jpg&crop=1535,826,x0,y91,safe&height=900&width=1600&fit=bounds"
+            },
+            {
+                "content": "Au CES 2025, le DisplayPort 2.1 présent dans la norme Thunderbolt 5 vue dans les Mac à base de M4 Pro et M4 Max n'évolue pas directement, mais l'association VESA, qui chapeaute la norme, a annoncé de… [+1700 chars]",
+                "description": "Au CES 2025, le DisplayPort 2.1 — présent dans la norme Thunderbolt 5 vue dans les Mac à base de M4 Pro et M4 Max — n'évolue pas directement, mais l'association VESA, qui chapeaute la norme, a annoncé de nouveaux câbles dits « LL » (pour low loss). Car en Dis…",
+                "publishedAt": "2025-01-10T13:00:00Z",
+                "source": "MacGeneration",
+                "title": "Le DisplayPort 2.1 passe aux câbles actifs pour dépasser 1 mètre à 80 Gb/s",
+                "url": "https://www.macg.co/materiel/2025/01/le-displayport-21-passe-aux-cables-actifs-pour-depasser-1-metre-80-gbs-148313",
+                "urlToImage": "https://cdn.mgig.fr/2025/01/mga-cb752699-w375-w1500-w750_accroche.jpg"
+            },
+            {
+                "content": "-\r\nOIWiki\r\n\\(O(\\log{n})\\)\r\nzkw \r\nzkw \r\nzkw \r\n1\r\n\\(n\\) zkw \\(n+2\\) 2 \\(n\\) 1 \r\n\\(P\\) :\r\n// P\r\n P = 1;\r\n while(P&lt;=n+1) P&lt;&lt;=1;//\r\n for(int i=1;i&lt;=n;++i) read(tr[P+i]);\r\n2\r\n//push_up\r\n for(in… [+14099 chars]",
+                "description": "前言 许多算法的本质是统计。线段树用于统计，是沟通原数组与前缀和的桥梁。 《统计的力量》清华大学-张昆玮 关于线段树 前置知识：线段树 OIWiki。 线段树是一种专门维护区间问题的数据结构。 线段树对信息进行二进制化处理并在树形结构上维护，以此让处理速度达到 \\(O(\\log{n})\\) 级别。",
+                "publishedAt": "2025-01-22T11:33:00Z",
+                "source": "Cnblogs.com",
+                "title": "zkw 线段树-原理及其扩展 - Tmbcan",
+                "url": "https://www.cnblogs.com/Tmbcan/p/18686660",
+                "urlToImage": ""
+            },
+            {
+                "content": "(MS) .\r\nLL- .\r\n .\r\n . LL- .\r\n (Ethan Hughes) : . .\r\n . .\r\n (Daniel Denman) : . . .\r\n .\r\n : . LL- .\r\n:\r\n#",
+                "description": "پژوهشگران پردیس پزشکی دانشگاه کلرادو آنشوتز داروی امیدوارکننده‌ای را پیدا کرده‌اند که می‌تواند به بازیابی بینایی در افراد مبتلا به مولتیپل اسکلروزیس (MS) و سایر بیماری‌های عصبی که به نورون‌ها آسیب می‌زند، کمک کند.",
+                "publishedAt": "2025-01-26T09:10:46Z",
+                "source": "Isna.ir",
+                "title": "یک داروی آزمایشی، بینایی را به موش‌های مبتلا به «ام‌اس» برگرداند",
+                "url": "https://www.isna.ir/news/1403110704924/یک-داروی-آزمایشی-بینایی-را-به-موش-های-مبتلا-به-ام-اس-برگرداند",
+                "urlToImage": "https://cdn.isna.ir/d/2025/01/26/4/63331392.jpg?ts=1737877365458"
+            },
+            {
+                "content": "Plant Label\r\nPlant Label Pea Drink LL153kcal\r\nPlant Label Oat Drink LL1D,B12171kcal\r\nZEZzwLfo500OFF\r\nPaypay()",
+                "description": "「Plant Label（プラントラベル）」は雪印メグミルクのプラントベースフードブランド。植物由来の原料からつくられた商品です。プラントベース食品を毎日続けたい方に。【Plant Label Pea Drink LL】エンドウ豆を使用したプラントベース飲料です。はほのかな豆の味わいが感じられ、毎日続けやすい風味設計。植物性たんぱく・たっぷり食物繊維・1本53kcal・低糖・低脂肪。【Plant Label Oat Drink LL】オーツ麦を使用したプラントベ...",
+                "publishedAt": "2025-01-19T02:53:10Z",
+                "source": "Tokka.shop",
+                "title": "雪印メグミルク Plant Label Pea Drink LL 200ml / Oat Drink LL 200ml 2種計96本 2,390円（24.9円/本）送料無料！",
+                "url": "https://blog.tokka.shop/e/159161",
+                "urlToImage": "https://static.fc2.com/image/noimage.gif"
+            },
+            {
+                "content": "×Macqlo/ ()2025221() MacqloMacqlo1182025\r\n×Macqlo2024330-4020183WWS30~401000(1)\r\n2025221()36() Macqlo2025Macqlo12/21()2/28()ultimex/Macqlo10%OFF\r\nMacqlo\r\n×Macqlo30-40Macqlohttps://macqlo.jp\r\nWWS20183… [+642 chars]",
+                "description": "[株式会社オアシスライフスタイルグループ]\n[画像1: https://prcdn.freetls.fastly.net/release_image/35410/526/35410-526-9c66890095d0dac8465d6fb732c8da9f-1920x1080.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&...",
+                "publishedAt": "2025-02-06T01:00:00Z",
+                "source": "Prtimes.jp",
+                "title": "【春夏新商品の先行予約を実施】 “黒×高機能”アパレル『Macqlo』2/21(金)よりルクア イーレにポップアップストアをオープン！",
+                "url": "https://prtimes.jp/main/html/rd/p/000000526.000035410.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/35410/526/35410-526-9c66890095d0dac8465d6fb732c8da9f-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "This comedy YouTube video has no notes, but it speaks for itself. Guide cats!\r\n******************\r\nThis Washington Post article, which you can read by clicking on the headline (it’s also archived her… [+8422 chars]",
+                "description": "This comedy YouTube video has no notes, but it speaks for itself. Guide cats! ****************** This Washington Post article, which you can read by clicking on the headline (it’s also archived here), describes a Florida B&B that’s really a tent hotel with do…",
+                "publishedAt": "2025-01-18T14:45:11Z",
+                "source": "Whyevolutionistrue.com",
+                "title": "Caturday felid trifecta: Seeing-eye cats; a Florida Airbnb with 130 cats; the case for cats; and lagniappe",
+                "url": "https://whyevolutionistrue.com/2025/01/18/caturday-felid-trifecta-seeing-eye-cats-a-florida-airbnb-with-130-cats-the-case-for-cats-and-lagniappe/",
+                "urlToImage": "https://whyevolutionistrue.com/wp-content/uploads/2025/01/Screen-Shot-2025-01-02-at-3.09.25-PM-720x182.png"
+            },
+            {
+                "content": "- . URA.ru.\r\n , 170 , . , 50-60- . 2,5 . , () .\r\n, . , ll «» . , . .",
+                "description": "В Усть-Катаве Челябинской области выставили на продажу в Интернете памятник Владимиру Ленину. Об этом сообщает URA.ru.",
+                "publishedAt": "2025-01-13T15:06:26Z",
+                "source": "Life.ru",
+                "title": "Памятник Ленину предложили обменять на машину в Челябинской области",
+                "url": "https://life.ru/p/1719059",
+                "urlToImage": "https://static.life.ru/ip/unsafe/rs:fill:1200:/gravity:ce/q:100/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyNS8xLzEzLzIxNDE5MDAyODIyMS4yMjcxNC53ZWJw"
+            },
+            {
+                "content": "J. Wu, X. Li, N. Xue, J. Wang, G. Xu, S. Chen, H. Cui, Y. Zi and Z. L. Wang,\r\n Energy Environ. Sci., 2025, Advance Article\r\n, DOI: 10.1039/D4EE05225K\r\nTo request permission to reproduce material from… [+642 chars]",
+                "description": "Energy Environ. Sci., 2025, Advance ArticleDOI: 10.1039/D4EE05225K, PaperJunpeng Wu, Xiaoyi Li, Na Xue, Jie Wang, Guoqiang Xu, Shougang Chen, Hongzhi Cui, Yunlong Zi, Zhong Lin WangThe TENG-MC system features dual-mode output with UO mode and LL mode. The LL …",
+                "publishedAt": "2025-01-29T00:00:00Z",
+                "source": "Royal Society of Chemistry",
+                "title": "Managing the two mode outputs of triboelectric nanogenerators to reach a pulsed peak power density of 31 MW m−2",
+                "url": "https://pubs.rsc.org/en/content/articlelanding/2025/ee/d4ee05225k",
+                "urlToImage": "https://pubs.rsc.org/en/Content/Image/GA/D4EE05225K"
+            },
+            {
+                "content": "()×Macqlo/311202523()10%()Macqlo 1st ANNIVERSARY                            Macqlo 1st ANNIVERSARYhttps://macqlo.jp/blogs/campaign/macqlo-1st-anniversary\r\n3×Macqlo304011ultimex/\r\n23()11:00228()Macqlo… [+816 chars]",
+                "description": "[株式会社オアシスライフスタイルグループ]\n[画像1: https://prcdn.freetls.fastly.net/release_image/35410/522/35410-522-02d539c0d5a8167d7950b3b978f2a019-1920x1080.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&...",
+                "publishedAt": "2025-02-03T02:00:00Z",
+                "source": "Prtimes.jp",
+                "title": "黒×高機能”アパレル『Macqlo』、2月3日(月)より1周年を記念した「Macqlo 1st ANNIVERSARY」を開催",
+                "url": "https://prtimes.jp/main/html/rd/p/000000522.000035410.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/35410/522/35410-522-02d539c0d5a8167d7950b3b978f2a019-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "C#LALR(1)miniDFA\r\nlexyacc-CLALR(1)miniDFAC#bitParser\r\nhttps://gitee.com/bitzhuwei/bitParser-demosANSI CGLGL4.60.8\r\nhttps://www.cnblogs.com/bitzhuwei/p/18544785\r\n1234+567+89+0+0\r\n(1234+567)/(89-0)\r\nht… [+79058 chars]",
+                "description": "生成从LL(1)到LR(1)的语法分析器+miniDFA的词法分析器代码（分析表、规则列表、状态转换表、保留字、Token类型等）。\n支持%nonassoc、%left、%right、%prec，自动解决Shift/Reduce、Reduce/Reduce冲突，并列示之。\n支持全Unicode字符、...",
+                "publishedAt": "2025-01-21T03:22:00Z",
+                "source": "Cnblogs.com",
+                "title": "拥有自己的解析器（C#实现LALR(1)语法解析器和miniDFA词法分析器的生成器） - BIT祝威",
+                "url": "https://www.cnblogs.com/bitzhuwei/p/18683262/my-own-parsers",
+                "urlToImage": ""
+            },
+            {
+                "content": "Cuidar el motor de tu coche es esencial para garantizar su rendimiento, longevidad y eficiencia. Uno de los aspectos más importantes para mantenerlo en óptimas condiciones es elegir el aceite adecuad… [+2905 chars]",
+                "description": "Cuidar el motor de tu coche es esencial para garantizar su rendimiento, longevidad y eficiencia. Uno de los aspectos más importantes para mantenerlo en óptimas condiciones es elegir el aceite adecuado. A continuación, te traemos el análisis de tres aceites di…",
+                "publishedAt": "2025-01-25T09:45:51Z",
+                "source": "Mundodeportivo.com",
+                "title": "El motor de tu coche lo agradecerá: aceites que garantizan el máximo rendimiento del vehículo",
+                "url": "https://www.mundodeportivo.com/elrecomendador/20250125/1002391297/lt-alixpress-aceite-motor.html",
+                "urlToImage": "https://www.mundodeportivo.com/files/og_thumbnail/uploads/2025/01/21/678f861db6840.jpeg"
+            },
+            {
+                "content": "The Tariff Act of 1930 (codified at 19 U.S.C.ch. 4), commonly known as the SmootHawley Tariff or HawleySmoot Tariff,[1] was a law that implemented protectionist trade policies in the United States. S… [+23893 chars]",
+                "description": "Comments",
+                "publishedAt": "2025-02-02T00:55:03Z",
+                "source": "Wikipedia.org",
+                "title": "Smoot–Hawley Tariff Act",
+                "url": "https://en.wikipedia.org/wiki/Smoot%E2%80%93Hawley_Tariff_Act",
+                "urlToImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/1200px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
+            },
+            {
+                "content": "Hip Hop celebrated its 50th birthday not long ago and while the genre has come on leaps and bounds since its infancy, one trend from its early days has come back in full force: the rapper-producer du… [+9567 chars]",
+                "description": "Rapper-producer duos made a big comeback in 2024, from Future and Metro Boomin to Kendrick Lamar and Mustard and Snoop Dogg and Dr. Dre.",
+                "publishedAt": "2025-01-09T12:30:26Z",
+                "source": "HipHopDX",
+                "title": "The Return Of The Rapper-Producer Duo",
+                "url": "https://hiphopdx.com/news/return-rapper-producer-duo-hip-hop",
+                "urlToImage": "https://app.hiphopdx.com/wp-content/uploads/2025/01/the-return-of-the-rapper-producer-duo.jpg?w=1200"
+            },
+            {
+                "content": "Nach der tödlichen Messerattacke in Bayern nimmt die Debatte um Ursachen und mögliche Folgen Fahrt auf. Bundesinnenministerin Nancy Faeser verlangt Aufklärung von den bayerischen Behörden. Polizeigew… [+4882 chars]",
+                "description": "Nach der tödlichen Messerattacke in Bayern nimmt die Debatte um Ursachen und mögliche Folgen Fahrt auf. Bundesinnenministerin Nancy Faeser verlangt Aufklärung von den bayerischen Behörden. Polizeigewerkschafter Manuel Ostermann sagt: „Ich habe die Nase gestri…",
+                "publishedAt": "2025-01-23T13:20:00Z",
+                "source": "DIE WELT",
+                "title": "„Offenbar sind in Bayern einige Dinge schiefgegangen“, sagt Faeser",
+                "url": "https://www.welt.de/politik/deutschland/article255215228/Aschaffenburg-Offenbar-sind-in-Bayern-einige-Dinge-schiefgegangen-sagt-Faeser-Reaktionen-im-Ueberblick.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255221728/3327939607-ci16x9-w1200/Innenausschuss-des-Bundestags-zu-Magdeburg-Anschlag.jpg"
+            },
+            {
+                "content": "In einem Park in Aschaffenburg werden mehrere Menschen mit einem Messer attackiert. Ein Mann und ein Kleinkind sterben. Polizisten nehmen einen afghanischen Tatverdächtigen fest. Er soll bereits zuvo… [+5852 chars]",
+                "description": "In einem Park in Aschaffenburg werden mehrere Menschen mit einem Messer attackiert. Ein Mann und ein Kleinkind sterben. Polizisten nehmen einen afghanischen Tatverdächtigen fest. Er soll bereits zuvor wegen Straftaten aufgefallen sein. „Ich bin es leid“, sagt…",
+                "publishedAt": "2025-01-22T16:55:00Z",
+                "source": "DIE WELT",
+                "title": "Afghane attackierte die Kinder mit einem Küchenmesser – Scholz spricht von „Terror-Tat“",
+                "url": "https://www.welt.de/vermischtes/kriminalitaet/article255207674/Aschaffenburg-Verdaechtiger-attackierte-die-Kinder-mit-einem-Kuechenmesser-Scholz-spricht-von-Terror-Tat.html",
+                "urlToImage": "https://img.welt.de/img/vermischtes/kriminalitaet/mobile255213562/5937934277-ci16x9-w1200/Two-people-killed-in-a-knife-attack-in-Aschaffenburg.jpg"
+            },
+            {
+                "content": "Fat Joe has admitted that he doesnt understand a lot of current Hip Hop.\r\nSpeaking to Complex, the Lean Back legend confessed that some of the rap music released by younger generations leaves him fee… [+2650 chars]",
+                "description": "Fat Joe has confessed that he does not understand a lot of the contemporary Hip Hop he hears, likening some of it to 'devil music'.",
+                "publishedAt": "2025-01-21T15:00:41Z",
+                "source": "HipHopDX",
+                "title": "Fat Joe Admits He's 'Confused' By Some Of Today's Rap Music: 'That's Hip Hop?'",
+                "url": "https://hiphopdx.com/news/fat-joe-confused-modern-hip-hop",
+                "urlToImage": "https://app.hiphopdx.com/wp-content/uploads/2025/01/fat-joe-admits-he-is-confused-by-some-modern-rap-music.jpg?w=1200"
+            },
+            {
+                "content": "Die Kollision einer Passagiermaschine und eines Militärhubschraubers erschüttert die US-Hauptstadt Washington: 67 Personen sind bei dem Unglück vermutlich ums Leben gekommen. 28 Leichen wurden inzwis… [+6728 chars]",
+                "description": "Die Kollision einer Passagiermaschine und eines Militärhubschraubers erschüttert die US-Hauptstadt Washington: 67 Personen sind bei dem Unglück vermutlich ums Leben gekommen. 28 Leichen wurden inzwischen aus dem eisigen Fluss geborgen.",
+                "publishedAt": "2025-01-30T11:00:00Z",
+                "source": "DIE WELT",
+                "title": "Flugzeugabsturz in Washington – „Wir glauben nicht, dass es Überlebende gibt“",
+                "url": "https://www.welt.de/politik/ausland/article255284708/Washington-Flugzeug-kollidiert-mit-Helikopter-Wir-glauben-nicht-dass-es-Ueberlebende-gibt.html",
+                "urlToImage": "https://img.welt.de/img/politik/ausland/mobile255289352/7617930107-ci16x9-w1200/Part-of-the-wreckage-is-seen-as-res.jpg"
+            },
+            {
+                "content": "Im Gaza-Streifen sind inmitten chaotischer Szenen weitere Geiseln freigekommen, darunter zwei Deutsch-Israelis und fünf aus Thailand. Am Morgen hatte die Hamas bereits eine 21-jährige Soldatin auf ei… [+5152 chars]",
+                "description": "Im Gaza-Streifen sind inmitten chaotischer Szenen weitere Geiseln freigekommen, darunter zwei Deutsch-Israelis und fünf aus Thailand. Am Morgen hatte die Hamas bereits eine 21-jährige Soldatin auf einer Bühne vorgeführt.",
+                "publishedAt": "2025-01-30T11:20:00Z",
+                "source": "DIE WELT",
+                "title": "Hamas übergibt deutsch-israelische Geiseln an das Rote Kreuz",
+                "url": "https://www.welt.de/politik/ausland/article255285556/Hamas-uebergibt-deutsch-israelische-Geiseln-an-das-Rote-Kreuz.html",
+                "urlToImage": "https://img.welt.de/img/politik/ausland/mobile255287660/9047931937-ci16x9-w1200/TOPSHOT-Palestinian-militant-grou.jpg"
+            },
+            {
+                "content": "LL-341070   .   ,     . ,   .     ,   ,   ,       . LL-341070         .\r\n  ,     . ,   . ,       .   , LL-341070 «   »,   .\r\n  LL-341070   ,   ,  ,    .  ,    — . ,     ,    .",
+                "description": "Американские ученые разработали препарат, способный восстановить зрение у пациентов с рассеянным склерозом и другими заболеваниями, при которых происходит повреждение нейронов. Это открытие дарит новые перспективы для лечения так называемых демиелинизирующих …",
+                "publishedAt": "2025-01-27T12:42:59Z",
+                "source": "Mail.ru",
+                "title": "В США придумали «чудо-лекарство» для возвращения зрения",
+                "url": "https://hi-tech.mail.ru/news/121557-v-ssha-pridumali-chudo-lekarstvo-dlya-vozvrasheniya-zreniya/",
+                "urlToImage": "https://resizer.mail.ru/p/520c7a97-e2b3-5ec7-a604-189dc1da593e/AQAKDAr7AQLu_OVklYkgreP-45RiZkqSGki428k9-lypIntXmBMj7prkhyJx0qKHr3r0lnrS2ES_wF2uiM0iJ3B9RW8.jpg"
+            },
+            {
+                "content": "\\[dp[i]=\\min/\\max(c[i]+d[j]+C)\r\n\\]\r\n\\(O(n^2)\\)\\(O(n)\\)\r\n\\[dp[i]=\\min/\\max(a[i]\\cdot b[j]+c[i]+d[j]+C)\r\n\\]\r\nCDQ \r\n\\(j_2\\)\\(j_1\\)\r\n\\(&lt;\\)\\(\\max\\)\\(&gt;\\)\\(\\min\\)\r\n\\[a[i]\\cdot b[j_1]+c[i]+d[j_1]+C&lt;… [+11325 chars]",
+                "description": "浅谈斜率优化 概论 列出状态转移方程，如果能化简为以下的形式： \\[dp[i]=\\min/\\max(c[i]+d[j]+C) \\]此时我们就可以利用单调队列优化从做 \\(O(n^2)\\) 到 \\(O(n)\\) 的复杂度。 现在考虑更一般的情况，如果化简为以下形式： \\[dp[i]=\\min/\\max",
+                "publishedAt": "2025-02-05T09:43:00Z",
+                "source": "Cnblogs.com",
+                "title": "浅谈斜率优化 - I_LOVE_MATH",
+                "url": "https://www.cnblogs.com/lintianchen/p/18699881",
+                "urlToImage": ""
+            },
+            {
+                "content": "AmazonAmazon.com, Inc.\r\n123 ()Amazon.co.jp2024\r\nAmazon.co.jp 2024 Amazon Amazon9Amazon 104AV28Amazon\r\n2\r\nAmazon.co.jp2024\r\n3\r\nAmazonB0CMWDNBFW\r\nhttps://www.amazon.co.jp/dp/B0CMWDNBFW\r\n16,39018,590()\r… [+239 chars]",
+                "description": "[株式会社ニッセンホールディングス]\n[画像1: https://prcdn.freetls.fastly.net/release_image/1066/554/1066-554-e2c391a471b58ac8966955161ce0b536-300x250.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&...",
+                "publishedAt": "2025-01-23T08:40:03Z",
+                "source": "Prtimes.jp",
+                "title": "ニッセンが「Amazon.co.jp マーケットプレイスアワード2024」にて、「カテゴリー賞」、「タイムセール賞」を受賞",
+                "url": "https://prtimes.jp/main/html/rd/p/000000554.000001066.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/1066/554/1066-554-e2c391a471b58ac8966955161ce0b536-300x250.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "CHAPTER NINE BEGINS NOW! I am THRILLED, PLEASED, and EXCITED to welcome you all to Johnny and the Witch Hunt, a chapter you are truly not prepared for. Its an action-packed one full of all your favor… [+791 chars]",
+                "description": "New comic!Today's News:<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\nCHAPTER NINE BEGINS NOW! I am THRILLED, PLEASED, and EXCITED to welcome you all to Johnny and the Witch Hunt, a chapter you are t…",
+                "publishedAt": "2025-01-17T09:16:45Z",
+                "source": "Paranatural.net",
+                "title": "Paranatural - Chapter 9",
+                "url": "https://www.paranatural.net/comic/chapter-9",
+                "urlToImage": ""
+            },
+            {
+                "content": "Este año Hideo Kojima lanzará Death Stranding 2 para PS5, un juego que todavía no tiene fecha de lanzamiento, aunque ya sabemos por parte de su director que el juego ha entrado en periodo de crunch. … [+2864 chars]",
+                "description": "<!--cache-->El creador de 'Metal Gear Solid' se pregunta cuántos años podrá seguir trabajando, y pone de ejemplo al director de cine Ridley Scott, que sigue activo con 87 años.<!--aa--->Este año Hideo Kojima lanzará Death Stranding 2 para PS5, un juego que to…",
+                "publishedAt": "2025-01-14T09:00:00Z",
+                "source": "Elespanol.com",
+                "title": "Hideo Kojima reflexiona sobre su edad mientras Death Stranding 2 entra en periodo de 'crunch'",
+                "url": "https://vandal.elespanol.com/noticia/1350777180/hideo-kojima-reflexiona-sobre-su-edad-mientras-death-stranding-2-entra-en-periodo-de-crunch/",
+                "urlToImage": "https://media.vandal.net/ivandal/12/63/1200x630/1/1-2025/14/2025114945486_1.jpg"
+            },
+            {
+                "content": "1\r\n 2025/01/11() 22:07:48.71ID:PnYeCNlJ0.net\r\n2SNS \r\n3 2025/01/11() 22:08:05.43ID:PnYeCNlJ0.net\r\n4 2025/01/11() 22:08:25.48ID:S0oeJOaQ0.net\r\n5 2025/01/11() 22:09:45.29ID:Q7FuxsQs0.net\r\n6 2025/01/11()… [+632 chars]",
+                "description": "1：ななし： 2025/01/11(土) 22:07:48.71ID:PnYeCNlJ0.net\n\n ゼレンスキー大統領 「北朝鮮兵士2人を捕虜に」SNS投稿 \n\n\n\n3：ななし： 2025/01/11(土) 22:08:05.43ID:PnYeCNlJ0.net\n\n 北朝鮮兵捕虜の画像  \n\n4：ななし： 2025/01/11(土) 22:08:25.48ID:S0oeJOaQ0.n...",
+                "publishedAt": "2025-01-11T22:00:20Z",
+                "source": "2chblog.jp",
+                "title": "ウクライナ、北朝鮮兵士2人を捕虜に　写真も公開",
+                "url": "https://news.2chblog.jp/archives/52051381.html",
+                "urlToImage": ""
+            },
+            {
+                "content": "https://www.nissen.co.jp/)2122025\r\n202310\r\n2\r\n6\r\nBHN0225A0002\r\nhttps://www.nissen.co.jp/item/BHN0225A0002\r\n8S,M,L,LL,3L,4L,5L,6L\r\n2\r\n7,6899,449()\r\nANW0225A0032\r\nhttps://www.nissen.co.jp/item/ANW0225A… [+184 chars]",
+                "description": "[株式会社ニッセンホールディングス]\n[画像1: https://prcdn.freetls.fastly.net/release_image/1066/553/1066-553-4f00d0fb9b8d7d518fd0a2c7cb0909c5-1000x500.png?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&amp...",
+                "publishedAt": "2025-01-22T02:00:00Z",
+                "source": "Prtimes.jp",
+                "title": "話題の多ポケットアウターに春の新作が登場。大容量の収納力は変わらず、背中にタブレット入ります！ニッセンの多ポケットアウターで、春も手ぶらでお出かけしよう。",
+                "url": "https://prtimes.jp/main/html/rd/p/000000553.000001066.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/1066/553/1066-553-4f00d0fb9b8d7d518fd0a2c7cb0909c5-1000x500.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "Heritage Audio have announced the launch of a new headphone amp that they say becomes the first in the world to offer impedance matching. In addition to accepting balanced and unbalanced line-level i… [+1858 chars]",
+                "description": "The OHM Amp features a built-in Bluetooth receiver, and offers a choice of six different impedances to ensure the best possible performance with a wide range of headphone models.",
+                "publishedAt": "2025-01-20T12:03:00Z",
+                "source": "Soundonsound.com",
+                "title": "Heritage Audio launch the OHM Amp",
+                "url": "https://www.soundonsound.com/news/heritage-audio-launch-ohm-amp",
+                "urlToImage": ""
+            },
+            {
+                "content": "Books on the rise and fall of empires, the life of Elon Musk, and a fictional next world war offer ... [+] powerful lessons for leaders.\r\nGETTY IMAGES\r\nGeopolitics in 2025 feels like a Dickensian par… [+6196 chars]",
+                "description": "Books on the rise and fall of empires, the life of Elon Musk, and a fictional next world war offer powerful lessons for leaders.",
+                "publishedAt": "2025-01-27T21:48:50Z",
+                "source": "Forbes",
+                "title": "CEO Reading List: 3 Books To Help Better Understand Geopolitics Today",
+                "url": "https://www.forbes.com/sites/davidmichels/2025/01/27/ceo-reading-list-3-books-to-help-better-understand-geopolitics-today/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6797fd455b689187e29b1259/0x0.jpg?format=jpg&crop=1439,810,x0,y0,safe&height=900&width=1600&fit=bounds"
+            },
+            {
+                "content": "ASKULLOHACO122\r\n20152025\r\nLOHACO\r\n<ol><li></li><li>2330ml4650ml1050ml\r\n</li><li></li></ol>\r\ne \r\n20041\r\nASKUL https://www.askul.co.jp/f/feature/\r\n<table><tr><th>2025122()\r\n</th><td>S\r\nM - L\r\nL - LLM\r\n… [+358 chars]",
+                "description": "[アスクル株式会社]\n　アスクル株式会社（本社：東京都江東区、代表取締役社長：吉岡晃、以下「アスクル」）は、事業所向け通販「ASKUL」と個人向け通販「LOHACO」で取り扱う大人用おむつシリーズの大幅リニューアルを1月22日（水）...",
+                "publishedAt": "2025-01-20T05:40:02Z",
+                "source": "Prtimes.jp",
+                "title": "エイジレスでジェンダーレス “わかりやすくて恥ずかしくない” アスクル、大人用おむつシリーズを22日より大幅リニューアル",
+                "url": "https://prtimes.jp/main/html/rd/p/000000430.000021550.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/21550/430/21550-430-03d50fe99fde3942ecbf4e17d6f7a64d-3900x2326.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "Quality WearBAMBI WATER BAMBI WATER V   V 2202512824\r\nBAMBI WATER 2424\r\nV   V 2 VV \r\nBAMBI WATER V\r\n 6,380\r\n 2025128\r\n 2 \r\n 4SMLLL\r\nS 7683cm6065cm\r\nM 7987cm 6575cm\r\nL 8390cm 6575cm\r\nLL 8695cm 7580cm\r… [+370 chars]",
+                "description": "[株式会社ラングレー]\n“Quality Wear”ブランド「BAMBI WATER（バンビウォーター）」を展開する株式会社ラングレー（本社：東京都渋谷区、代表取締役：栗原 淳徳）は、「BAMBI WATER スタイルナイトブラ シームレス」シリーズに深めのV...",
+                "publishedAt": "2025-01-28T07:40:03Z",
+                "source": "Prtimes.jp",
+                "title": "人気シリーズ「BAMBI WATER スタイルナイトブラ シームレス」に「Vネック」と「バンドゥ」の2タイプが新登場！ファッションやシーンに合わせて、外出時もおうちでも1日中育乳設計",
+                "url": "https://prtimes.jp/main/html/rd/p/000000057.000123525.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/123525/57/123525-57-15b8a09e1f83a1dd382d8a57527a4851-750x750.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "El español es una lengua en constante evolución. La Real Academia Española (RAE) es consciente de la transformación de un idioma que bebe, en determinada medida, de los cambios sociales y culturales … [+1315 chars]",
+                "description": "<![CDATA[<p>El español es una lengua en constante evolución. La Real Academia Española (RAE) es consciente de la transformación de un idioma que bebe, en determinada medida, de los cambios sociales y culturales que se viven entre sus hablantes. Prueba de ello…",
+                "publishedAt": "2025-01-18T09:46:45Z",
+                "source": "Huffingtonpost.es",
+                "title": "Las dos letras eliminadas sin piedad del abecedario por la RAE y que los jóvenes nunca conocieron",
+                "url": "https://www.huffingtonpost.es/sociedad/las-dos-letras-eliminadas-piedad-abecedario-rae-jovenes-nunca-conocieronbr.html",
+                "urlToImage": "https://img.huffingtonpost.es/files/og_thumbnail/uploads/2025/01/18/fachada-de-la-real-academia-espanola-rae-1200.jpeg"
+            },
+            {
+                "content": "Minnesota is off to its best start in 17 games and earned its first ranking since 2019 on Monday, entering The Associated Press women's college basketba\r\nll\r\n poll at No. 24.\r\nThe Golden Gophers have… [+2842 chars]",
+                "description": "UCLA, South Carolina, Notre Dame kept the top three spots in the women's AP Top 25, while Minnesota entered for the first time since 2019.",
+                "publishedAt": "2025-01-13T18:35:18Z",
+                "source": "Fox Sports",
+                "title": "AP Top 25: UCLA, South Carolina, Notre Dame remain on top in women's poll",
+                "url": "https://www.foxsports.com/stories/womens-college-basketball/ap-top-25-ucla-south-carolina-notre-dame-remain-top-womens-poll",
+                "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2025/01/1408/814/notre-dame2.jpg?ve=1&tl=1"
+            },
+            {
+                "content": "H. Tang,\r\n Nanoscale, 2025, Accepted Manuscript\r\n, DOI: 10.1039/D4NR05075D\r\nTo request permission to reproduce material from this article, please go to the \r\n Copyright Clearance Center request page.… [+567 chars]",
+                "description": "Nanoscale, 2025, Accepted ManuscriptDOI: 10.1039/D4NR05075D, PaperHuayuan TangThe aberrant aggregation of the human islet amyloid polypeptide (hIAPP) is a hallmark of type II diabetes. LL37, the only cathelicidin host defense peptide in humans, plays essentia…",
+                "publishedAt": "2025-01-22T00:00:00Z",
+                "source": "Royal Society of Chemistry",
+                "title": "Unveiling the inhibition mechanism of host-defense peptide cathelicidin LL-37 on the amyloid aggregation of human islet amyloid polypeptide",
+                "url": "https://pubs.rsc.org/en/content/articlelanding/2025/nr/d4nr05075d",
+                "urlToImage": ""
+            },
+            {
+                "content": "In writing the drunken theorem post, I realized I never wrote a post on Lautemann's amazing proof that BPP is contained in \\(\\Sigma^p_2\\), the second level of the polynomial-time hierarchy.\r\nClemens … [+2203 chars]",
+                "description": "In writing the drunken theorem post , I realized I never wrote a post on Lautemann's amazing proof  that BPP is contained in \\(\\Sigma^p_2\\),...",
+                "publishedAt": "2025-01-29T14:15:00Z",
+                "source": "Computationalcomplexity.org",
+                "title": "Lautemann's Beautiful Proof",
+                "url": "https://blog.computationalcomplexity.org/2025/01/lautemanns-beautiful-proof.html",
+                "urlToImage": ""
+            },
+            {
+                "content": "Apple is reportedly making good headway on its quest to bring controllers to Vision Pro, as Bloomberg’s Mark Gurman maintains a collaboration with Sony to bring support for PSVR 2’s controllers to Ap… [+2116 chars]",
+                "description": "Apple is reportedly making good headway on its quest to bring controllers to Vision Pro, as Bloomberg’s Mark Gurman maintains a collaboration with Sony to bring support for PSVR 2’s controllers to Apple’s headset is still on track. Gurman noted late last year…",
+                "publishedAt": "2025-02-03T12:39:27Z",
+                "source": "Road to VR",
+                "title": "Apple Reportedly on Track to Bring PSVR 2 Controller Support to Vision Pro",
+                "url": "https://www.roadtovr.com/apple-brings-psvr-2-controllers-vision-pro-report/",
+                "urlToImage": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2025/02/vision-pro-psvr-2.jpg"
+            },
+            {
+                "content": "Introduction\r\nHello. I'm Paru, a 24-year-old graduate and a first-year infrastructure engineer in the System Solutions Department.Before I know it, the new year is over, and it's been almost a year s… [+10568 chars]",
+                "description": "Hello. I&#39;m Paru, a 24-year-old graduate and a first-year infrastructure engineer in the System Solutions Department. This time, I was asked to delete files on a customer&#39;s server during actual work, but there were so many files that it would be ineffi…",
+                "publishedAt": "2025-01-23T23:56:23Z",
+                "source": "Beyondjapan.com",
+                "title": "【Linux】find コマンドを使ってサーバ内のファイルを一括削除したい！ | 株式会社ビヨンド",
+                "url": "https://beyondjapan.com/en/blog/2025/01/find_command/",
+                "urlToImage": "https://beyondjapan.com/cms/wp-content/uploads/2024/12/morning-playlist.png"
+            },
+            {
+                "content": "Gold demand is surging to new records, driven by accelerating purchases from central banks as well as investors seeking a safe haven amid the threat of escalating tariffs.\r\nOn Wednesday gold hit reco… [+2615 chars]",
+                "description": "Gold demand surged to record levels last year as central banks accelerated purchases.",
+                "publishedAt": "2025-02-05T20:59:45Z",
+                "source": "Yahoo Entertainment",
+                "title": "Gold demand hits record levels as central banks buy at 'eye-watering' pace",
+                "url": "https://finance.yahoo.com/news/gold-demand-hits-record-levels-as-central-banks-buy-at-eye-watering-pace-205945413.html",
+                "urlToImage": "https://s.yimg.com/ny/api/res/1.2/vPq2XS8hJrC_Y8Ssllmwcg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-04/b7b35970-d5d8-11ed-aeef-bf7029bc739e"
+            },
+            {
+                "content": "(via weibo)\r\nBluetooth 5.4AAC/SBC/aptX/aptX LL/aptX Adaptive/aptX Lossless/aptX HD/LDAC8LDAC2280mW32THD+N1%650mW32THD+N1%20Hz80kHz3dBS/N126dBUSBATHD+N0.00035%USB\r\n3.5mm/4.4mm/USB-C/USB-C1.3/40x240/IP… [+652 chars]",
+                "description": "2024年12月に発売されたFIIOのレシーバー「BTR17」。「BTR7」の後継機となる新フラッグシップモデルのBluetoothレシーバー。「KA17」でも使われていたTHX AAA 78+アンプ搭載、QCC5181のBluetoothチップ搭載でLDAC/aptX Lossless対応、高出力を実現するデスクトップモード、などハイエンドなスペックになっていますが、ちょっとチェックしてみます。【公式サイト】BTR17 – FIIO Japan...",
+                "publishedAt": "2025-01-13T15:00:20Z",
+                "source": "Watchmono.com",
+                "title": "『FIIO BTR17』レビューチェック ～音質も機能も進化したフラッグシップモデルのBluetoothレシーバー/アンプ",
+                "url": "https://watchmono.com/e/fiio-btr17-review-check",
+                "urlToImage": "https://blog-imgs-158.fc2.com/w/a/t/watchmonoblog/FIIO_BTR17_review_check_01.jpg"
+            },
+            {
+                "content": "Vor der Abstimmung über einen Gesetzentwurf, der auch dank AfD-Stimmen den Bundestag passieren könnte, macht die FDP-Fraktion einen Vorschlag: Das Gesetz soll zurück in den Innenausschuss verwiesen w… [+8516 chars]",
+                "description": "Vor der Abstimmung über einen Gesetzentwurf, der auch dank AfD-Stimmen den Bundestag passieren könnte, stimmt CDU-Chef Merz seine Abgeordneten auf harte Auseinandersetzungen ein. Die Union rechnet mit einem knappen Ergebnis. Mehr im Liveticker.",
+                "publishedAt": "2025-01-31T08:38:00Z",
+                "source": "DIE WELT",
+                "title": "„Wir müssen diesen Sturm jetzt aushalten“, sagt Merz – knappes Ergebnis erwartet",
+                "url": "https://www.welt.de/politik/deutschland/article255295952/Bundestag-FDP-Fraktion-will-Abstimmung-ueber-Merz-Migrationsgesetz-verschieben-Live-Ticker.html",
+                "urlToImage": "https://img.welt.de/img/politik/deutschland/mobile255296994/7227934397-ci16x9-w1200/Session-of-the-lower-house-of-parliament-Bundestag.jpg"
+            }
+        ],
+        "timestamp": 1739173590
+    },
+    "1561": {
+        "articles": [
+            {
+                "content": "Every so often, claims of UFO sightings go viral and even spur serious research\r\n. But humans have been gazing at the sky for millennia, and reports of such sightings go way back. So what was the fir… [+5070 chars]",
+                "description": "Are UFO sightings a 20th-century phenomena, or did people report seeing them earlier in history?",
+                "publishedAt": "2025-01-16T10:00:00Z",
+                "source": "Live Science",
+                "title": "Did people report seeing UFOs before the 20th century?",
+                "url": "https://www.livescience.com/space/extraterrestrial-life/did-people-report-seeing-ufos-before-the-20th-century",
+                "urlToImage": "https://cdn.mos.cms.futurecdn.net/h6zZMcmrZVS65SskBp26wC-1200-80.jpg"
+            },
+            {
+                "content": "TIMEX5202527\r\nURBAN POPQ TIMEX LCAMK136\r\nCOLD SNAP PICKAXE1\r\n11010\r\nhttps://www.timexwatch.jp/\r\nTIMEX X FORTNITE: URBAN POP\r\nFORTNITE\r\nTIMEX X FORTNITE: Q TIMEX LCA\r\nLCA\r\nTIMEX X FORTNITE: MK1\r\nMK1\r\n… [+185 chars]",
+                "description": "[株式会社ウエニ貿易]\n[画像1: https://prcdn.freetls.fastly.net/release_image/25284/1561/25284-1561-a06f6b7c8dfa689513e87b5e41b2e3f3-760x860.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&...",
+                "publishedAt": "2025-01-10T01:00:00Z",
+                "source": "Prtimes.jp",
+                "title": "プレイヤー必見！TIMEX＜タイメックス＞と FORTNITE＜フォートナイト＞のコラボレーションウォッチが登場！",
+                "url": "https://prtimes.jp/main/html/rd/p/000001561.000025284.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/25284/1561/25284-1561-a06f6b7c8dfa689513e87b5e41b2e3f3-760x860.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": "(UFO) . 20 UFO ?\r\n  16() 20 UFO   . \r\n  UFO . \r\n2015 UFO . .\r\nUFO \r\nUFO (Magonia Exchange) (Chris Aubeck) \" UFO \" . , UFO .\r\n 1 UFO . (=Purchase, 1886; The Met ; )\r\n(Greg Eghigian) \" .\r\n, UFO . () .\r… [+160 chars]",
+                "description": "[지디넷코리아]종종 미확인비행물체(UFO)에 대한 목격담이 전해지며 관심이 집중되곤 한다. 20세기 전에도 UFO를 봤다는 보고가 있었을까?과학전문매체 라이브사이언스는 16일(현지시간) 전문가들과의 인터뷰를 통해 20세기 전에 UFO를 목격했다는 사례를 소개했다. 특히 이 매체는 근대 이전 사례를 살펴보면 UFO가 언제 가장 먼저 목격됐는지는 명확하지 않다고 전했다. 국제 UFO 역사보관 프로젝트 ‘마지니아 익스체인지’(Magonia Exchange) 이사이자…",
+                "publishedAt": "2025-01-17T06:59:32Z",
+                "source": "Zdnet.co.kr",
+                "title": "신비의 물체 UFO, 언제 최초로 목격됐을까",
+                "url": "https://zdnet.co.kr/view/?no=20250117132129",
+                "urlToImage": "https://image.zdnet.co.kr/2021/06/21/842bca8aa6b58db8cbc8a94c805017f3.gif"
+            },
+            {
+                "content": "En cyklist har blivit påkörd av en personbil i Tomelilla.\r\nOlyckan inträffade strax före klockan 18 på länsväg 1561 mellan Everöd och Tomelilla.\r\n Vi har skickat dit en patrull och en ambulans är ock… [+116 chars]",
+                "description": "Olycka i Tomelilla",
+                "publishedAt": "2025-02-01T17:19:16Z",
+                "source": "Expressen.se",
+                "title": "Cyklist påkörd av bil i Tomelilla",
+                "url": "https://www.expressen.se/nyheter/sverige/cyklist-pakord-av-bil-i-tomelilla/",
+                "urlToImage": "https://www.expressen.se/images/logotype-for-sharing.png"
+            },
+            {
+                "content": "MC(GENERATIONS)\r\n××7002\r\n×\r\n1561\r\nCBC\r\nCBC×\r\nGP\r\n202512514:0015:24CBCTBS28\r\n(GENERATIONS)\r\n=LOVE",
+                "description": "[株式会社CBCテレビ]\n[画像1: https://prcdn.freetls.fastly.net/release_image/15357/1289/15357-1289-cb29f05aa71c4fac43209502fbbcbd55-1999x1333.jpg?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bound...",
+                "publishedAt": "2025-01-10T08:40:03Z",
+                "source": "Prtimes.jp",
+                "title": "過剰なこだわりに面白さと衝撃、そして共感！トゥーマッチな人やスポット、“多すぎで仰天するもの”ナンバー１を決める『太田石井の多すぎニッポンGP』TBS系全国28局ネットで1月25日（土）放送決定！",
+                "url": "https://prtimes.jp/main/html/rd/p/000001289.000015357.html",
+                "urlToImage": "https://prcdn.freetls.fastly.net/release_image/15357/1289/15357-1289-cb29f05aa71c4fac43209502fbbcbd55-1999x1333.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+            },
+            {
+                "content": ". () , .\r\n . () () () () . .\r\n1= \r\n (). 1 · 1 .| \r\n. (1545~1598) &lt;&gt; (1540~1597) 80~120 .\r\n .(1593 5 14)\r\n .(1593 611)\r\n .(1597 5 8)\r\n .(1594 119)\r\n&lt;&gt; , , .\r\n. &lt;&gt; .\r\n(1542~1607) &lt;… [+2281 chars]",
+                "description": "“이순신과 원균의 차이가 있어요. 이순신은 일기(난중일기)를 남겼고, 원균은 그렇지 않았다는 겁니다.”\n\n노무현 전 대통령이 기록의 중요성을 강조하며 측근들에게 남긴 말의 요지란다. 물론 승장(이순신)과 패장(원균)이라는 점에서 찬사(이순신)와 비판(원균)을 받는 것은 어쩔 수 없다. 그러나 ‘구국의 영웅’으로 추앙받은 이순신에 비해 원균이 ‘만고의 역적’···",
+                "publishedAt": "2025-01-13T20:00:00Z",
+                "source": "Khan.co.kr",
+                "title": "[이기환의 흔적의 역사] ‘일기’ 없어 악인된 원균?…실록 ‘어전회의 회의록’ 등에 기록된 진면목",
+                "url": "https://www.khan.co.kr/article/202501140500001",
+                "urlToImage": "https://img.khan.co.kr/news/2025/01/14/news-p.v1.20250111.610b460615da4729a49a1c598b01f59b_P1.jpg"
+            },
+            {
+                "content": ". 14 . INTERFAX.RU - \"\" , .\r\n \" \"\" , , , - , , , , , , , , -, , , \", .\r\n , -, , , , , , , , , , , , , , , , , -, , , , , , , .\r\n 460 , , , 22 , 18 , , .\r\n\" 51 900 , 303 , 229 , 168 , 1561 , 1474 , 36… [+42 chars]",
+                "description": "Войска группировки \"Север\" в Курской области за сутки отразили три контратаки подразделений вооруженных сил Украины, сообщило министерство обороны РФ во вторник.",
+                "publishedAt": "2025-01-14T12:58:00Z",
+                "source": "Interfax.ru",
+                "title": "Минобороны РФ сообщило об отражении за сутки трех контратак ВСУ на курском направлении",
+                "url": "https://www.interfax.ru/russia/1002847",
+                "urlToImage": "https://www.interfax.ru/aspimg/1002847.png"
+            },
+            {
+                "content": "(SUV) 2025 ID.4 SUV ID.5 14 .\r\n ID.5 . 2025 ID.4 .\r\n2025 ID.4 ID.4 Pro Lite 5299, ID.4 Pro 5999. ID.5 ID.5 Pro , 699.\r\n SUV ID.5\r\nID.5 MEB ID.4 15mm 5mm . 4600mm, 1850mm, 1620mm 2765mm.\r\nID.5 . (Cd) … [+209 chars]",
+                "description": "[지디넷코리아]폭스바겐코리아가 베스트셀링 순수 전기 스포츠유틸리티차(SUV) 2025년형 ID.4와 첫 쿠페형 전기SUV ID.5의 출시를 앞두고 사전계약을 개시한다고 14일 밝혔다.국내 첫 선을 보이는 ID.5는 폭스바겐코리아가 한국 시장에 소개하는 두 번째 순수 전기차이다. 2025년형 ID.4는 더욱 강력하고 효율적인 드라이브 시스템으로 주행 성능을 대폭 끌어올린 것이 특징이다.2025년형 ID.4의 공식 판매 가격은 ID.4 Pro Lite 5천299만…",
+                "publishedAt": "2025-01-14T03:51:29Z",
+                "source": "Zdnet.co.kr",
+                "title": "폭스바겐, 첫 전기 쿠페형 SUV 'ID.5' 사전계약…6099만원",
+                "url": "https://zdnet.co.kr/view/?no=20250114125129",
+                "urlToImage": "https://image.zdnet.co.kr/2025/01/14/b78470f774d8ed245212e10c7831ee9e.jpg"
+            },
+            {
+                "content": "<ol><li>: -14 </li><li> : </li><li> - </li><li></li><li> : -8 </li></ol>-14 \r\n XIII \r\n , . , , , -, . - -.\r\n , - ! , . . - 250 700 . . , , 700 1800 .\r\n XVI ( , 1)\r\n- , , , . , . , , . - 800 , - 300-4… [+1704 chars]",
+                "description": "Что посмотреть в Выборге за 1-2 дня самостоятельно: описание и фото достопримечательностей, советы туристам. Как добраться. Где поесть.",
+                "publishedAt": "2025-01-13T07:25:38Z",
+                "source": "Rg.ru",
+                "title": "Что посмотреть в Выборге за один-два дня",
+                "url": "https://rg.ru/2025/01/13/reg-szfo/chto-posmotret-v-vyborge-za-odin-dva-dnia.html",
+                "urlToImage": "https://cdnstatic.rg.ru/uploads/images/2025/01/10/04_d93.jpg"
+            },
+            {
+                "content": "- « , , 15 , , ...» - . , 27/7/1948- « , , , ...» - . , 20/3/1913\r\n- « , 20 , ...» - . 1/11/1962 20. ;\r\n, , . , ... . , ; , ;\r\n: «». « » «» , , . , , , . .\r\n, . . , , , . ., . . . . , , (1561): , , ,… [+1314 chars]",
+                "description": "Το τραγικό φαινόμενο της «λυτρωτικής αυτοκτονίας» «ζυμώνεται» από τον προηγούμενο, ακόμη, αιώνα. Η υπηρέτρια, η δούλα ή, ακόμα πιο υποτιμητικά, το δουλικό δεν ανήκει ακριβώς στην κατηγορία των ανθρώπων. Βρίσκεται μεταξύ ζώου και ανθρώπου | Υπηρέτριες | Δούλες…",
+                "publishedAt": "2025-02-08T08:52:00Z",
+                "source": "Protothema.gr",
+                "title": "Δούλες, υπηρέτριες, ψυχοκόρες - Σκιές στα υπόγεια",
+                "url": "https://www.protothema.gr/stories/article/1598675/doules-upiretries-psuhokores-skies-sta-upogeia/",
+                "urlToImage": "https://www.protothema.gr/images/640x360share/jpg/files/2025-02-08/doules_arthrou.jpg"
+            },
+            {
+                "content": "Las plazas mayores han sido a lo largo de la historia elementos fundamentales en la configuración de las ciudades españolas. Estos espacios no solo sirven como centros administrativos y comerciales, … [+2906 chars]",
+                "description": "<![CDATA[<p>Las plazas mayores han sido a lo largo de la historia elementos fundamentales en la configuración de las ciudades españolas. Estos espacios no solo sirven como centros administrativos y comerciales, sino también como puntos de encuentro social y c…",
+                "publishedAt": "2025-02-02T08:01:44Z",
+                "source": "Huffingtonpost.es",
+                "title": "Esta es la región que esconde la plaza mayor más antigua de España",
+                "url": "https://www.huffingtonpost.es/sociedad/esta-region-esconde-plaza-mayor-mas-antigua-espana.html",
+                "urlToImage": "https://img.huffingtonpost.es/files/og_thumbnail/uploads/2025/02/01/plaza-mayor-de-valladolid-8281.jpeg"
+            },
+            {
+                "content": "Publicado por\r\nChristian Pérez\r\nRedactor especializado en divulgación científica e histórica\r\nCreado:\r\n31.01.2025 | 14:16\r\nActualizado:\r\n31.01.2025 | 14:17\r\nLa historia de la ciencia está repleta de … [+20328 chars]",
+                "description": "No siempre la ciencia avanza con planificación y método: muchos de los mayores descubrimientos han sido fruto del azar y de la capacidad de los científicos para aprovechar lo inesperado.",
+                "publishedAt": "2025-01-31T14:16:57Z",
+                "source": "Muyinteresante.com",
+                "title": "De la orina al fósforo: cuando un alquimista tropezó con un elemento químico sin saberlo",
+                "url": "http://www.muyinteresante.com/historia/orina-fosforo-descubrimiento-alquimista.html",
+                "urlToImage": "https://www.muyinteresante.com/wp-content/uploads/sites/5/2025/01/hallazgo-fosforo-blanco-alquimia-og.jpg"
+            },
+            {
+                "content": "Entinen ministeri liitti tapauksen humoristisesti Itämeren kaapelirikkoihin.Helsingin kantakaupungissa Mechelininkadun ja Pohjoisen Rautatienkadun risteyksessä tapahtunut iso putkirikko sai veteraani… [+1679 chars]",
+                "description": "Entinen ministeri liitti tapauksen humoristisesti Itämeren kaapelirikkoihin.",
+                "publishedAt": "2025-02-01T15:00:00Z",
+                "source": "Www.is.fi",
+                "title": "Iso putkirikko Helsingissä sai Erkki Tuomiojan huumorin kukkimaan",
+                "url": "https://www.is.fi/kotimaa/art-2000011005149.html",
+                "urlToImage": "https://images.sanoma-sndp.fi/c527a47f90cd53b639ace3fb5fb9cd7d/some/is-default.jpg"
+            },
+            {
+                "content": "A népszámlálási adatok szerint 2022-ben már 4,7 millió foglalkoztatott volt az országban, akiknek dönt többsége, 96 százaléka aktív korú volt (1561 éves) és közel 200 ezer munkavállaló a 65 éves és a… [+6244 chars]",
+                "description": "Új korszak tanúi vagyunk, teljesen átalakul a munka világa Magyarországon - Ez már térképeken is látszik.",
+                "publishedAt": "2025-01-13T15:39:00Z",
+                "source": "Index.hu",
+                "title": "Új korszak tanúi vagyunk, teljesen átalakul a munka világa Magyarországon",
+                "url": "https://index.hu/gazdasag/2025/01/13/ksh-munkaeropiac-foglalkoztatas-oeconomus/",
+                "urlToImage": "https://kep.cdn.index.hu/1/0/5506/55065/550651/55065125_4069697_2b1d0154d87648f11656dce00987545e_wm.jpg"
+            },
+            {
+                "content": "1 godz. temu | Humanistyka\r\nW Eisleben, miecie urodzin i mierci Marcina Lutra, w kociele w. Andrzeja, w którym Luter wygosi swoje ostatnie kazania, znaleziono skarb skadajcy si z 816 monet. Zostay on… [+3343 chars]",
+                "description": "W Eisleben, mieście urodzin i śmierci Marcina Lutra, w kościele św. Andrzeja, w którym Luter wygłosił swoje ostatnie kazania, znaleziono skarb składający się z 816 monet. Zostały one ukryte około 1640 roku w rzeźbie, która zdobi wykonany z 1567 roku nagrobek …",
+                "publishedAt": "2025-01-14T10:16:13Z",
+                "source": "Kopalniawiedzy.pl",
+                "title": "Skarb w nodze hrabiego. Niezwykłe odkrycie w kościele, gdzie Luter wygłosił ostatnie kazania",
+                "url": "https://kopalniawiedzy.pl/Eisleben-skarb-monety-Marcin-Luter,37608",
+                "urlToImage": "https://kopalniawiedzy.pl/media/lib/599/eismonety(2)-13e38a71bad1611b2a8a379a4c01dfd6.jpg"
+            },
+            {
+                "content": "«  460 , , , 22 , 18 ,  », —   .\r\n      51900 , 303 , 229 , 168 , 1561 , 1474 , 364 , 44 ,   13 HIMARS   MLRS , 16 , - , 93 , 14 , , 30   ,   15 , -77,   -  - .",
+                "description": "МОСКВА, 14 янв — РИА Новости. Подразделения российской армии в курском пограничье уничтожили за сутки более 460 боевиков ВСУ, три танка, два бронетранспортера, 22 боевые бронированные машины, 18 автомобилей, шесть артиллерийских орудий и миномет, сообщило во …",
+                "publishedAt": "2025-01-14T12:56:18Z",
+                "source": "Mail.ru",
+                "title": "Минобороны рассказало о потерях ВСУ в Курской области",
+                "url": "https://news.mail.ru/svo/64435503/",
+                "urlToImage": "https://resizer.mail.ru/p/ac27ae72-30f7-5825-a4cd-d4753533e1ad/op:15/logo:bottom:news.png/AQAGU7nznATH7zg5ZFrLSXiMZvuLXkhJbhje6rJp-bKyiEZXCNwgiafSSPWIpBWZMqURMQ1ipSwPEzpvoEGgMxoBzDc.jpg"
+            },
+            {
+                "content": ". \r\n4 . 1 , .\r\n12 (aT) 4 2025 1 , 4 86.2 3(106.0) 19.8 . 1 92.4 2 93.6, 3 106.0 4 . 16∼31 1561 , 100 100 .\r\n ( ) 61.2% . 22.9%, 8.2% .\r\n , , . (90.2), (90.1), (87.1), (86.0), (94.7), (89.6) 100 . 129… [+211 chars]",
+                "description": "서울 한 마트에서 시민들이 장을 보고 있다. 한수빈 기자\n\n내수 경기가 얼어붙으면서 지난해 4분기 식품업계 체감경기가 크게 나빠진 것으로 나타났다. 올해 1분기 식품산업 경기도 기상이변에 따른 작황 부진과 원재료 가격 상승, 고환율 등의 영향으로 전 분기보다 악화할 것이란 전망이 우세하다.\n\n12일 한국농수산식품유통공사(aT)의 ‘식품산업 경기동향조사 4분···",
+                "publishedAt": "2025-01-12T05:59:00Z",
+                "source": "Khan.co.kr",
+                "title": "식품업계 체감경기 ‘최악’…내수 부진·고환율·원재료값 상승에 올해 1분기 전망도 ‘암울’",
+                "url": "https://www.khan.co.kr/article/202501121459001",
+                "urlToImage": "https://img.khan.co.kr/news/2025/01/12/news-p.v1.20250112.2ae3f3b36ef44af6886b9e0b1f14fa55_P1.jpeg"
+            },
+            {
+                "content": "12 . 2003 . \" /&gt;\r\n12 . 2003 . \r\n4 86.23 19.8P \r\n 6.6% 2.5% 1 \r\n 4 . 1 , .\r\n12 (aT) 4 2025 1 , 4 86.2 3(106.0) 19.8 .\r\n 1 92.4 2 93.6, 3 106.0 4 .\r\n 16~31 1561 , 100 100 .\r\n ( ) 61.2% . 22.9%, 8.2%… [+276 chars]",
+                "description": "날씨만큼 차가운 소비 심리 12일 서울 시내 한 노상의 판매대에서 상인이 물품을 정리하고 있다. 지난해 소매판매액은 ‘신용카드 대란’ 사태로 소비가 얼어붙은 2003년 이후 가장 큰 폭으로 줄었다. 연합뉴스\n\n작년 4분기 현황지수 86.2\n3분기 대비 19.8P ‘급락’\n\n농축산물 물가 6.6% 상승\n음식료품 소비 2.5% 감소\n올 1분기 전망···",
+                "publishedAt": "2025-01-12T11:18:01Z",
+                "source": "Khan.co.kr",
+                "title": "원재료값 확 뛰는데 지갑은 꽉 닫혔다…울상 짓는 식품업계",
+                "url": "https://www.khan.co.kr/article/202501122018015",
+                "urlToImage": "https://img.khan.co.kr/news/2025/01/12/l_2025011301000336400031642.jpg"
+            },
+            {
+                "content": "En el exclusivo vecindario de River Oaks, en Houston, una mansión que mezcla lujo y misterioestá buscando nuevo dueño. Construida en la década de 1930, esta residencia destaca por su arquitectura clá… [+2955 chars]",
+                "description": "Descubre la icónica mansión de Houston, ubicada en River Oaks y a la venta por $5.2 millones. Con su lujosa arquitectura de la década de 1930 y su misteriosa historia relacionada con \"Blood and Money\", esta residencia combina elegancia y un pasado infame que …",
+                "publishedAt": "2025-01-22T21:33:00Z",
+                "source": "La Nacion",
+                "title": "En Houston: así es por dentro la icónica mansión de “Blood and Money” que salió a la venta por US$5,2 millones",
+                "url": "https://www.lanacion.com.ar/estados-unidos/texas/en-houston-asi-es-por-dentro-la-iconica-mansion-de-blood-and-money-que-salio-a-la-venta-por-us52-nid22012025/",
+                "urlToImage": "https://resizer.glanacion.com/resizer/v2/la-imponente-fachada-de-la-iconica-mansion-de-ZQGVGLCOXBFNVMHRUQQEGD52MM.jpg?auth=d24d819c66d0798e00caf3873076e3d162a52e0437af2d9f7a9c6e2cdbca718d&width=1200&quality=70&smart=false&height=800"
+            },
+            {
+                "content": "El Obispado de Córdoba acaba de confirmar a la comunidad y parroquia Trinitaria de Córdoba la aprobación del Jubileo que conmemorará durante este año 2025 el 50 aniversario de la canonización del ref… [+2100 chars]",
+                "description": "El Obispado de Córdoba acaba de confirmar a la comunidad y parroquia Trinitaria de Córdoba la aprobación del Jubileo que conmemorará durante este año 2025 el 50 aniversario de la canonización del reformador de la orden, San Juan Bautista de la Concepción . La…",
+                "publishedAt": "2025-01-10T05:47:25Z",
+                "source": "Www.abc.es",
+                "title": "Un Jubileo festejará en Córdoba los 50 años de la canonización de San Juan Bautista de la Concepción",
+                "url": "https://www.abc.es/espana/andalucia/cordoba/semana-santa/jubileo-festejara-cordoba-anos-canonizacion-san-juan-20250110064725-nts.html",
+                "urlToImage": "https://s3.abcstatics.com/abc/www/multimedia/espana/2025/01/10/jubileo-trinitarios-reformador-U34111461034LXc-1024x512@diario_abc.jpg"
+            },
+            {
+                "content": "https://sarabic.ae/20250114/-------------1096783410.html\r\nhttps://cdn.img.sarabic.ae/img/07e8/0b/07/1094572174_0:39:3072:1767_1920x0_80_0_0_b6b3b9e516e122828c0dda7bf969c277.jpg.webp\r\n \"\" . - . 51900 … [+460 chars]",
+                "description": "أفادت وزارة الدفاع الروسية، اليوم الثلاثاء، أن الجيش الروسي استهدف عددا من الألوية التابعة للقوات الأوكرانية في مقاطعة كورسك، ودمر عددا من الآليات العسكرية.",
+                "publishedAt": "2025-01-14T13:34:07Z",
+                "source": "Sarabic.ae",
+                "title": "الجيش الروسي يدمر آليات عسكرية ويستهدف عددا من الألوية الأوكرانية في مقاطعة كورسك",
+                "url": "https://sarabic.ae/20250114/%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%B1%D9%88%D8%B3%D9%8A-%D9%8A%D8%AF%D9%85%D8%B1-%D8%A2%D9%84%D9%8A%D8%A7%D8%AA-%D8%B9%D8%B3%D9%83%D8%B1%D9%8A%D8%A9-%D9%88%D9%8A%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D8%B9%D8%AF%D8%AF%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D9%84%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D9%82%D8%A7%D8%B7%D8%B9%D8%A9-%D9%83%D9%88%D8%B1%D8%B3%D9%83-1096783410.html",
+                "urlToImage": "https://cdn.img.sarabic.ae/img/07e8/0b/07/1094572174_0:39:3072:1767_2072x0_60_0_0_d11b57e013cd12886b578cf39a6f4425.jpg.webp"
+            },
+            {
+                "content": "In ganz Deutschland haben am Wochenende wieder hunderttausende Menschen gegen Rechtsextremismus und ein Erstarken der AfD protestiert. 42 Prozent der Deutschen fordern ein Verbot der extrem rechten P… [+2372325 chars]",
+                "description": "Kommen im Gutachten sehr häufig vor: AfD-Bundeschefin Alice Weidel und AfD-Landeschef Björn Höcke. Bilder: FreeImages.com/MeHere, IMAGO/Revierfoto, IMAGO/Funke Foto Services. Montage: netzpolitik.org.\r\nDie Alternative für Deutschland steht im Verdacht, rechts…",
+                "publishedAt": "2025-02-03T04:01:23Z",
+                "source": "Netzpolitik.org",
+                "title": "Verdachtsfall Rechtsextremismus: Wir veröffentlichen das 1.000-seitige Verfassungsschutz-Gutachten zur AfD",
+                "url": "https://netzpolitik.org/2025/verdachtsfall-rechtsextremismus-wir-veroeffentlichen-das-1-000-seitige-verfassungsschutz-gutachten-zur-afd/",
+                "urlToImage": "https://cdn.netzpolitik.org/wp-upload/2025/02/BfV-AfD-Gutachten-Weidel-Hoecke-1200x675.jpg"
+            },
+            {
+                "content": "99,1 MHz, 100,8 MHz 105,4 MHz\r\nhttps://sputnikportal.rs/20250125/dodik-u-republici-srpskoj-nema-grupe-za-otcepljenje-to-je-izmisljotina-1181984135.html\r\nhttps://cdn1.img.sputnikportal.rs/img/07e7/0a/… [+356 chars]",
+                "description": "Председник Републике Српске Милорад Додик изјавио је данас да у Републици Српској нема групе за отцепљење и да је то измишљотина.",
+                "publishedAt": "2025-01-25T20:43:00Z",
+                "source": "Sputnikportal.rs",
+                "title": "Додик: У Републици Српској нема групе за отцепљење, то је измишљотина",
+                "url": "https://sputnikportal.rs/20250125/dodik-u-republici-srpskoj-nema-grupe-za-otcepljenje-to-je-izmisljotina-1181984135.html",
+                "urlToImage": "https://cdn1.img.sputnikportal.rs/images/sharing/article/srb/1181984135.jpg?11628891151737837785"
+            },
+            {
+                "content": "The best deals aren't always just for Melbourne and Sydney, or even Perth - Brisbane has an exclusive airline - EVA Air, that only flies out of Brisbane in Australia.\r\nTaiwanese airline EVA Air offer… [+1039 chars]",
+                "description": "The best deals aren't always just for Melbourne and Sydney, or even Perth - Brisbane has an exclusive airline - EVA Air, that only flies out of Brisbane in Australia.\n\nTaiwanese airline EVA Air offers exceptional service and comfort, connecting Australia with…",
+                "publishedAt": "2025-02-05T01:11:38Z",
+                "source": "Ozbargain.com.au",
+                "title": "EVA Air to Europe Return: Brisbane to Milan fr $991, Paris $1036, Amsterdam $1247, London $1288 (Feb-Nov) @ Beat That Flight",
+                "url": "https://www.ozbargain.com.au/node/892062",
+                "urlToImage": "https://files.ozbargain.com.au/n/62/892062l.jpg?h=1bd839df"
+            },
+            {
+                "content": "Abstract\r\nThe DAF-2/insulin/insulin-like growth factor signaling (IIS) pathway plays an evolutionarily conserved role in regulating reproductive development, life span, and stress resistance. In Caen… [+93336 chars]",
+                "description": "The flight response in worms induces changes in insulin signaling that promote short-term metabolic benefits at the cost of decreased cytoprotective mechanisms. Here, the authors define a brain-gut pathway mediating this adaptive tradeoff, wherein TYRA-3 stim…",
+                "publishedAt": "2025-01-28T14:00:00Z",
+                "source": "Plos.org",
+                "title": "The neurohormone tyramine stimulates the secretion of an insulin-like peptide from the Caenorhabditis elegans intestine to modulate the systemic stress response",
+                "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002997",
+                "urlToImage": "https://journals.plos.org/plosbiology/article/figure/image?id=10.1371/journal.pbio.3002997.g008&size=inline"
+            },
+            {
+                "content": "The Annual General Meeting (the Meeting) of Pandora A/S (the \"Company\") is hereby convened to be held on\r\nWednesday, 12 March 2025 at 10:00 a.m. CET (doors will open at 9:30)\r\nThe Meeting will be hel… [+29705 chars]",
+                "description": "The Annual General Meeting (the “Meeting”) of Pandora A/S (the \"Company\") is hereby convened to be held on  Wednesday, 12 March 2025 at 10:00 a.m. CET......",
+                "publishedAt": "2025-02-07T11:00:00Z",
+                "source": "GlobeNewswire",
+                "title": "Notice of Annual General Meeting",
+                "url": "https://www.globenewswire.com/news-release/2025/02/07/3022649/0/en/Notice-of-Annual-General-Meeting.html",
+                "urlToImage": "https://ml-eu.globenewswire.com/Resource/Download/ea13442a-2b4b-497e-93dd-90eb8214876e"
+            },
+            {
+                "content": "Palandöken Da (3 bin 125 metre), beyaz bir yorgan altnda... Kar, beyaz altn.Palandöken Kayak Merkezi... Bayram yeri gibi... K turizmi.stanbul, Ankara, zmir, Antalya, Bursa, Trabzon, Rize'den gelenler… [+4369 chars]",
+                "description": "ERZURUMDevamı için tıklayınız",
+                "publishedAt": "2025-01-27T04:00:09Z",
+                "source": "Sabah.com.tr",
+                "title": "Beyaz altın diyarından",
+                "url": "https://www.sabah.com.tr/yazarlar/donat/2025/01/27/beyaz-altin-diyarindan",
+                "urlToImage": "https://iasbh.tmgrup.com.tr/addf48/0/0/0/0/739/584?u=https://isbh.tmgrup.com.tr/sbh/2025/01/27/beyaz-altin-diyarindan-1737931552638.jpeg"
+            },
+            {
+                "content": "! .\r\n . \r\n .\r\n- ? .\r\n- . \r\n 2., 3., 4., 5 ., 6 , \r\n 1 . \r\n 7 ., \r\n .\r\n?\r\n– . , , . , . . - -. . , , , , 1024 . , - :\r\n#include &lt;iostream&gt;\r\nusing std::cout;\r\nusing std::endl;\r\nclass eggs {\r\n pub… [+558 chars]",
+                "description": "Привет ЛОРчик! Есть задачка.\nЖенщина везла корзину яиц на рынок. \nНавстречу ехал мужик и разбил корзину с яйцами.\n\n- Сколько у тебя было яиц в корзине? Я оплачу ущерб.\n\n- Не знаю. Но когда я их перекладывала \nпо 2шт., по 3шт., по 4шт., по 5 шт., по 6 шт, \nвсе…",
+                "publishedAt": "2025-01-27T22:03:05Z",
+                "source": "Linux.org.ru",
+                "title": "Математическая задача, последовательность для тех, кто все забыл",
+                "url": "https://www.linux.org.ru/forum/talks/17863124",
+                "urlToImage": "https://www.linux.org.ru/img/good-penguin.png"
+            },
+            {
+                "content": ".\r\n (2000) \r\n . \r\n .  \r\n  . \r\n 1503 \r\n .\r\n .\r\n  1555 1561 \r\n .\r\n .\r\n .\r\n . \r\n :   \r\n :             \r\n .\r\nJohn Hogue .\r\n  .\r\n “: ”\r\n ”: .”\r\n - \r\n .\r\n .\r\n .\r\n . \r\n  - \r\n - . :\r\n .\r\n .\r\n  HarperCollins … [+1860 chars]",
+                "description": "نسيم مجلي أول دراسة بيوجرافية كاملة لتاريخ أشهر وأكثر العرافين إثارة للجدل  على مدى الخمسمائة عام الأخيرة، ظل طبيب القرن السادس عشر الفرنسى، ميشيل دى نوسترامادوس، ونبوءاته الغامضة المدهشة، يلقى بسحره على أجيال من القراء. وقد اعتقد كثير من مفسرى نبوءاته أن الي…",
+                "publishedAt": "2025-01-13T06:22:35Z",
+                "source": "Ahram-canada.com",
+                "title": "نوستراداموس ” Nostradamus “",
+                "url": "https://www.ahram-canada.com/233240/",
+                "urlToImage": "https://www.ahram-canada.com/wp-content/uploads/2025/01/1251546-660x330.jpg"
+            },
+            {
+                "content": "XX ?\r\n. , . , XX , ?\r\n , , , .\r\n« , », , Magonia Exchange, 15 . : .\r\n« , , , », , .\r\n, , . , , , , , , , . , , . .\r\n« , , », . , . , , .\r\n : () 14 1561 . , , , , , . , , , , « », « ... , , ». , , « ,… [+150 chars]",
+                "description": "Время от времени заявления о наблюдениях НЛО становятся вирусными и подталкивают учёных к серьёзным исследованиям. Но люди смотрят на небо уже тысячелетия, и сообщения о подобных наблюдениях уходят корнями в далёкое прошлое. Так каким же было первое зафиксиро…",
+                "publishedAt": "2025-01-24T12:38:09Z",
+                "source": "Habr.com",
+                "title": "[Перевод] Сообщали ли люди о наблюдениях НЛО до XX века?",
+                "url": "https://habr.com/ru/articles/876398/#post-content-body",
+                "urlToImage": "https://habrastorage.org/getpro/habr/upload_files/9df/ab6/a9d/9dfab6a9d79f384cd17ba2a8b80280f1.jpg"
+            },
+            {
+                "content": "DX\r\nGMOGMOGMO GMOIDaaSGMOGMOhakaru().ai() byGMOSAML202524\r\nhakaru.ai byGMODX[: https://prcdn.freetls.fastly.net/release_image/136/4720/136-4720-b535c74fa6f0c1b375096446b18d970c-1280×670.png?width=536… [+885 chars]",
+                "description": "製造現場の設備点検データをより安全に管理し、DXを推進 GMOインターネットグループのGMOグローバルサイン・ホールディングスの連結企業群であるGMOグローバルサインは、企業向けシングルサインオンサービス「GMOトラスト・ログイン」が、GMOグローバルサイン・ホールディングスが提供するメーター検針の業務改善サービス「hakaru.ai byGMO」とのSAML認証連携を、2025年2月4日より開始したことをお知らせいたします。プレスリリース",
+                "publishedAt": "2025-02-04T07:47:14Z",
+                "source": "Osdn.jp",
+                "title": "企業向けIDaaS「GMOトラスト・ログイン」、AIでメーター値を読み取る「hakaru.ai byGMO」と連携開始【GMOグローバルサイン】",
+                "url": "https://mag.osdn.jp/pr/25/02/04/140010",
+                "urlToImage": "https://prtimes.jp/img/136/4720/resize/d136-4720-41de0cfaaf01927c5328-0.png"
+            },
+            {
+                "content": "Skip to comments.\r\nThe Destruction of the Traditional Latin Mass and its Ultimate Cause The Remnant Newspaper ^\r\n | February 3, 2025\r\n | Robert Lazu Kmita\r\nPosted on 02/08/2025 3:23:12 PM PST by ebb … [+12468 chars]",
+                "description": "The Destruction of the Traditional Latin Mass and its Ultimate CauseThe exclusion of the Church’s Traditional Latin Mass and the tyrannical imposition of Pope Paul VI’s Liturgy are events whose deep causes must be sought among the very premises that gave rise…",
+                "publishedAt": "2025-02-08T23:23:12Z",
+                "source": "Freerepublic.com",
+                "title": "The Destruction of the Traditional Latin Mass and its Ultimate Cause",
+                "url": "https://freerepublic.com/focus/f-religion/4296101/posts",
+                "urlToImage": ""
+            },
+            {
+                "content": "A falusi CSOK továbbra is a preferált kistelepüléseken (lásd alább a településlistát) fekv vagy külterületi (tanya, birtokközpont) lakásnak minsül\r\n<ul><li>új családi ház vásárlása vagy építése vagy<… [+251507 chars]",
+                "description": "2025-ben is elérhető a preferált kistelepüléseken a falusi CSOK, amely az egyetlen vissza nem térítendő otthonteremtési támogatás a családok számára. Házépítésre vagy lakásvásárlásra egy gyerekkel 1 millió, kettővel 4 millió, hárommal 15 millió forint igényel…",
+                "publishedAt": "2025-01-18T13:00:00Z",
+                "source": "Portfolio.hu",
+                "title": "Falusi CSOK 2025: feltételek, településlista, igénylési tudnivalók egy helyen!",
+                "url": "https://www.portfolio.hu/bank/20250118/falusi-csok-2025-feltetelek-telepuleslista-igenylesi-tudnivalok-egy-helyen-735477",
+                "urlToImage": "https://pcdn.hu/articles/images-xl/f/a/l/falusi-csok-falusi-csok-feltetelek-falusi-csok-telepuleslista-falusi-csok-hitel-csok-csok-plusz-727121.jpg"
+            },
+            {
+                "content": "Under the cover of darkness, Michelle slipped out of her car to squat down in the middle of the street. With her vehicle as her home, she had no other option for immediate relief.\r\nContent warning: T… [+12395 chars]",
+                "description": "Most cities, such as Portland where Michelle now lives, do not offer many safe, clean, accessible or free restrooms despite public health experts acknowledging the very real, very ordinary need.",
+                "publishedAt": "2025-01-16T12:30:00Z",
+                "source": "Albany Democrat Herald",
+                "title": "Lack of restrooms leave homeless women at risk for rape, assault, infection, survey says",
+                "url": "https://democratherald.com/news/nation-world/lack-of-restrooms-leave-homeless-women-at-risk-for-rape-assault-infection-survey-says/article_fc1ef66a-da84-5ee6-81de-3426b241af18.html",
+                "urlToImage": "https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/3/84/384f79d1-8378-5b8a-931d-00e5f04eb968/678715326513b.preview.jpg?crop=1920%2C1008%2C0%2C35&resize=1200%2C630&order=crop%2Cresize"
+            },
+            {
+                "content": "The day after an emergency cesarean section to deliver her premature twins, Rachel came back from the neonatal intensive care unit to find her now ex-husband napping in her hospital bed.\r\nContent war… [+12484 chars]",
+                "description": "To break free from the domestic abuse and to protect her children, Rachel experienced homelessness in hopes of something safer on the other side.",
+                "publishedAt": "2025-01-16T12:00:00Z",
+                "source": "Albany Democrat Herald",
+                "title": "Homeless mothers seek supportive housing, substance use disorder services to break cycle",
+                "url": "https://democratherald.com/news/nation-world/homeless-mothers-seek-supportive-housing-substance-use-disorder-services-to-break-cycle/article_17bd8851-96a1-5229-b764-433211ace3b9.html",
+                "urlToImage": "https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/9/f2/9f279bd2-d8a8-587e-ae12-1f204dec4d7e/67871518e04b8.preview.jpg?crop=1763%2C926%2C0%2C125&resize=1200%2C630&order=crop%2Cresize"
+            },
+            {
+                "content": "Jessie has her mothers eyes, ocean blue and iridescent. She has her mothers fine hair, too, though she no longer remembers her moms natural color under the memories of ever-changing hair dye.\r\nConten… [+21477 chars]",
+                "description": "Faced with a homeless services system largely built for men, women experiencing domestic abuse may find themselves choosing between violence and the street.",
+                "publishedAt": "2025-01-15T12:30:00Z",
+                "source": "Albany Democrat Herald",
+                "title": "Domestic violence pushes women to life on the streets, survey shows",
+                "url": "https://democratherald.com/news/nation-world/domestic-violence-homeless-women-oregon-washington/article_23c0eb7c-ba9f-5208-9409-12c7c95eafe8.html",
+                "urlToImage": "https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/6/f0/6f0fc817-c10c-5f08-ac87-f194a4a97149/6786bf10b6d47.preview.jpg?crop=1714%2C900%2C23%2C34&resize=1200%2C630&order=crop%2Cresize"
+            },
+            {
+                "content": "A finales del siglo XI, durante la Primera Cruzada, Godofredo de Bouillon fundó el reino de Jerusalén. Sin embargo, nunca se consideró digno de ceñir una corona de oro donde Cristo la había llevado d… [+6129 chars]",
+                "description": "El heredero al trono del reino armenio de Cilicia fue capturado por las tropas mamelucas de Egipto que atacaron y robaron sus tierras. Juan I de Castilla le liberó y le concedió el señorío de Madrid, Andújar, Guadalajara y Villarreal (actual Ciudad Real).",
+                "publishedAt": "2025-02-01T03:17:42Z",
+                "source": "Elespanol.com",
+                "title": "León V, el rey sin reino que convirtió a Madrid en capital de Armenia dos siglos antes de serlo de España",
+                "url": "https://www.elespanol.com/reportajes/20250201/leon-rey-sin-reino-convirtio-madrid-capital-armenia-siglos-serlo-espana/920658137_0.html",
+                "urlToImage": "https://s1.elespanol.com/2025/01/31/reportajes/920668236_252754574_1706x960.png"
+            },
+            {
+                "content": "Abstract\r\nBackground\r\nOrthohantaviruses are negative-sense RNA viruses that can cause hantavirus cardiopulmonary syndrome (HCPS) in humans. In the United States, Sin Nombre orthohantavirus (SNV) is t… [+43834 chars]",
+                "description": "Author summary The first reported hantavirus cases in the United States occurred in the Four Corners region (Arizona, New Mexico, Utah and Colorado) and was found to be transmitted by the droppings of western deer mice. This led to discovery of Sin Nombre vir…",
+                "publishedAt": "2025-01-21T14:00:00Z",
+                "source": "Plos.org",
+                "title": "A human pathogenic hantavirus circulates and is shed in taxonomically diverse rodent reservoirs",
+                "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1012849",
+                "urlToImage": "https://journals.plos.org/plospathogens/article/figure/image?id=10.1371/journal.ppat.1012849.g005&size=inline"
+            }
+        ],
+        "timestamp": 1739173589
+    },
+    "jnnhni": {
+        "articles": [],
+        "timestamp": 1739173588
+    },
     "top_headlines": {
         "articles": [
             {
-                "content": "What a storytelling win for Trump, said DeRay McKesson, a progressive activist who rose to prominence during the Black Lives Matter protests in Ferguson, Missouri. That is a failure of storytelling o… [+6632 chars]",
-                "description": "Conservatives won the culture war by riding the backlash to Black Lives Matter protests.",
-                "publishedAt": "2025-02-08T19:00:00Z",
-                "source": "",
-                "title": "Why Trump was able to pull off such a swift war on diversity - POLITICO",
-                "url": "https://www.politico.com/news/2025/02/08/trump-dei-diversity-federal-workers-00203254",
-                "urlToImage": "https://static.politico.com/99/06/21060f4747a0af9f0ed574769754/https-delivery-gettyimages.com/downloads/2196277511"
+                "content": "Sonys PlayStation Network was down from Friday to Saturday evening. Surpassing 24 hours, it was one of the decades longest unscheduled outages of a major video game network. The outage was wide-reach… [+2926 chars]",
+                "description": "The PSN outage included the PlayStation Store, PSN account management, and more. Sony has provided little clarity.",
+                "publishedAt": "2025-02-09T07:18:00Z",
+                "source": "Polygon",
+                "title": "Sony’s response to PlayStation Network outage - Polygon",
+                "url": "https://www.polygon.com/news/521195/playstation-network-down-outage-psn",
+                "urlToImage": "https://platform.polygon.com/wp-content/uploads/sites/2/2024/10/ps5-pro-games-list.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
             },
             {
-                "content": "Your support helps us to tell the story\r\nFrom reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia… [+2528 chars]",
-                "description": "Company has been largely silent on issues",
-                "publishedAt": "2025-02-08T18:58:00Z",
-                "source": "",
-                "title": "PlayStation Network has been down for nearly a day – and players are starting worried - The Independent",
-                "url": "https://www.the-independent.com/tech/psn-down-playstation-network-ps5-not-working-offline-latest-status-b2694716.html",
-                "urlToImage": "https://static.the-independent.com/2025/02/08/13/Sony_Playstation_Outage_12114.jpg?width=1200&height=800&crop=1200:800"
+                "content": "Office of Management and Budget director Russell Vought is now also the acting director of the Consumer Financial Protection Bureau, where he has directed staff to not issue any new rules, to suspend… [+2643 chars]",
+                "description": "Russell Vought, acting director of the Consumer Financial Protection Bureau, has directed staff to not issue any new rules and to stop any new investigations.",
+                "publishedAt": "2025-02-09T07:16:00Z",
+                "source": "Fox News",
+                "title": "Russ Vought, tapped as CFPB's acting director, directs bureau to issue no new rules, stop new investigations - Fox News",
+                "url": "https://www.foxnews.com/politics/russ-vought-tapped-cfpbs-acting-director-directs-bureau-issue-no-new-rules-stop-new-investigations",
+                "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/01/president-donald-trump-administration-100-days110.jpg"
             },
             {
-                "content": "NEW YORK (AP) Ben Simmons was waived by the Brooklyn Nets on Saturday after the team agreed to a buyout with the last remaining link to a failed era of building around All-Stars.\r\nThe No. 1 pick in t… [+1547 chars]",
-                "description": "Ben Simmons has been waived by the Brooklyn Nets after the team agreed to a buyout with the last remaining link to a failed era of building around All-Stars. The No. 1 pick in the 2016 draft was not with the Nets for their victory over the Miami Heat on Frida…",
-                "publishedAt": "2025-02-08T18:41:00Z",
-                "source": "",
-                "title": "Ben Simmons waived by the Nets after the team and former No. 1 pick agree to a buyout - The Associated Press",
-                "url": "https://apnews.com/article/nets-ben-simmons-buyout-04e750bf220727e6b52bfcc205039c81",
-                "urlToImage": "https://dims.apnews.com/dims4/default/62ee983/2147483647/strip/true/crop/3791x2132+0+198/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff5%2F17%2F7ba6e91e2502a8f7561f2dfad728%2Fa45c5dbb3d644e7390b3635dd355ba8b"
+                "content": "A fast-moving winter storm packing a dangerous combination of snow, sleet and ice is moving through the Midwest overnight Saturday into Sunday, with up to a foot of snow predicted in parts of the Nor… [+6067 chars]",
+                "description": "A fast-moving winter storm packing a dangerous combination of snow, sleet and ice is moving through the Midwest on Saturday afternoon, with up to a foot of snow predicted in parts of the Northeast by Sunday morning.",
+                "publishedAt": "2025-02-09T06:26:01Z",
+                "source": "CNN",
+                "title": "Fast-moving winter storm is bringing snow, sleet and ice to Midwest, then the Northeast - CNN",
+                "url": "https://www.cnn.com/2025/02/08/weather/winter-storms-weekend-weather/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/still-21360373-0-still.jpg?c=16x9&q=w_800,c_fill"
             },
             {
-                "content": "The fatal shooting of a police officer responding to a shopping center in Georgia is under investigation, authorities said Saturday.\r\nA suspect, identified as 23-year-old Edward Espinoza, was taken i… [+1735 chars]",
-                "description": "The Roswell police officer responded to a report of a suspicious person in the parking lot of a pickleball club when he was shot.",
-                "publishedAt": "2025-02-08T18:37:17Z",
-                "source": "",
-                "title": "Georgia police officer fatally shot responding to pickleball club; suspect arrested - CBS News",
-                "url": "https://www.cbsnews.com/news/roswell-georgia-police-officer-killed-pickleball-club-suspect-arrested/",
-                "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/02/08/532ad930-d1d7-43de-bd77-59b5c76f77a6/thumbnail/1200x630/a1bcc3477c965450d589f09565425459/gettyimages-462582206.jpg?v=c6b5070a57014f3b00753bf0e763f9c3"
+                "content": "The Los Angeles Lakers tried to thread the needle between present and future when they traded for Charlotte Hornets center Mark Williams. In the long run, they thought they'd found the big man they'd… [+15891 chars]",
+                "description": "The Lakers' present and future look drastically different without Williams",
+                "publishedAt": "2025-02-09T05:19:52Z",
+                "source": "CBS Sports",
+                "title": "Mark Williams trade rescinded: What comes next for Lakers on buyout market and in the offseason - CBS Sports",
+                "url": "https://www.cbssports.com/nba/news/mark-williams-trade-rescinded-what-comes-next-for-lakers-on-buyout-market-and-in-the-offseason/",
+                "urlToImage": "https://sportshub.cbsistatic.com/i/r/2025/02/09/8fec6fc3-58c2-4cb8-9ff9-500239d0fde5/thumbnail/1200x675/d87d4104a704322e8f54d0bf4c0d0e6b/020825-lebronluka.jpg"
             },
             {
-                "content": "Three male Israeli hostages and 183 Palestinian prisoners were freed in the fifth round of exchanges between Israel and Hamas Saturday as Israel expressed concern about the appearance of the released… [+8300 chars]",
-                "description": "Three male Israeli hostages and 183 Palestinian prisoners were freed in the fifth round of exchanges between Israel and Hamas Saturday as Israel expressed concern about the appearance of the released captives.",
-                "publishedAt": "2025-02-08T18:12:00Z",
-                "source": "",
-                "title": "Israeli hostages and Palestinian prisoners freed as Israel condemns frail appearance of captives - CNN",
-                "url": "https://www.cnn.com/2025/02/08/middleeast/hostages-release-fifth-round-israel-hamas-ceasefire-intl-hnk/index.html",
-                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/ap25039351227721.jpg?c=16x9&q=w_800,c_fill"
+                "content": "President Donald Trump announced in an interview published Saturday that he has spoken with Russian President Vladimir Putin.\r\nHe wants to see people stop dying, Trump told the New York Post.\r\nIt was… [+2800 chars]",
+                "description": "President Donald Trump announced in an interview published Saturday that he has spoken with Russian President Vladimir Putin.",
+                "publishedAt": "2025-02-09T04:55:00Z",
+                "source": "CNN",
+                "title": "Trump says he’s spoken with Putin as Russia’s war in Ukraine approaches third anniversary - CNN",
+                "url": "https://www.cnn.com/2025/02/08/politics/trump-putin-speak-interview-saturday/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/trumpputin020825.jpg?c=16x9&q=w_800,c_fill"
             },
             {
-                "content": "This water is raising a red flag. \r\nA canal in Argentina mysteriously turned bright red on Thursday, alarming residents who were woken up by its strong odor.\r\n“The smell woke us up. In the daytime, w… [+1070 chars]",
-                "description": "This water is raising a red flag.",
-                "publishedAt": "2025-02-08T18:08:00Z",
-                "source": "",
-                "title": "Argentina canal mysteriously turns bright red, looks like it’s ‘covered in blood’ - New York Post ",
-                "url": "https://nypost.com/2025/02/08/lifestyle/sarandi-canal-canal-mysteriously-turns-bright-red-looks-covered-in-blood/",
-                "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/02/98143478.jpg?quality=75&strip=all&w=1024"
+                "content": "Thomas Mackintosh\r\nThe United States Geological Survey showed a map of the location of the earthquake - \r\nTsunami warnings issued after a powerful 7.6-magnitude earthquake rocked the Caribbean Sea ha… [+1558 chars]",
+                "description": "Warnings had been issued for a number of countries including Cuba, Puerto Rico and the Cayman Islands.",
+                "publishedAt": "2025-02-09T04:50:00Z",
+                "source": "BBC News",
+                "title": "Tsunami alerts cancelled after major Caribbean earthquake - BBC.com",
+                "url": "https://www.bbc.com/news/articles/c4g3y4g7dy2o",
+                "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3731/live/a9921b80-e67d-11ef-b7fd-31c3ae575e99.png"
             },
             {
-                "content": "Firaxis has announced a virtual reality version of the recently released Civilization 7.\r\nSid Meier's Civilization 7 - VR is the long-running strategy franchises first foray into VR, and launches spr… [+2827 chars]",
-                "description": "Firaxis has announced a virtual reality version of the recently released Civilization 7, called Sid Meier's Civilization 7 - VR. It's exclusive to the Meta Quest 3 and 3S.",
-                "publishedAt": "2025-02-08T18:00:37Z",
-                "source": "",
-                "title": "Firaxis Makes Surprise Sid Meier's Civilization 7 - VR Announcement - IGN",
-                "url": "https://www.ign.com/articles/firaxis-makes-surprise-sid-meiers-civilization-7-vr-announcement",
-                "urlToImage": "https://assets-prd.ignimgs.com/2025/02/07/civilization-vii-vr-announce-trailer-commander-1738943357922.jpg?width=1280"
+                "content": "The Warriors have an identity, but Jimmy Butler proves in his 1st game how he can add to it.\r\n Get NBA League Pass TODAY 2024-25 Trade Tracker: Every official deal\r\nCHICAGO (AP) Jimmy Butler drew the… [+2698 chars]",
+                "description": "Jimmy Butler scores 25 points on 7-of-12 shooting in his 1st game since joining the Warriors at the trade deadline.",
+                "publishedAt": "2025-02-09T04:48:09Z",
+                "source": "Heat.com",
+                "title": "Jimmy Butler scores 25 points in Warriors debut, helps lead 24-point comeback - NBA.Com",
+                "url": "https://www.nba.com/news/jimmy-butler-warriors-debut",
+                "urlToImage": "https://cdn.nba.com/manage/2025/02/butler-curry.jpg"
             },
             {
-                "content": "The culmination of an 18-week regular season and a playoff gauntlet brings us to Super Bowl LIX. The Philadelphia Eagles and Kansas City Chiefs will square off with the last team standing, owning the… [+9652 chars]",
-                "description": "CBSSports.com and SportsLine break down Super Bowl LIX",
-                "publishedAt": "2025-02-08T17:51:00Z",
-                "source": "",
-                "title": "Super Bowl 2025 expert picks, odds, prop bets, best bets, where to watch, live streaming, more - CBS Sports",
-                "url": "https://www.cbssports.com/nfl/news/super-bowl-2025-expert-picks-odds-prop-bets-best-bets-where-to-watch-live-streaming-more/",
-                "urlToImage": "https://sportshub.cbsistatic.com/i/r/2025/02/04/60815686-f5a9-46e4-96a3-158200887c7b/thumbnail/1200x675/f09367750e015963f47b40965837932e/super-bowl-lix-g.jpg"
+                "content": "As host of the 77th Annual DGA Awards Saturday night, Judd Apatow laid into Trump, Elon Musk, Mars, and so much more.\r\nHis monologue opened to raucous laughter from the audience when he explained the… [+1705 chars]",
+                "description": "Judd Apatow taunts Trump and Musk in DGA Awards opening monologue.",
+                "publishedAt": "2025-02-09T03:54:00Z",
+                "source": "Deadline",
+                "title": "Judd Apatow Taunts Trump and Musk During DGA Awards Monologue: “Let’s All Go Super Double Woke” - Deadline",
+                "url": "http://deadline.com/2025/02/judd-apatow-dga-awards-monologue-1236282981/",
+                "urlToImage": "https://deadline.com/wp-content/uploads/2025/02/GettyImages-2198459554.jpg?w=1024"
             },
             {
-                "content": "Laura Bicker\r\nThe landslide struck Jinping village in Sichuan province\r\nAt least 30 people have been reported missing after a landslide in south-western China, according to Chinese state media.\r\nThe … [+1808 chars]",
-                "description": "Hundreds of emergency workers are searching for survivors, officials say, in Jinping village, Sichuan province.",
-                "publishedAt": "2025-02-08T17:42:47Z",
-                "source": "",
-                "title": "China landslide: More than 30 missing in Sichuan - BBC.com",
-                "url": "https://www.bbc.com/news/articles/czep9d9p8kzo",
-                "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7cf4/live/e315aaa0-e643-11ef-bd1b-d536627785f2.jpg"
+                "content": "",
+                "description": "Dairy herds in Nevada have been infected by a version of the H5N1 bird flu not previously seen in cows, putting virologists on high alert.",
+                "publishedAt": "2025-02-09T03:47:00Z",
+                "source": "Fortune",
+                "title": "New bird flu variant found in Nevada dairy cows has experts sounding alarms: 'We have never been closer to a pandemic from this virus' - Fortune",
+                "url": "https://fortune.com/well/2025/02/08/bird-flu-variant-nevada-pandemic-closer/",
+                "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/02/GettyImages-1255621259-e1739071874280.jpg?resize=1200,600"
             },
             {
-                "content": "Your security has now at risk\r\nGetty Images\r\nWe live in dangerous times. As is being widely reported, Apple is being forced to add a backdoor to iCloud, which opens up access to all your iPhone, iPad… [+3035 chars]",
-                "description": "This is how to add end-to-end encryption to your iCloud account—and why you should.",
-                "publishedAt": "2025-02-08T17:29:54Z",
-                "source": "",
-                "title": "Apple’s ‘Emergency’ Warning—Do This To Encrypt Your iCloud Now - Forbes",
-                "url": "https://www.forbes.com/sites/zakdoffman/2025/02/08/apples-emergency-warning-do-this-to-encrypt-your-icloud-now/",
-                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/67a790f6926ad4d05b159b9a/0x0.jpg?format=jpg&crop=2806,1601,x319,y434,safe&height=900&width=1600&fit=bounds"
+                "content": "The Producers Guild of America Awards are underway on a jam-packed awards weekend in L.A. that’s sure to provide some clarity for the upcoming Oscars race.\r\nThe PGA Awards are widely regarded as stro… [+5158 chars]",
+                "description": "The full winners list of the 2025 PGA Awards.",
+                "publishedAt": "2025-02-09T03:41:00Z",
+                "source": "Variety",
+                "title": "PGA Awards Winners List (Updating Live) - Variety",
+                "url": "https://variety.com/2025/film/news/pga-awards-2025-winners-list-1236301628/",
+                "urlToImage": "https://variety.com/wp-content/uploads/2024/11/Wild-Robot_6358e9.jpg?w=1000&h=563&crop=1"
             },
             {
-                "content": "Update, Saturday Feb 8, 2025: This article has been updated with details on Apples new 5G modem for the iPhone SE.\r\nTim Cook, CEO of Apple, visits an Apple store in New York City. (Photo by Andrew Bu… [+4598 chars]",
-                "description": "Apple’s eagerly awaited return to the ultra-competitive mid-range smartphone market with a new iPhone SE could happen in the next week.",
-                "publishedAt": "2025-02-08T17:03:00Z",
-                "source": "",
-                "title": "Apple Leak Reveals iPhone SE Release Date - Forbes",
-                "url": "https://www.forbes.com/sites/ewanspence/2025/02/08/apple-iphone-se-release-launch-date-leak-mwc-new-iphone/",
-                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/67a6153a374f2728158e6484/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+                "content": "BANGKOK (AP) Five Thai workers released after being held hostage for over a year in Gaza arrived in Bangkok on Sunday.\r\nSarusak Rumnao, 32, Watchara Sriaoun, 33, Sathian Suwannakham, 35, Pongsak Thae… [+2694 chars]",
+                "description": "Five Thai workers released after being held hostage for over a year in Gaza arrived in Bangkok on Sunday. The five were the second batch of Thai hostages released since the war broke out. During an earlier ceasefire in November 2023, 23 Thai nationals were fr…",
+                "publishedAt": "2025-02-09T03:02:00Z",
+                "source": "Associated Press",
+                "title": "Released Thai hostages return to Bangkok after being held for over a year in Gaza - The Associated Press",
+                "url": "https://apnews.com/article/thailand-middle-east-gaza-hostages-d225705053f453c403d25f29658d0fb5",
+                "urlToImage": "https://dims.apnews.com/dims4/default/ee3b6cb/2147483647/strip/true/crop/5931x3336+0+309/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F26%2F86%2F85c0ce55c146f82bcea143518f9c%2Fa2bd7f9b4df343b89fdba054ce49f4a8"
             },
             {
-                "content": "FT newspaper delivered Monday-Saturday, plus FT Digital Edition delivered to your device Monday-Saturday.\r\n<ul><li></li>Weekday Print Edition<li></li>FT Weekend<li></li>FT Digital Edition<li>Global n… [+105 chars]",
-                "description": "Marine Le Pen, Viktor Orbán and Geert Wilders endorse call for EU to copy US President’s policies",
-                "publishedAt": "2025-02-08T16:37:15Z",
-                "source": "",
-                "title": "Europe’s emboldened far right lauds Trump at Madrid rally - Financial Times",
-                "url": "https://www.ft.com/content/ffb098ed-60da-4015-b58d-543941c30e1b",
-                "urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe0906ec7-f285-42e3-89b1-6f9d0e4039af.jpg?source=next-barrier-page"
-            },
-            {
-                "content": "It seems an old “Dog Man” can outearn new pics, as the DreamWorks Animation caper will lead the domestic box office for a second weekend in a row. Meanwhile, slasher “Heart Eyes” and Ke Huy Quan acti… [+2996 chars]",
-                "description": "The DreamWorks picture 'Dog Man' will stay top dog at the box office, beating Ke Huy Quan's 'Love Hurts' and the slasher 'Heart Eyes.'",
-                "publishedAt": "2025-02-08T16:25:00Z",
-                "source": "",
-                "title": "Box Office: ‘Dog Man’ Still Off the Leash at No. 1, ‘Heart Eyes’ and ‘Love Hurts’ Beat Slowly in Quiet Super Bowl Weekend - Variety",
-                "url": "https://variety.com/2025/film/box-office/box-office-heart-eyes-love-hurts-opening-day-dog-man-1236300788/",
-                "urlToImage": "https://variety.com/wp-content/uploads/2025/02/hurts-split-weekend.jpg?w=1000&h=563&crop=1"
-            },
-            {
-                "content": "JUNEAU, Alaska (AP) Authorities are working to recover the wreckage of a plane crash in western Alaska that killed 10 people while investigators are trying to determine what caused the small commuter… [+3352 chars]",
-                "description": "Authorities are working to recover the wreckage of a plane crash in western Alaska that killed 10 people while investigators are trying to determine what caused the small commuter aircraft to go down in the icy Bering Sea. The Bering Air single-engine turbopr…",
-                "publishedAt": "2025-02-08T16:17:00Z",
-                "source": "",
-                "title": "Here’s what we know about a commuter plane crash in Alaska that killed 10 people - The Associated Press",
-                "url": "https://apnews.com/article/alaska-plane-crash-recovery-investigation-28c8fd9e0fd1f1d450c94aaef81cc0f1",
-                "urlToImage": "https://dims.apnews.com/dims4/default/d55beaf/2147483647/strip/true/crop/4796x2698+0+254/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F50%2Fe5%2F1935ce8f84cd44418398d4618600%2F094769e709134b4695bc1d2aa74f1847"
-            },
-            {
-                "content": "The Trump administration is cutting billions of dollars in biomedical research funding, alarming academic leaders who said it would imperil their universities and medical centers and drawing swift re… [+7713 chars]",
-                "description": "The move halts a large slice of money for most universities and research institutions virtually overnight, imperiling vital research in everything from cancer to heart disease.",
-                "publishedAt": "2025-02-08T15:56:58Z",
-                "source": "",
+                "content": "The Trump administration is cutting billions of dollars in biomedical research funding, alarming academic leaders who said it would imperil their universities and medical centers and drawing swift re… [+9583 chars]",
+                "description": "Researchers say it would hurt facilities that work on medical issues such as cancer research and heart disease. Elon Musk contends the old policy was ‘a ripoff.’",
+                "publishedAt": "2025-02-09T02:38:36Z",
+                "source": "The Washington Post",
                 "title": "NIH cuts billions of dollars in biomedical funding, effective immediately - The Washington Post",
                 "url": "https://www.washingtonpost.com/health/2025/02/08/nih-cuts-billions-dollars-biomedical-funding-effective-immediately/",
                 "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EQCKAWG4WEI6VNHREW3WFTN36Q.jpg&w=1440"
             },
             {
-                "content": "He might be spending the next 27 years behind bars, but that isn’t stopping abuse victims of embattled R&amp;B icon R. Kelly from trying to collect the millions the disgraced singer still owes them.\r… [+2062 chars]",
-                "description": "To date, the six victims said they’ve received less than $500,000 of the $10.3 million R. Kelly owes them.",
-                "publishedAt": "2025-02-08T14:12:38Z",
-                "source": "",
-                "title": "R. Kelly sued by six victims seeking the millions he still owes them - AOL",
-                "url": "https://nypost.com/2025/02/08/us-news/r-kelly-sued-by-victims-seeking-the-millions-he-still-owes-them/",
-                "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/02/98060757.jpg?quality=75&strip=all&w=1024"
+                "content": "Prime Minister Benjamin Netanyahu called US President Donald Trump \"the greatest friend that Israel has ever had in the White House,\" in an exclusive Fox News interview that aired on Saturday night, … [+2428 chars]",
+                "description": "Israel has no greater friend than America, \"especially under President Trump's leadership,\" he said.",
+                "publishedAt": "2025-02-09T01:07:44Z",
+                "source": "The Jerusalem Post",
+                "title": "'Trump is greatest friend Israel has ever had,' Netanyahu says in exclusive interview - The Jerusalem Post",
+                "url": "https://www.jpost.com/israel-news/article-841243",
+                "urlToImage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_407,w_690/648376"
             },
             {
-                "content": "A federal judge, citing a risk of irreparable harm, has temporarily restricted Elon Musks government efficiency team from accessing a critical Treasury Department payment system.\r\nThe judges order, i… [+2020 chars]",
+                "content": "JUNEAU, Alaska (AP) Authorities are working to recover the wreckage of a plane crash in western Alaska that killed 10 people while investigators are trying to determine what caused the small commuter… [+4028 chars]",
+                "description": "Authorities are working to recover the wreckage of a plane crash in western Alaska that killed 10 people while investigators are trying to determine what caused the small commuter aircraft to go down in the icy Bering Sea. The Bering Air single-engine turbopr…",
+                "publishedAt": "2025-02-09T01:06:00Z",
+                "source": "Associated Press",
+                "title": "Here’s what we know about a commuter plane crash in Alaska that killed 10 people - The Associated Press",
+                "url": "https://apnews.com/article/alaska-plane-crash-recovery-investigation-28c8fd9e0fd1f1d450c94aaef81cc0f1",
+                "urlToImage": "https://dims.apnews.com/dims4/default/d55beaf/2147483647/strip/true/crop/4796x2698+0+254/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F50%2Fe5%2F1935ce8f84cd44418398d4618600%2F094769e709134b4695bc1d2aa74f1847"
+            },
+            {
+                "content": "A Stradivarius violin made at the \"pinnacle\" of Antonio Stradivaris career sold at auction for an eye-popping price this week. \r\nThe musical instrument, crafted in 1714 by Stradivari, the luthier mos… [+2281 chars]",
+                "description": "A Stradivarius violin that sold for $11.3 million, just shy of the $15.9 million record, will benefit a Boston music conservatory and fund student scholarships.",
+                "publishedAt": "2025-02-09T00:43:00Z",
+                "source": "Fox News",
+                "title": "Stradivarius violin crafted at ‘pinnacle’ of maker's career over 300 years ago sells for eye-popping price - Fox News",
+                "url": "https://www.foxnews.com/lifestyle/stradivarius-violin-made-pinnacle-career-more-than-300-years-ago-sells-eye-popping-price",
+                "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2025/02/violinist.jpg"
+            },
+            {
+                "content": "All of the plane and chopper wreckage has been fished from the icy Potomac River, as the National Transportation Safety Board continues to investigate the Jan. 29 mid-air crash that killed 67 people.… [+2257 chars]",
+                "description": "The “major pieces” of the American Airlines plane and the Black Hawk helicopter have been recovered, and will be transported to a “secure airport facility for further examination …",
+                "publishedAt": "2025-02-09T00:24:00Z",
+                "source": "New York Post",
+                "title": "All 'major pieces' from midair DC crash recovered -- as it releases new images of wreckage: NTSB - New York Post ",
+                "url": "https://nypost.com/2025/02/08/us-news/wreckage-from-dc-mid-air-collision-that-killed-67-recovered/",
+                "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/02/98174258.jpg?quality=75&strip=all&w=1024"
+            },
+            {
+                "content": "A federal judge, citing a risk of irreparable harm, has temporarily restricted Elon Musks government efficiency team from accessing a critical Treasury Department payment system.\r\nThe judges order, i… [+4444 chars]",
                 "description": "A federal judge, citing a risk of “irreparable harm,” early Saturday temporarily restricted Elon Musk’s government efficiency team from accessing a critical Treasury Department payment system.",
-                "publishedAt": "2025-02-08T13:53:00Z",
-                "source": "",
+                "publishedAt": "2025-02-08T23:20:00Z",
+                "source": "CNN",
                 "title": "Federal judge blocks Elon Musk’s DOGE access to critical Treasury payment system - CNN",
                 "url": "https://www.cnn.com/2025/02/08/politics/elon-musk-doge-treasury-payment-system/index.html",
                 "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2197153044.jpg?c=16x9&q=w_800,c_fill"
             },
             {
-                "content": "By MIKE STOBBE AP Medical Writer\r\nNEW YORK (AP) The U.S. winter virus season is in full force, and by one measure is the most intense in 15 years.\r\nOne indicator of flu activity is the percentage of … [+3867 chars]",
-                "description": "So far this season, the CDC estimates, there have been 13,000 flu deaths — including at least 57 children. The flu has forced schools to shut down in some states.",
-                "publishedAt": "2025-02-08T13:53:00Z",
-                "source": "",
-                "title": "US flu season right now is the most intense it’s been in 15 years - MLive.com",
-                "url": "https://www.mlive.com/news/2025/02/us-flu-season-right-now-is-the-most-intense-its-been-in-15-years.html",
-                "urlToImage": "https://www.mlive.com/resizer/v2/HMCAGFTJOZAIJPGYTUWM63N6J4.jpg?auth=7c24351540c4489886847f4681580651adc35169683e199dbccac0bec4b5c18a&width=1280&quality=90"
+                "content": "Christy Carlson Romano is recovering after she was “shot in the eye” by “another party” during her husband’s birthday celebration.\r\nThe Even Stevens alum shared, in an Instagram post Saturday, that s… [+1407 chars]",
+                "description": "The 'Even Stevens' alum says she's \"safe,\" but noted that a fragment is still lodged behind her eye that's too risky to remove surgically, after \"another party … unsafely fired in the wrong direction.\"",
+                "publishedAt": "2025-02-08T23:16:29Z",
+                "source": "Hollywood Reporter",
+                "title": "Christy Carlson Romano Reveals She Was “Shot in the Eye” During Husband’s Birthday Celebration - Hollywood Reporter",
+                "url": "http://www.hollywoodreporter.com/news/general-news/christy-carlson-romano-shot-in-the-eye-1236131095/",
+                "urlToImage": "https://www.hollywoodreporter.com/wp-content/uploads/2024/04/GettyImages-14491794511.jpg?w=1296&h=730&crop=1"
             },
             {
-                "content": "For the federal workers struggling to decide whether to take the Trump administrations deferred resignation program offer, a Massachusetts federal judges order to delay the Thursday night deadline wa… [+5520 chars]",
-                "description": "A judge in Massachusetts paused a deadline to decide on whether to take the buyout, leaving some workers unsure of where their acceptance of the deal leaves them.",
-                "publishedAt": "2025-02-08T12:31:53Z",
-                "source": "",
-                "title": "Federal workers who took Trump buyout feel fear, regret after judge’s order - The Washington Post",
-                "url": "https://www.washingtonpost.com/dc-md-va/2025/02/08/federal-workers-deferred-resignation-judge-ruling/",
-                "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/P3B6QZQMIJ5CIX6B5Z56QDGPCA_size-normalized.JPG&w=1440"
+                "content": "FT newspaper delivered Monday-Saturday, plus FT Digital Edition delivered to your device Monday-Saturday.\r\n<ul><li></li>Weekday Print Edition<li></li>FT Weekend<li></li>FT Digital Edition<li>Global n… [+105 chars]",
+                "description": "US investor could force UK oil company to refocus on core fossil fuels business after foray into green energy",
+                "publishedAt": "2025-02-08T22:07:39Z",
+                "source": "Financial Times",
+                "title": "Activist hedge fund Elliott builds stake in struggling BP - Financial Times",
+                "url": "https://www.ft.com/content/0fe68734-0a90-4824-ba84-8a3cd39a0bc3",
+                "urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd6beb6cd-080e-4d3d-ae10-40d3fbc5d5bb.jpg?source=next-barrier-page"
             }
         ],
-        "timestamp": 1739132366
-    },
-    "גד": {
-        "articles": [
-            {
-                "content": ", ' (24) -7 , -ynet . \" 2018\", , \" () 7 , . \".\r\n: \" . . . , . . , . , . \".\r\n, . , . \" , . 10 , . . , . \".\r\n. \" , . \", . : \" , . . \".\r\n, ', : \" . . , . . , , . \".\r\n\" ' ' \", . \" . , . . . ' \".",
-                "description": "\"הוא נחטף, ומאז אנחנו לא יודעים מה איתו\", סיפר ל-ynet פרובין דאנגי, חברו ללימודים של ביפין ג'ושי שמוחזק בשבי בעזה. הוא הוסיף כי משפחתו מודאגת: \"אין לדעת איך אמא מרגישה כשהיא בארץ אחרת והבן שלה חטוף\". גד שפרר, מנהל הפרדס שבו עבד החטוף הנפאלי: \"הוא סחף את החבר'…",
-                "publishedAt": "2025-02-03T20:21:50Z",
-                "source": "Ynet",
-                "title": "\"ביפין הציל אותי, הוא חייב להשתחרר\" | החטוף הנפאלי שנותר בשבי חמאס",
-                "url": "https://www.ynet.co.il/news/article/hjvwucroyx",
-                "urlToImage": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2024/12/08/H1XylP7Nkg/H1XylP7Nkg_0_344_1000_563_0_large.jpg"
-            },
-            {
-                "content": ", , , . , \" AM:PM, : \" , \".\r\n-2023 \" \" : AM:PM . , . , . -4P (, , , ) 6P, Pleasure () -Proposal ( ), .\r\n\" -AM:PM , . -. , - , . AM:PM , -DNA -24/7, , . . , , \" , , \", \".\r\n. - Nestlé , . Froneri , -El… [+213 chars]",
-                "description": "שיראל חוגג, מנכ\"ל AM:PM, מומחה לאופטימיזציה וניהול מערכות מורכבות, מוביל את החברה לצמיחה עסקית וחברתית, גם בתנאים של אי-ודאות קיצונית. כמי שהוביל תהליכים רבי משמעות בחברות כמו, Nestle אלקטרה, Froneri וחברות נוספות, הוא מנהיג כיום גם שינוי ברמה הלאומית-חברתית …",
-                "publishedAt": "2025-01-12T08:00:00Z",
-                "source": "Ynet",
-                "title": "\"ניהול מנהיגותי שמוביל לצמיחה דורש גיוון והקשבה לצרכים, לעובדים וללקוחות\"",
-                "url": "https://www.ynet.co.il/economy/article/sjtfjx3uke",
-                "urlToImage": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2025/01/08/Bkm4kg3IJx/Bkm4kg3IJx_0_66_2461_1385_0_large.jpg"
-            }
-        ],
-        "timestamp": 1739133902
+        "timestamp": 1739173588
     }
 }

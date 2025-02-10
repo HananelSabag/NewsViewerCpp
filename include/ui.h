@@ -39,7 +39,7 @@ private:
     NewsFetcher& fetcher;                                  // Reference to NewsFetcher for fetching news
     std::vector<NewsFetcher::NewsArticle> headlines;       // Stores fetched headlines
     std::vector<NewsFetcher::NewsArticle> searchResults;   // Stores search results
-    std::vector<std::string> favorites;                    // Stores favorite headlines (just titles)
+    std::vector<NewsFetcher::NewsArticle> favorites;       // Stores favorite articles with full details
     std::string searchQuery;                               // Stores the current user search input
 
     // Current selected article for popup
@@ -70,7 +70,7 @@ private:
     void render();
 
     /**
-     * Displays the favorites popup.
+     * Displays the favorites popup with full article details.
      */
     void renderFavoritesPopup();
 
@@ -115,16 +115,16 @@ private:
     void handleSearch();
 
     /**
-     * Adds a news headline to favorites and saves it to file.
-     * @param headline The news headline to add.
+     * Adds a news article to favorites and saves it to file.
+     * @param article The full article to add to favorites.
      */
-    void addToFavorites(const std::string& headline);
+    void addToFavorites(const NewsFetcher::NewsArticle& article);
 
     /**
-     * Removes a news headline from favorites and updates the file.
-     * @param headline The news headline to remove.
+     * Removes a news article from favorites by its title and updates the file.
+     * @param title The title of the article to remove.
      */
-    void removeFavorite(const std::string& headline);
+    void removeFavorite(const std::string& title);
 
     /**
      * Helper function to push icon font for rendering Font Awesome icons.

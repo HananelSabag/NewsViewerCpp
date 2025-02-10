@@ -278,6 +278,7 @@ void NewsUI::renderToolbar() {
     }
 }
 
+// Render the news content (headlines or search results)
 void NewsUI::renderNewsContent() {
     ImVec2 contentSize = ImGui::GetContentRegionAvail();
     ImGui::BeginChild("NewsContent", ImVec2(0, -ImGui::GetFrameHeightWithSpacing()), true, ImGuiWindowFlags_AlwaysVerticalScrollbar);
@@ -287,49 +288,50 @@ void NewsUI::renderNewsContent() {
     if (displayList.empty()) {
         ImGui::TextColored(textColor, "No articles to display.");
     } else {
+        // Display each article
         for (const auto& article : displayList) {
             if (&article != &displayList.front()) {
-                ImGui::Dummy(ImVec2(0.0f, 10.0f));  // הוספת מרווח בין הכותרות
+                ImGui::Dummy(ImVec2(0.0f, 10.0f));  // Spacing between articles
             }
 
             ImGui::PushStyleColor(ImGuiCol_Text, textColor);
             ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 8.0f);
 
-            std::string articleId = "Article" + std::to_string(reinterpret_cast<size_t>(&article));
+            // Create article container
+            std::string articleId = "Article_" + std::to_string(reinterpret_cast<size_t>(&article));
             ImGui::BeginChild(articleId.c_str(), ImVec2(contentSize.x, 120), true, ImGuiWindowFlags_AlwaysUseWindowPadding);
 
-            bool clickedOnFavorite = false;  // משתנה שנשתמש בו לבדוק אם לחצו על הכפתור של המועדפים
+            bool clickedOnFavorite = false;
 
-            // ✅ הצגת הכותרת בצורה ברורה יותר
+            // Article title and description
             ImGui::TextWrapped("%s", article.title.c_str());
-
-            // ✅ הצגת תקציר עם תוספת מקום
             if (!article.description.empty()) {
                 ImGui::TextColored(ImVec4(0.7f, 0.7f, 0.7f, 1.0f), "%s",
                                    article.description.substr(0, 150).c_str());
             }
 
-            // ✅ שיפור עיצוב הכפתור של המועדפים
+            // Favorite button
             ImGui::SetCursorPosY(ImGui::GetCursorPosY() + 5);
-            bool isFavorite = std::find(favorites.begin(), favorites.end(), article.title) != favorites.end();
+            bool isFavorite = std::find_if(favorites.begin(), favorites.end(),
+                                           [&](const NewsFetcher::NewsArticle& fav) { return fav.title == article.title; }) != favorites.end();
 
             pushIcon();
             if (isFavorite) {
                 ImGui::PushStyleColor(ImGuiCol_Button, buttonColor);
-                std::string btnId = FA_ICON_STAR "##" + article.title;
+                std::string btnId = FA_ICON_STAR "##Art_" + article.title;
                 if (ImGui::Button(btnId.c_str())) {
                     removeFavorite(article.title);
-                    clickedOnFavorite = true;  // ✅ סימון שלחצו על הכפתור
+                    clickedOnFavorite = true;
                 }
                 ImGui::PopStyleColor();
                 if (ImGui::IsItemHovered()) {
                     ImGui::SetTooltip("Remove from favorites");
                 }
             } else {
-                std::string btnId = FA_ICON_STAR_O "##" + article.title;
+                std::string btnId = FA_ICON_STAR_O "##Art_" + article.title;
                 if (ImGui::Button(btnId.c_str())) {
-                    addToFavorites(article.title);
-                    clickedOnFavorite = true;  // ✅ סימון שלחצו על הכפתור
+                    addToFavorites(article);
+                    clickedOnFavorite = true;
                 }
                 if (ImGui::IsItemHovered()) {
                     ImGui::SetTooltip("Add to favorites");
@@ -337,7 +339,7 @@ void NewsUI::renderNewsContent() {
             }
             popIcon();
 
-            // ✅ תיקון הבעיה: פתיחת הפופאפ רק אם לא לחצו על כפתור המועדפים!
+            // Handle click on article (show details)
             if (ImGui::IsWindowHovered() && ImGui::IsMouseClicked(0) && !clickedOnFavorite) {
                 selectedArticle = article;
                 showArticlePopup = true;
@@ -350,10 +352,6 @@ void NewsUI::renderNewsContent() {
     }
 
     ImGui::EndChild();
-
-    if (showArticlePopup) {
-        renderArticlePopup();
-    }
 }
 
 
@@ -389,7 +387,6 @@ void NewsUI::renderSettingsPopup() {
 void NewsUI::renderFavoritesPopup() {
     ImGui::OpenPopup("Favorites");
 
-
     ImVec2 center = ImGui::GetMainViewport()->GetCenter();
     ImGui::SetNextWindowPos(center, ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
     ImGui::SetNextWindowSize(ImVec2(900, 600), ImGuiCond_Appearing);
@@ -402,40 +399,54 @@ void NewsUI::renderFavoritesPopup() {
         ImGui::Text(" Saved Articles");
         ImGui::Separator();
 
-
         ImGui::BeginChild("FavoritesList", ImVec2(850, 450), true, ImGuiWindowFlags_AlwaysVerticalScrollbar);
 
         if (favorites.empty()) {
             ImGui::TextColored(textColor, "No favorites added yet.");
         } else {
-            for (const auto& favorite : favorites) {
+            for (const auto& article : favorites) {
                 ImGui::PushStyleColor(ImGuiCol_Text, textColor);
+                ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 8.0f);
 
+                std::string articleId = "FavArticle" + std::to_string(reinterpret_cast<size_t>(&article));
+                ImGui::BeginChild(articleId.c_str(), ImVec2(ImGui::GetContentRegionAvail().x, 120), true);
 
-                ImGui::TextWrapped("%s", favorite.c_str());
+                bool clickedOnRemove = false;
 
-                ImGui::SameLine();
+                // Title and description
+                ImGui::TextWrapped("%s", article.title.c_str());
+                if (!article.description.empty()) {
+                    ImGui::TextColored(ImVec4(0.7f, 0.7f, 0.7f, 1.0f), "%s",
+                                       article.description.substr(0, 150).c_str());
+                }
+
+                // Remove button
+                ImGui::SetCursorPosY(ImGui::GetCursorPosY() + 5);
+                ImGui::SameLine(ImGui::GetWindowWidth() - 40);
                 pushIcon();
-
-
-                if (ImGui::Button((FA_ICON_TIMES "##" + favorite).c_str())) {
-                    removeFavorite(favorite);
+                if (ImGui::Button((FA_ICON_TIMES "##" + article.title).c_str())) {
+                    removeFavorite(article.title);
+                    clickedOnRemove = true;
                 }
-
                 popIcon();
-                if (ImGui::IsItemHovered()) {
-                    ImGui::SetTooltip("Remove from favorites");
+
+                // Clicking on article opens detail popup
+                if (!clickedOnRemove && ImGui::IsWindowHovered() && ImGui::IsMouseClicked(0)) {
+                    selectedArticle = article;
+                    showArticlePopup = true;
+                    showFavoritesPopup = false;  // Close favorites popup
+                    ImGui::CloseCurrentPopup();
                 }
 
+                ImGui::EndChild();
+                ImGui::PopStyleVar();
                 ImGui::PopStyleColor();
-                ImGui::Separator();
+                ImGui::Dummy(ImVec2(0.0f, 10.0f));
             }
         }
 
         ImGui::EndChild();
 
-
-        ImGui::Spacing();
         if (ImGui::Button("Close", ImVec2(120, 40))) {
             showFavoritesPopup = false;
             ImGui::CloseCurrentPopup();
@@ -445,7 +456,11 @@ void NewsUI::renderFavoritesPopup() {
     }
 }
 
+
+
+// Main render function for the application
 void NewsUI::render() {
+    // Set up main window
     ImGui::SetNextWindowPos(ImVec2(0, 0));
     ImGui::SetNextWindowSize(ImGui::GetIO().DisplaySize);
 
@@ -455,9 +470,11 @@ void NewsUI::render() {
                  ImGuiWindowFlags_NoMove |
                  ImGuiWindowFlags_NoBringToFrontOnFocus);
 
+    // Main content
     renderToolbar();
     ImGui::Separator();
 
+    // Header based on current view
     if (showHome) {
         pushIcon();
         ImGui::Text(FA_ICON_HOME);
@@ -474,16 +491,23 @@ void NewsUI::render() {
 
     renderNewsContent();
 
-    if (showFavoritesPopup) {
-        renderFavoritesPopup();
-    }
-
+    // Render popups in specific order
     if (showSettings) {
         renderSettingsPopup();
     }
 
+    if (showFavoritesPopup) {
+        renderFavoritesPopup();
+    }
+
+    // Article details popup should always be rendered last
+    if (showArticlePopup) {
+        renderArticlePopup();
+    }
+
     ImGui::End();
 }
+
 
 void NewsUI::handleSearch() {
     if (!searchQuery.empty()) {
@@ -493,38 +517,43 @@ void NewsUI::handleSearch() {
 }
 
 // Helper functions remain unchanged since they work with strings
-void NewsUI::addToFavorites(const std::string& headline) {
-    if (std::find(favorites.begin(), favorites.end(), headline) == favorites.end()) {
-        favorites.push_back(headline);
+void NewsUI::addToFavorites(const NewsFetcher::NewsArticle& article) {
+    auto it = std::find_if(favorites.begin(), favorites.end(),
+                           [&](const NewsFetcher::NewsArticle& fav) { return fav.title == article.title; });
+
+    if (it == favorites.end()) {
+        favorites.push_back(article);
         NewsStorage::saveFavoritesToFile(favorites);
+        std::cout << "[INFO] Article added to favorites.\n";
     }
 }
 
-void NewsUI::removeFavorite(const std::string& headline) {
+void NewsUI::removeFavorite(const std::string& title) {
     favorites.erase(
-            std::remove(favorites.begin(), favorites.end(), headline),
+            std::remove_if(favorites.begin(), favorites.end(),
+                           [&](const NewsFetcher::NewsArticle& article) { return article.title == title; }),
             favorites.end()
     );
     NewsStorage::saveFavoritesToFile(favorites);
+    std::cout << "[INFO] Article removed from favorites.\n";
 }
+// Render the article details popup with full information
 void NewsUI::renderArticlePopup() {
+    // Open the popup and center it on screen
     ImGui::OpenPopup("Article Details");
-
     ImVec2 center = ImGui::GetMainViewport()->GetCenter();
     ImGui::SetNextWindowPos(center, ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
     ImGui::SetNextWindowSize(ImVec2(600, 400), ImGuiCond_Appearing);
 
-    if (ImGui::BeginPopupModal("Article Details", &showArticlePopup,
-                               ImGuiWindowFlags_AlwaysAutoResize)) {
-
-        if (selectedArticle) {  // Check if we have a valid article
-            // Title with larger font
+    if (ImGui::BeginPopupModal("Article Details", &showArticlePopup, ImGuiWindowFlags_AlwaysAutoResize)) {
+        if (selectedArticle) {
+            // Article title with larger font
             ImGui::PushFont(defaultFont);
             ImGui::TextWrapped("%s", selectedArticle->title.c_str());
             ImGui::PopFont();
             ImGui::Separator();
 
-            // Source and date
+            // Source and publication date if available
             if (!selectedArticle->source.empty()) {
                 ImGui::Text("Source: %s", selectedArticle->source.c_str());
                 ImGui::SameLine();
@@ -534,37 +563,38 @@ void NewsUI::renderArticlePopup() {
             }
             ImGui::Separator();
 
-            // Description in a scrolling region
+            // Article description
             if (!selectedArticle->description.empty()) {
                 ImGui::TextWrapped("%s", selectedArticle->description.c_str());
                 ImGui::Spacing();
             }
 
-            // Content in a scrolling region
+            // Article content in scrollable area
             if (!selectedArticle->content.empty()) {
-                ImGui::BeginChild("Content", ImVec2(0, 200), true);
+                ImGui::BeginChild("ArticleContent", ImVec2(0, 200), true);
                 ImGui::TextWrapped("%s", selectedArticle->content.c_str());
                 ImGui::EndChild();
             }
 
             ImGui::Separator();
 
-            // URL Button
+            // Open in browser button
             if (!selectedArticle->url.empty()) {
                 if (ImGui::Button("Open in Browser")) {
-                    // Open URL in default browser - platform specific
+                    // Platform-specific URL opening
 #ifdef _WIN32
                     system(("start " + selectedArticle->url).c_str());
 #elif __APPLE__
                     system(("open " + selectedArticle->url).c_str());
-                    #else
-                        system(("xdg-open " + selectedArticle->url).c_str());
+#else
+                    system(("xdg-open " + selectedArticle->url).c_str());
 #endif
                 }
                 ImGui::SameLine();
             }
         }
 
+        // Close button
         if (ImGui::Button("Close")) {
             showArticlePopup = false;
             ImGui::CloseCurrentPopup();

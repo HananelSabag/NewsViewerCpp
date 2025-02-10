@@ -8,7 +8,7 @@ int main() {
 
     // Create NewsFetcher instance
     NewsFetcher newsFetcher(apiKey);
-    newsFetcher.startAutoUpdate(300);
+    newsFetcher.startAutoUpdate(10);
 
     // Create and run the UI
     NewsUI ui(newsFetcher);
