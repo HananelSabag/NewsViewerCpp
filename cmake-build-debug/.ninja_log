@@ -17,3 +17,16 @@
 8885	50130	7611011309400232	NewsViewer.exe	e55c8fed6321a2c5
 24	22199	7611321432381935	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	1206156b0074ecf0
 22199	100777	7611322218032608	NewsViewer.exe	e55c8fed6321a2c5
+7	8479	7611386745224766	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	1206156b0074ecf0
+4	11673	7611386777052099	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	7b15e3bc8a482bbd
+11673	59218	7611387252623223	NewsViewer.exe	e55c8fed6321a2c5
+9	9927	7611401545143642	CMakeFiles/NewsViewer.dir/main.cpp.obj	44dfdf2d62aa9126
+15	11236	7611401558164405	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	1206156b0074ecf0
+12	12262	7611401568381406	CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj	26bd237e80a40a15
+4	14758	7611401593275399	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	7b15e3bc8a482bbd
+14758	63552	7611402081346847	NewsViewer.exe	e55c8fed6321a2c5
+10	8415	7611407306864427	CMakeFiles/NewsViewer.dir/main.cpp.obj	44dfdf2d62aa9126
+13	9484	7611407317565010	CMakeFiles/NewsViewer.dir/src/ui.cpp.obj	1206156b0074ecf0
+17	10368	7611407326343385	CMakeFiles/NewsViewer.dir/src/news_storage.cpp.obj	26bd237e80a40a15
+5	12886	7611407351422670	CMakeFiles/NewsViewer.dir/src/news_fetcher.cpp.obj	7b15e3bc8a482bbd
+12886	60662	7611407829268019	NewsViewer.exe	e55c8fed6321a2c5

@@ -31,6 +31,7 @@ int main() {
         // Clean shutdown
         std::cout << "[INFO] Application shutting down, stopping auto-update..." << std::endl;
         newsFetcher.stopAutoUpdate();
+        newsFetcher.stopImageLoading();
 
         // Log total runtime
         auto end = std::chrono::system_clock::now();

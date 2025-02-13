@@ -44,6 +44,27 @@ NewsFetcher::NewsFetcher(const std::string& apiKey) : apiKey(apiKey) {
 
 
 /**
+ * @brief Stops all active image loading threads safely.
+ */
+void NewsFetcher::stopImageLoading() {
+    isImageLoadingEnabled = false;  // Prevents new image loads from starting
+
+    std::lock_guard<std::mutex> lock(imageThreadsMutex);
+    for (auto& thread : imageThreads) {
+        if (thread.joinable()) {
+            thread.join();  // Waits for all image loading threads to finish
+        }
+    }
+    imageThreads.clear();
+    std::cout << "[INFO] Image loading threads successfully stopped.\n";
+}
+
+NewsFetcher::~NewsFetcher() {
+    stopImageLoading();  // Ensuring proper cleanup when the object is destroyed
+}
+
+
+/**
  * Parse JSON article data into NewsArticle struct with improved source handling
  * @param articleJson JSON object containing article data from NewsAPI
  * @return NewsArticle object with parsed data
@@ -399,25 +420,32 @@ void NewsFetcher::autoUpdateLoop(int intervalSeconds) {
 
 //Load article image inky when user click on the headline to prevent waste of heep request
 bool NewsFetcher::loadArticleImageOnDemand(NewsArticle& article) {
-    // If already loaded or loading, no need to do anything
-    if (article.isImageLoaded || article.isImageLoading) {
-        return true;
+    if (!isImageLoadingEnabled || article.isImageLoaded || article.isImageLoading) {
+        return false;
     }
 
-    // If no image URL or previous error, return false
+
     if (article.urlToImage.empty() || article.loadError) {
         return false;
     }
 
-    // Start loading in a new thread
     article.isImageLoading = true;
-    std::thread([this, &article]() {
-        std::lock_guard<std::mutex> lock(imageMutex);
-        if (!loadArticleImage(article)) {
-            article.loadError = true;
-        }
-        article.isImageLoading = false;
-    }).detach();
+
+
+    {
+        std::lock_guard<std::mutex> lock(imageThreadsMutex);
+        imageThreads.emplace_back([this, &article]() {
+            if (!isImageLoadingEnabled) return;
+
+            std::lock_guard<std::mutex> loadLock(imageMutex);
+            if (!loadArticleImage(article)) {
+                article.loadError = true;
+            }
+            article.isImageLoading = false;
+        });
+
+        imageThreads.back().detach();
+    }
 
     return true;
 }

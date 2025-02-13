@@ -1,26 +1,31 @@
-# CLion specific
-.idea/
+# Build directories
 cmake-build-*/
+!cmake-build-debug/assets/
+build/
+[Dd]ebug/
+[Rr]elease/
 
-# Prerequisites
-*.d
+# IDE
+.idea/
+.vscode/
+*.user
+.vs/
 
-# Compiled Object files
+# Compiled stuff
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# Dynamic libs
 *.so
 *.dylib
 *.dll
+!lib/glfw3.dll
 
-# Compiled Static libraries
+# Static libs
 *.lai
 *.la
 *.a
@@ -31,16 +36,25 @@ cmake-build-*/
 *.out
 *.app
 
-# Cache and temporary files
+# Cache and logs
 news_cache.txt
-imgui.ini
-
-# VS Code
-.vscode/
+.ninja_*
+CMakeCache.txt
 
 # Windows specific
-[Dd]ebug/
-[Rr]elease/
 x64/
-.vs/
 *.user
+
+# Temporary files
+*.log
+*.tlog
+*.idb
+*.pdb
+
+# Keep all source, headers and config
+!src/
+!include/
+!assets/
+!CMakeLists.txt
+!README.md
+!LICENSE

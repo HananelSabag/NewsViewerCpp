@@ -64,6 +64,13 @@ public:
      */
     explicit NewsFetcher(const std::string& apiKey);
 
+    ~NewsFetcher();  // Destructor to ensure proper cleanup
+
+    /**
+ * @brief Stops all running image loading threads safely.
+ */
+    void stopImageLoading();
+
     /**
      * @brief Fetches the latest headlines
      * @return Vector of NewsArticle objects containing the headlines
@@ -104,11 +111,16 @@ public:
      */
     void stopAutoUpdate();
 
+
+
 private:
     std::string apiKey;                  ///< NewsAPI authentication key
     std::string baseUrl;                 ///< Base URL for API requests
     std::atomic<bool> isAutoUpdateRunning{false}; ///< Controls auto-update thread
     std::thread updateThread;            ///< Thread for automatic updates
+    std::atomic<bool> isImageLoadingEnabled{true};
+    std::vector<std::thread> imageThreads;
+    std::mutex imageThreadsMutex;
 
 
     // Thread synchronization
