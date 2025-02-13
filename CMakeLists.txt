@@ -28,7 +28,7 @@ set(IMGUI_SOURCES
         src/imgui_widgets.cpp
         src/imgui_impl_glfw.cpp
         src/imgui_impl_opengl3.cpp
-        )
+        include/stb_image.h)
 
 # Combine all sources
 add_executable(NewsViewer
@@ -56,4 +56,8 @@ target_link_libraries(NewsViewer
 target_compile_definitions(NewsViewer PRIVATE
         UNICODE
         _UNICODE
+        )
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
         )

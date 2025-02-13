@@ -1,147 +1,151 @@
 #ifndef NEWS_UI_H
 #define NEWS_UI_H
 
+#ifdef _WIN32
+#include <winsock2.h>  // Add this line first
+#include <windows.h>
+#include <GL/gl.h>
+#elif __APPLE__
+#include <OpenGL/gl.h>
+#else
+#include <GL/gl.h>
+#endif
+
 #include <vector>
 #include <string>
 #include <optional>
+#include <unordered_map>
 #include "news_fetcher.h"
 #include "news_storage.h"
 #include "imgui.h"
+#include "glfw3.h"
 
-// Font Awesome icon definitions
-#define FA_ICON_SEARCH     "\uf002"
-#define FA_ICON_HOME       "\uf015"
-#define FA_ICON_STAR       "\uf005"
-#define FA_ICON_STAR_O     "\uf006"
-#define FA_ICON_COG        "\uf013"
-#define FA_ICON_SUN        "\uf185"
-#define FA_ICON_MOON       "\uf186"
-#define FA_ICON_TIMES      "\uf00d"
+#ifndef GL_CLAMP_TO_EDGE
+#define GL_CLAMP_TO_EDGE 0x812F
+#endif
 
-/**
- * @class NewsUI
- * @brief Handles the graphical user interface for the news viewer application.
- */
+// Font Awesome icon definitions for better readability
+#define ICON_SEARCH     "\uf002"
+#define ICON_HOME       "\uf015"
+#define ICON_STAR       "\uf005"
+#define ICON_STAR_O     "\uf006"
+#define ICON_COG        "\uf013"
+#define ICON_SUN        "\uf185"
+#define ICON_MOON       "\uf186"
+#define ICON_PLUS       "\uf067"
+#define ICON_MINUS      "\uf068"
+// Add with other icon definitions in ui.h
+#define ICON_REFRESH    "\uf021"
+#define DEFAULT_FONT_SIZE 18.0f
+
+
+// Application version
+#define APP_VERSION "1.0.0"
+
 class NewsUI {
 public:
-    /**
-     * Constructor - Initializes the UI with a reference to a NewsFetcher instance.
-     * @param fetcher Reference to a NewsFetcher object.
-     */
+    // Constructor initializes the UI with a NewsFetcher instance
     explicit NewsUI(NewsFetcher& fetcher);
+    ~NewsUI();
 
-    /**
-     * Runs the main UI loop using ImGui.
-     */
+    // Main entry point to run the UI
     void run();
 
 private:
-    NewsFetcher& fetcher;                                  // Reference to NewsFetcher for fetching news
-    std::vector<NewsFetcher::NewsArticle> headlines;       // Stores fetched headlines
-    std::vector<NewsFetcher::NewsArticle> searchResults;   // Stores search results
-    std::vector<NewsFetcher::NewsArticle> favorites;       // Stores favorite articles with full details
-    std::string searchQuery;                               // Stores the current user search input
-
-    // Current selected article for popup
+    // Core data
+    NewsFetcher& fetcher;
+    std::vector<NewsFetcher::NewsArticle> headlines;
+    std::vector<NewsFetcher::NewsArticle> searchResults;
+    std::vector<NewsFetcher::NewsArticle> favorites;
     std::optional<NewsFetcher::NewsArticle> selectedArticle;
-    bool showArticlePopup = false;                         // Controls visibility of the article details popup
 
-    // UI State variables
-    bool showFavoritesPopup = false;   // Controls visibility of the favorites popup
-    bool showHome = true;              // Controls whether to show "Top Headlines" or search results
-    bool isDarkMode = true;            // Controls dark/light mode
-    float fontSize = 16.0f;            // Controls font size
-    float pendingFontSize = 14.0f;     // For handling font size changes
-    bool fontSizeChanged = false;      // Flag for font changes
-    bool showSettings = false;         // Controls settings popup visibility
-    ImFont* defaultFont = nullptr;     // Default font
-    ImFont* iconFont = nullptr;        // Font Awesome icons font
+    // UI state
+    struct UIState {
+        std::string searchQuery;
+        bool showArticlePopup = false;
+        bool showFavoritesPopup = false;
+        bool showSettings = false;
+        bool showHome = true;
+        bool isDarkMode = true;
+    } state;
 
-    // UI Colors
-    ImVec4 backgroundColor = ImVec4(0.9f, 0.9f, 0.9f, 1.0f);
-    ImVec4 textColor = ImVec4(0.0f, 0.0f, 0.0f, 1.0f);
-    ImVec4 accentColor = ImVec4(0.2f, 0.6f, 1.0f, 1.0f);
-    ImVec4 buttonColor = ImVec4(0.2f, 0.6f, 1.0f, 0.6f);
-    ImVec4 buttonHoverColor = ImVec4(0.2f, 0.6f, 1.0f, 0.8f);
+    // Message system for user feedback
+    struct Message {
+        std::string text;
+        ImVec4 color;
+        double duration;
+        double startTime;
+    };
+    std::vector<Message> messages;
 
-    /**
-     * Renders the main ImGui interface.
-     */
+    // Fonts
+    ImFont* defaultFont = nullptr;
+    ImFont* iconFont = nullptr;
+
+    // Image handling
+    struct ImageTexture {
+        GLuint textureId = 0;
+        int width = 0;
+        int height = 0;
+        bool isLoaded = false;
+    };
+    std::unordered_map<std::string, ImageTexture> textureCache;
+
+    // Theme colors
+    struct ThemeColors {
+        ImVec4 background{0.9f, 0.9f, 0.9f, 1.0f};
+        ImVec4 text{0.0f, 0.0f, 0.0f, 1.0f};
+        ImVec4 accent{0.2f, 0.6f, 1.0f, 1.0f};
+        ImVec4 success{0.2f, 0.8f, 0.2f, 1.0f};
+        ImVec4 warning{1.0f, 0.8f, 0.0f, 1.0f};
+        ImVec4 error{0.8f, 0.2f, 0.2f, 1.0f};
+    } colors;
+
+
+    // Core UI rendering functions
     void render();
+    void renderToolbar();
+    void renderNewsContent();
+    void renderFooter();
+    void renderMessages();
 
-    /**
-     * Displays the favorites popup with full article details.
-     */
+    // Popup rendering
+    void renderArticlePopup();
     void renderFavoritesPopup();
-
-    /**
-     * Displays the settings popup.
-     */
     void renderSettingsPopup();
 
-    /**
-     * Displays the article details popup.
-     */
-    void renderArticlePopup();
+    // UI utilities
+    void showMessage(const std::string& text, const ImVec4& color, float duration = 3.0f);
+    void updateMessages();
+    void centerText(const char* text, float width, float height);
+    void pushIcon();
+    void popIcon();
+    void renderIconButton(const char* icon, const char* tooltip = nullptr,
+                          const ImVec4* color = nullptr);
 
-    /**
-     * Renders the main toolbar (search, favorites, settings buttons).
-     */
-    void renderToolbar();
-
-    /**
-     * Renders the news content area.
-     */
-    void renderNewsContent();
-
-    /**
-     * Applies the current theme (dark/light mode).
-     */
+    // Theme and style
     void applyTheme();
-
-    /**
-     * Loads and initializes fonts.
-     */
     bool initializeFonts();
+    bool hasNewUpdates = false;  // Flag to indicate new content is available
 
-    /**
-     * Checks and handles font size changes safely between frames.
-     */
-    void checkFontSizeChange();
 
-    /**
-     * Handles user input and searches for news.
-     */
+
+    // Image handling
+    ImageTexture createTextureFromImageData(const std::vector<unsigned char>& imageData);
+    void deleteTexture(ImageTexture& texture);
+    void renderImage(NewsFetcher::NewsArticle& article, float maxWidth, float maxHeight);
+
+
+    // Content management
     void handleSearch();
-
-    /**
-     * Adds a news article to favorites and saves it to file.
-     * @param article The full article to add to favorites.
-     */
     void addToFavorites(const NewsFetcher::NewsArticle& article);
-
-    /**
-     * Removes a news article from favorites by its title and updates the file.
-     * @param title The title of the article to remove.
-     */
     void removeFavorite(const std::string& title);
 
-    /**
-     * Helper function to push icon font for rendering Font Awesome icons.
-     */
-    void pushIcon() { ImGui::PushFont(iconFont); }
+    // Window management
+    void setupWindow(GLFWwindow* window);
+    void cleanup(GLFWwindow* window);
+    void setWindowIcon(GLFWwindow* window, const char* iconPath);
 
-    /**
-     * Helper function to pop icon font after rendering Font Awesome icons.
-     */
-    void popIcon() { ImGui::PopFont(); }
-
-    /**
-     * Renders a button with a Font Awesome icon.
-     * @param icon The Font Awesome icon code.
-     * @param tooltip Optional tooltip text to show on hover.
-     */
-    void renderIconButton(const char* icon, const char* tooltip = nullptr);
 };
 
 #endif // NEWS_UI_H
